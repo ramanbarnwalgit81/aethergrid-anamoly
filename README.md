@@ -9,8 +9,8 @@ across 89 turbine-years from three wind farms.
 
 This repository holds the corrected evaluation harness, the CARE-Precursor
 labels, the physics-residual stacker, the conformal calibration layer, and every
-result file behind the tables and figures. No reported number is hand-entered;
-each is written to a JSON file by the script that produces it.
+result file behind the tables and figures. No reported number is hand-entered.
+Each is written to a JSON file by the script that produces it.
 
 ## What is included
 
@@ -29,7 +29,7 @@ for where to obtain them.
 
 ## Environment
 
-Python 3.12.6, CPU only. No GPU was used; the deep and graph models run in
+Python 3.12.6, CPU only. No GPU was used. The deep and graph models run in
 bounded configurations documented in the code, and a GPU would permit larger
 ones. Core package versions: numpy 1.26.4, scipy 1.13.1, scikit-learn 1.8.0,
 pandas 2.2.2, torch 2.11.0+cpu. All runs use fixed seed 42.
