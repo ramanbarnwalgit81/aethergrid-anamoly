@@ -1,6 +1,5 @@
 # AetherGrid reproducibility manifest (SHA-256)
-# Generated 2026-06-11; 110 files
-# Verify: sha256sum -c (strip size column) or compare hashes
+# 116 files
 1c57c16e03ef3d1348580803a67a760707cc57575aa1f222b6215c5c9bdb1d8b          2594  data/benchmark/care_precursor/event_info_precursor_farm_A.csv
 e11dc909d206e63b650895214508b1ae1842eac965a832f06fe764c0fd3a053b          1868  data/benchmark/care_precursor/event_info_precursor_farm_B.csv
 7e939ddc911c2b9a96bee2adb6209babf1661b6c38f00a6cf97eca647a46143b          8066  data/benchmark/care_precursor/event_info_precursor_farm_C.csv
@@ -22,8 +21,10 @@ effbdded60660f00d003c59d1882e439946f0cc8649811b96d5492ff648db590         10534  
 736e40db5704c159c06d42e6954b3fd4e55afba25f45e2a80082d5231f19d980          5906  docs/results/care_ensemble_v6.json
 33f37286efa59b8c75cea785cde0bbdf1e6c9ea492b62e5d9c6fe8ae97075a57          8328  docs/results/care_ensemble_v7.json
 67f76307a7dbda2617965f9cce8ccd15e99b3fc6cace7f81c7496d6a5e8c8421       3593557  docs/results/care_ensemble_v7_per_event_scores.json
-080eed62ab7c891858090b76d6dfa08caf4903dde89823be675afceacb4d53e6          3416  docs/results/care_farm_b_ensemble.json
-a752329c21c7dcf241852b0ae6176c91f3abd07f552b5d24ca3a17fadd7b8947         13033  docs/results/care_farm_c_ensemble.json
+a9b337f5f9c8acf178a19bcc5a7d8a21dafba1c009fcfc1550f5a6de77c62778       2617779  docs/results/care_ensemble_v7_per_event_scores_b.json
+5b9f7e59150655fee35add9663a8477ca009baa93bdd26ed78ab933195511952       5631666  docs/results/care_ensemble_v7_per_event_scores_c.json
+33c823aae4f0efab44a97732061ed5d8e3be96ec83991755d9484a0e4db09d09          4189  docs/results/care_farm_b_ensemble.json
+f35fc2e130295668e4cd9b0e19c3858bdf74390e33edcb198011a616859e6d05         15242  docs/results/care_farm_c_ensemble.json
 5f37c797f384ac35eab6277b45287c08a0358d01dff096a6737b7bdca060a141          2682  docs/results/care_fault_specific.json
 f106cd65bd2f0f7c7d08754936bd6c2b38ec2d604f953500857aed37c0b8975d          6179  docs/results/care_pinn_results.json
 ae4beee736731fc164c4a1b381b6556e9b84211d7cac0f05886462be12de693c          6044  docs/results/care_real_labels.json
@@ -34,6 +35,7 @@ d3a3064e1102248a98f3c331240b3bf0c9bd580d72bf2e110b05643faa384dd0         51350  
 8beff26dcff774faee2b5e2141ad891691e21bcc3bda60a2b03da4d32472fe89          4479  docs/results/cms/benchmark_A.json
 02d3d895e7ee4d0bc08e9ac703982bd4482d15fc6dee83102e1b0618cf138ef9          5857  docs/results/cms/benchmark_ABC.json
 e969cb5c07eefa9142c475841c11f244679be155175bea03ea77fc62ebd53ab3         11140  docs/results/cms/benchmark_GDN_AB.json
+c8ef3e22797179cc42a043dc3197fa01b29504198bde0b3cac251784fd126c82         27348  docs/results/cms/benchmark_GDN_ABC.json
 46fa11d6968c2cc546ca47c6d83e53e3bd76710f6ecef7cf04a9479f399454b8        325263  docs/results/cms/benchmark_baselines.json
 0fbf5857834fa7b34d052c9318805eca4c83b23cbd262e16e6a421ec7cb8c77c         72948  docs/results/cms/benchmark_core.json
 3386b6bc689843a734994e5c78ed72c11790cf495475ab2e0d4fa24516970402         32406  docs/results/cms/benchmark_smoke_baselines.json
@@ -82,9 +84,12 @@ f5a6b7ba18022528cb5b109a0a16b49eaaccb05415f1f451fc5ca3fbc6e7158b          2444  
 a75268c125b9108ad07cfb016d75791384989e88f8038717390faea928aed712          4173  docs/results/label_ambiguity_test.json
 c366a789b2b39a42dc177635b7e4f20094a74a98e31d5320dee2ed6dd1062578          1666  docs/results/laplace_uq_y_event.json
 56ab66c5847357bc32f780e12f9b10db7412a13e1c6d10b2c74c2a57a8bc120b          1829  docs/results/laplace_uq_y_status.json
+5433069e178f590e04624b16aabe164472ad5b949c719aca52275e2ddfdaedff           140  docs/results/las_data_bc.json
+f1ffa57ff4ac6dcd035f07abf7973739723bf20169ae81c0078d7b113110ceb7         14842  docs/results/las_per_farm_table.json
 ba4883ea5e498ddbdbf90d0f0e953aaa9e65d90e8c39fb12d668aea9b0ec770b          8721  docs/results/lat_nab.json
+8645aebb9b904ed12dfb76cdc481a8e95716983cecc831c77cda8b66d9986b41           797  docs/results/physics_sensitivity.json
 bb8147757da7dee747de12a9371376d53d3fd8a9899bbc4a1dcd32b7c4227767          1083  docs/results/pinn_ablation.json
-be6ac68912bc4068bd505a31f54b93e81992a105855af7f80e67b9461cef8f3f          9000  docs/results/pinn_stacker_crossfarm.json
+f8b6dcae6accb60dc1be3030e052188079058137dca036343c27355fb76ed094         37992  docs/results/pinn_stacker_crossfarm.json
 e8f7137976283d42a2a1a3e8b1fcbaca441e17bb4cd59cefc0e8cf6cdd31a2fe          2409  docs/results/pinn_stacker_y_event.json
 6da33543e47ae344438174aa7981a6d63a62169c506ddd7b0f4328039b82cc1c          2218  docs/results/pinn_stacker_y_precursor.json
 d91fc231cf10dcf7594b75067736acd95338216bbba4076dafc8ae797491e4da          2020  docs/results/pinn_stacker_y_status.json

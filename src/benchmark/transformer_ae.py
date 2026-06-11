@@ -133,8 +133,15 @@ def train_transformer_ae(X_train: np.ndarray, seq_len: int = 24,
 
         model.eval()
         with torch.no_grad():
-            val_t = torch.FloatTensor(val).to(device)
-            val_loss = loss_fn(model(val_t), val_t).item()
+            # Mini-batch the validation forward (see lstm_ae.py) to keep memory
+            # bounded on large pooled validation sets (Farm C, 952 features).
+            vb = 512
+            tot_loss, tot_n = 0.0, 0
+            for j in range(0, len(val), vb):
+                chunk = torch.FloatTensor(val[j:j + vb]).to(device)
+                tot_loss += loss_fn(model(chunk), chunk).item() * len(chunk)
+                tot_n += len(chunk)
+            val_loss = tot_loss / max(tot_n, 1)
 
         if val_loss < best_val:
             best_val = val_loss

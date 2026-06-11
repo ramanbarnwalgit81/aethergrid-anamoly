@@ -1,0 +1,39 @@
+{
+  "label": "y_event",
+  "sweep": [
+    {
+      "scale": 0.8,
+      "mean_stacker_auc": 0.5798,
+      "mean_delta_auc": 0.1215,
+      "pooled_auc": 0.5753
+    },
+    {
+      "scale": 0.9,
+      "mean_stacker_auc": 0.5647,
+      "mean_delta_auc": 0.1064,
+      "pooled_auc": 0.5675
+    },
+    {
+      "scale": 1.0,
+      "mean_stacker_auc": 0.5769,
+      "mean_delta_auc": 0.1187,
+      "pooled_auc": 0.5794
+    },
+    {
+      "scale": 1.1,
+      "mean_stacker_auc": 0.576,
+      "mean_delta_auc": 0.1178,
+      "pooled_auc": 0.5764
+    },
+    {
+      "scale": 1.2,
+      "mean_stacker_auc": 0.58,
+      "mean_delta_auc": 0.1218,
+      "pooled_auc": 0.583
+    }
+  ],
+  "auc_min": 0.5647,
+  "auc_max": 0.58,
+  "auc_range": 0.0153,
+  "baseline_auc_c1": 0.5769
+}

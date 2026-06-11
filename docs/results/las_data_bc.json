@@ -1,0 +1,10 @@
+{
+  "B": {
+    "n_anomaly_events": 6,
+    "las_data": 0.9722
+  },
+  "C": {
+    "n_anomaly_events": 27,
+    "las_data": 0.9371
+  }
+}

@@ -1,131 +1,154 @@
 {
   "method": "Ensemble Farm B, status_type_id label",
   "n_features": 252,
-  "mean_auc_status": 0.9236733606255872,
-  "mean_auc_event": 0.32103790483635875,
-  "pooled_auc_status": 0.9446965379496208,
-  "pooled_auc_event": 0.48244109860653467,
+  "n_events": 15,
+  "ensemble_weights": {
+    "vae": 0.07007479001034758,
+    "lstm": 0.024490915242602905,
+    "transformer": 0.9054342947470495
+  },
+  "mean_auc_status": 0.9258543934688722,
+  "mean_auc_event": 0.32596371327281803,
+  "mean_auc_precursor": 0.32700658990814563,
+  "pooled_auc_status": 0.947549601791352,
+  "pooled_auc_event": 0.4864704166087589,
+  "pooled_auc_precursor": 0.4866970591320876,
   "per_event": [
     {
       "event_id": 34,
       "event_type": "anomaly",
       "event_description": "high temperature",
       "n_test": 4033,
-      "auc_status": 0.9288073912173939,
-      "auc_event": 0.3162618479950446
+      "auc_status": 0.9273235050427131,
+      "auc_event": 0.33109558161822283,
+      "auc_precursor": 0.33109558161822283
     },
     {
       "event_id": 7,
       "event_type": "anomaly",
       "event_description": "high temperature",
       "n_test": 5329,
-      "auc_status": 0.9500150526257333,
-      "auc_event": 0.40917553191489364
+      "auc_status": 0.9538605357175913,
+      "auc_event": 0.4059866347310357,
+      "auc_precursor": 0.41120101790767377
     },
     {
       "event_id": 53,
       "event_type": "anomaly",
       "event_description": "Rotor Bearing 2 - Damage",
       "n_test": 6048,
-      "auc_status": 0.973930781712838,
-      "auc_event": null
+      "auc_status": 0.974473230119188,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 27,
       "event_type": "anomaly",
       "event_description": "Turbine is stopped due to a main bearing",
       "n_test": 9937,
-      "auc_status": 0.9819854660242443,
-      "auc_event": 0.18536992901410232
+      "auc_status": 0.9832062719354177,
+      "auc_event": 0.17109132912793273,
+      "auc_precursor": 0.17109132912793273
     },
     {
       "event_id": 19,
       "event_type": "anomaly",
       "event_description": "high temperature",
       "n_test": 3745,
-      "auc_status": 0.9108026327414082,
-      "auc_event": 0.4285834233226632
+      "auc_status": 0.900416335365315,
+      "auc_event": 0.4556039248203428,
+      "auc_precursor": 0.4556039248203428
     },
     {
       "event_id": 77,
       "event_type": "anomaly",
       "event_description": "Turbine is in standstill since 01.08 due",
       "n_test": 9217,
-      "auc_status": 0.9464096998383345,
-      "auc_event": 0.2657987919350898
+      "auc_status": 0.946961716792302,
+      "auc_event": 0.26604109606655607,
+      "auc_precursor": 0.26604109606655607
     },
     {
       "event_id": 83,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 14113,
-      "auc_status": 0.9441429698857426,
-      "auc_event": null
+      "auc_status": 0.9423062778934768,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 52,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2737,
-      "auc_status": 0.9362637362637363,
-      "auc_event": null
+      "auc_status": 0.9458922030350602,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 21,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 1297,
-      "auc_status": 0.8978104244061691,
-      "auc_event": null
+      "auc_status": 0.8693009118541033,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 2,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2215,
-      "auc_status": 0.8828451178451178,
-      "auc_event": null
+      "auc_status": 0.8827693602693603,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 23,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 1983,
-      "auc_status": 0.8812679288582903,
-      "auc_event": null
+      "auc_status": 0.8982381908586728,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 87,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3025,
-      "auc_status": 0.8140257833509368,
-      "auc_event": null
+      "auc_status": 0.8520903091455239,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 74,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3073,
-      "auc_status": 0.9859531608455093,
-      "auc_event": null
+      "auc_status": 0.9864990860353563,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 86,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2927,
-      "auc_status": 0.9576971633723913,
-      "auc_event": null
+      "auc_status": 0.9555913914861719,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 82,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2449,
-      "auc_status": 0.863143100395962,
-      "auc_event": null
+      "auc_status": 0.8688865764828304,
+      "auc_event": null,
+      "auc_precursor": null
     }
   ],
-  "total_time_s": 5502.954300880432
+  "total_time_s": 2725.2193133831024
 }

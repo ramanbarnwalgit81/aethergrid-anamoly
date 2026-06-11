@@ -1,0 +1,1238 @@
+{
+  "config": {
+    "farms": [
+      "A",
+      "B",
+      "C"
+    ],
+    "models": [
+      "GDN"
+    ],
+    "smooth_alphas": [
+      0.05
+    ],
+    "quantiles": [
+      0.99,
+      0.995
+    ]
+  },
+  "published_reference_CARE": {
+    "Random": 0.5,
+    "IsolationForest_paper": 0.45,
+    "Autoencoder_paper": 0.66
+  },
+  "runtime_sec": 1730.5,
+  "calibrated": [
+    {
+      "model": "GDN",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6465,
+      "agg_AUC": 0.6872,
+      "agg_AP": 0.6531,
+      "coverage": 0.3066,
+      "earliness": 0.2894,
+      "reliability": 0.7456,
+      "accuracy": 0.9453,
+      "ev_tp": 34,
+      "ev_fp": 12,
+      "ev_fn": 10,
+      "per_farm_CARE": {
+        "A": 0.6072,
+        "B": 0.583,
+        "C": 0.6828
+      },
+      "selection": "calibrated_fp<=1"
+    }
+  ],
+  "care_per_dataset": {
+    "GDN|0.05|0.995": [
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.03146176185866408,
+        "earliness": 0.006791150255597369,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.0,
+        "earliness": 0.0,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.0,
+        "earliness": 0.0,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.3068862275449102,
+        "earliness": 0.019980276754896713,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.003720238095238095,
+        "earliness": 0.001325600772025671,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.0,
+        "earliness": 0.0,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.7049466114621922,
+        "earliness": 0.1946319626384127,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.38275862068965516,
+        "earliness": 0.05455479046252288,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.3076923076923077,
+        "earliness": 0.10876954452753229,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.0,
+        "earliness": 0.0027199621570482497,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.0,
+        "earliness": 0.04415780805113982,
+        "accuracy": null
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9844509232264335
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9956027849028949
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9772727272727273
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9806786050895382
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9726747241198108
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9887218045112782
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.0,
+        "earliness": 0.00727902844986792,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.14582459085186739,
+        "earliness": 0.03272261746686983,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.16161000152462265,
+        "earliness": 0.03754984016147192,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.0029677113010446346,
+        "earliness": 0.0005523782746141128,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.0,
+        "earliness": 0.0,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.08753252898036433,
+        "earliness": 0.020239243371139054,
+        "accuracy": null
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9969671047515359
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9976851851851852
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.2081183350533196,
+        "earliness": 0.08084856131460168,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.2079866888519135,
+        "earliness": 0.3693842921784098,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.50639500297442,
+        "earliness": 0.9756782039289055,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.33759772565742713,
+        "earliness": 0.16384947941313288,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.1759656652360515,
+        "earliness": 0.051672115733914566,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.3160621761658031,
+        "earliness": 0.07640500128899201,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.8569435968965217,
+        "earliness": 0.8136037297795123,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.17814726840855108,
+        "earliness": 0.6152450090744102,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.0,
+        "earliness": 0.7609618104667609,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.060784313725490195,
+        "earliness": 0.01443718425749463,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.38629737609329445,
+        "earliness": 0.155780107080914,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.011990407673860911,
+        "earliness": 0.23287143956889916,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.5371900826446281,
+        "earliness": 0.8684102983244789,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.7341206511330992,
+        "earliness": 0.6571058011262825,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.6284023668639053,
+        "earliness": 0.40414864899228164,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.9802022302022302,
+        "earliness": 0.9301865460712266,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.00966183574879227,
+        "earliness": 0.003206218119990284,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.7575757575757576,
+        "earliness": 0.8729601311458614,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": false,
+        "coverage": 0.1623003861809832,
+        "earliness": 0.0511085163646394,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.8056616304167359,
+        "earliness": 0.6332987682388722,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.08711374095989481,
+        "earliness": 0.047579723680560675,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.7388535031847133,
+        "earliness": 0.6709183673469388,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.43333333333333335,
+        "earliness": 0.2714024869615269,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.8526002201929926,
+        "earliness": 1.0,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.15748031496062992,
+        "earliness": 0.06773101112723755,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.6047700170357752,
+        "earliness": 0.9203786630979343,
+        "accuracy": null
+      },
+      {
+        "label": "anomaly",
+        "alarm": true,
+        "coverage": 0.6202290076335878,
+        "earliness": 0.49281141312775517,
+        "accuracy": null
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9824007220216606
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9891095451633568
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.97780925401322
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9873294346978557
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.7913593256059009
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.8982259570494865
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.5356846473029045
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9394861392832995
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9599528857479388
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9486803519061584
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.7329360780065005
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9741581832419733
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.19216867469879517
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9489551216169921
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.972505406240346
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9030494821634062
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9630071599045346
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9989229940764675
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.985190670122177
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9154484393520348
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9704412989175687
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9806105610561056
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9612259970457903
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9860088365243005
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9995625546806649
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 1.0
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9706732755059893
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9776511831726555
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9641678453559641
+      },
+      {
+        "label": "normal",
+        "alarm": false,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9735152487961477
+      },
+      {
+        "label": "normal",
+        "alarm": true,
+        "coverage": null,
+        "earliness": null,
+        "accuracy": 0.9381313131313131
+      }
+    ]
+  },
+  "rows": [
+    {
+      "model": "GDN",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6465,
+      "agg_AUC": 0.6872,
+      "agg_AP": 0.6531,
+      "coverage": 0.3066,
+      "earliness": 0.2894,
+      "reliability": 0.7456,
+      "accuracy": 0.9453,
+      "ev_tp": 34,
+      "ev_fp": 12,
+      "ev_fn": 10,
+      "per_farm_CARE": {
+        "A": 0.6072,
+        "B": 0.583,
+        "C": 0.6828
+      }
+    },
+    {
+      "model": "GDN",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.6372,
+      "agg_AUC": 0.6872,
+      "agg_AP": 0.6531,
+      "coverage": 0.3321,
+      "earliness": 0.313,
+      "reliability": 0.6967,
+      "accuracy": 0.922,
+      "ev_tp": 34,
+      "ev_fp": 16,
+      "ev_fn": 10,
+      "per_farm_CARE": {
+        "A": 0.6121,
+        "B": 0.5557,
+        "C": 0.6715
+      }
+    }
+  ],
+  "level_scores": {
+    "GDN|0.05": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 12.403772066302583
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 9.58763384529008
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 9.78498831896554
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 13.516543678313646
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 14.858983899797087
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 8.064662459753244
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 23.55719900638864
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 15.622403156423708
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 15.032257132146912
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 14.236754138927402
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 21.073294835031394
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.254475983317876
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.527288336286874
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 7.093430649081224
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 8.262628823728766
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 14.22295038642685
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.185125722656885
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 12.706848323627135
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 22.642657415268296
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 8.094947571826332
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 6.539935822532538
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.630045488541942
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 12.004242978241702
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 33.6611965491719
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 15.046022709820964
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 14.328000435752193
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 4.576717138116804
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 143.37002812703162
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 140.79939457797434
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 5.98475286896581
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 6.841763050514477
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 8.49341551705215
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 7.214741554160579
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 6.494481712730172
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 5.145053801094116
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 4.455765419431891
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 10.546378045369192
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1617.782549196224
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 41.50775420661908
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 70.0377256840432
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 387.3093332286498
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 163.89361427555025
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 89.00785197831873
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1009.5752626343234
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 226.39509439896185
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 483.67595455102503
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 20.71546377472792
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 49.70417976556151
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 210.79897925512188
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 9441.148069241248
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 60.26253383941625
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 51.14233070707146
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 230.66625078099833
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 94.83412009747248
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 289.72177656243764
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 66.6063593535102
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 78.5746241569505
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 220.70683073614234
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 159.6901136016235
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 165.74996189821198
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 80.61735875073884
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 25.29315923157511
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 225.53423811190163
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 17.50690222577426
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 13.463051551803183
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 19.023461923852217
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 302.98904529690856
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 12.108680960241308
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 46.07308507429546
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 123.83749924046454
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 324.59520051531973
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 84.70143637742353
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 73.92042293823079
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 32.91904120382174
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 56.140896183398276
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 17.805212861296557
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 50.53062904034032
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 74.56588101543065
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 41.32826966958963
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 126.78590096257558
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 51.256500282159614
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 9.932320349628123
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 21.28604131926096
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 5335.877544040271
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 34.59550106274478
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 19.335454650144037
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 46.84481880677319
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 21.73301911812655
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 11.289776105525153
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 8.240367621242
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 21.82961354008821
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 32.78281073656609
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 70.07363371773145
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 28.429379490119622
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 117.36600199572749
+      }
+    ]
+  }
+}

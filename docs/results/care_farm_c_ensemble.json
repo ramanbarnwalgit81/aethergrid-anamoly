@@ -3,479 +3,539 @@
   "n_features": 952,
   "n_events": 58,
   "ensemble_weights": {
-    "vae": 0.37411168365532693,
-    "lstm": 0.12436627999007917,
-    "transformer": 0.5015220363545938
+    "vae": 0.4082728211329609,
+    "lstm": 0.13117139087697335,
+    "transformer": 0.4605557879900657
   },
-  "mean_auc_status": 0.9416969302058751,
-  "mean_auc_event": 0.5535221463172559,
-  "pooled_auc_status": 0.9617595836679466,
-  "pooled_auc_event": 0.6655379060306327,
+  "mean_auc_status": 0.9462633228846212,
+  "mean_auc_event": 0.56059023644861,
+  "mean_auc_precursor": 0.5639904100977904,
+  "pooled_auc_status": 0.9645762815849379,
+  "pooled_auc_event": 0.6729165878173059,
+  "pooled_auc_precursor": 0.6744584292142632,
   "per_event": [
     {
       "event_id": 55,
       "event_type": "anomaly",
       "event_description": "Harting plug Nacelle/HUB damaged + NCR20",
       "n_test": 3193,
-      "auc_status": 0.9773895978825083,
-      "auc_event": 0.4703772970301478
+      "auc_status": 0.9794277442292898,
+      "auc_event": 0.4753150694163634,
+      "auc_precursor": 0.4753150694163634
     },
     {
       "event_id": 81,
       "event_type": "anomaly",
       "event_description": "Converter Failure from 17.11 12:30 - 18.",
       "n_test": 1372,
-      "auc_status": 0.9810743302591128,
-      "auc_event": 0.6963004753183324
+      "auc_status": 0.9864267676767677,
+      "auc_event": 0.6973606750392465,
+      "auc_precursor": 0.6973606750392465
     },
     {
       "event_id": 47,
       "event_type": "anomaly",
       "event_description": "Failure due to Rotorbrake and Hydraulic ",
       "n_test": 1577,
-      "auc_status": 0.8959160972509136,
-      "auc_event": 0.31666049815594
+      "auc_status": 0.9053823976754216,
+      "auc_event": 0.31622220923588384,
+      "auc_precursor": 0.31622220923588384
     },
     {
       "event_id": 12,
       "event_type": "anomaly",
       "event_description": "10115 : Oil level error, two-pump mode +",
       "n_test": 3547,
-      "auc_status": 0.9766066893756858,
-      "auc_event": 0.4546906430056936
+      "auc_status": 0.9768726567779329,
+      "auc_event": 0.491031246803723,
+      "auc_precursor": 0.491031246803723
     },
     {
       "event_id": 4,
       "event_type": "anomaly",
       "event_description": "23020 : Axis 3 not ready-to-operate",
       "n_test": 3889,
-      "auc_status": 0.9744347352816001,
-      "auc_event": 0.47826404112369586
+      "auc_status": 0.9781053367697757,
+      "auc_event": 0.4783820230990947,
+      "auc_precursor": 0.4783820230990947
     },
     {
       "event_id": 18,
       "event_type": "anomaly",
       "event_description": "We had some failures (st\u00f6rung 24VAC Vers",
       "n_test": 1728,
-      "auc_status": 0.9582817866646249,
-      "auc_event": 0.2908588927469136
+      "auc_status": 0.9581232848559582,
+      "auc_event": 0.2973120418595679,
+      "auc_precursor": 0.2973120418595679
     },
     {
       "event_id": 28,
       "event_type": "anomaly",
       "event_description": "P20_spinner_carbonbrush defekt + P20_Acc",
       "n_test": 3358,
-      "auc_status": 0.9835938211786144,
-      "auc_event": 0.5072165894534316
+      "auc_status": 0.9842608467580513,
+      "auc_event": 0.5109799435457331,
+      "auc_precursor": 0.5144330531178862
     },
     {
       "event_id": 39,
       "event_type": "anomaly",
       "event_description": "15004 : Safety chain relay open + 93005 ",
       "n_test": 1167,
-      "auc_status": 0.9612506792626343,
-      "auc_event": 0.725160619803477
+      "auc_status": 0.9586082729710201,
+      "auc_event": 0.7219576719576719,
+      "auc_precursor": 0.7219576719576719
     },
     {
       "event_id": 66,
       "event_type": "anomaly",
       "event_description": "Pitchfailure - defect Beckhoffcard, Axis",
       "n_test": 1807,
-      "auc_status": 0.9949504596805803,
-      "auc_event": 0.9127120890774125
+      "auc_status": 0.9952791573432298,
+      "auc_event": 0.9205255096029221,
+      "auc_precursor": 0.9205255096029221
     },
     {
       "event_id": 15,
       "event_type": "anomaly",
       "event_description": "Randomn small failures regarding pitch r",
       "n_test": 2737,
-      "auc_status": 0.9449717871644783,
-      "auc_event": 0.44097647565899917
+      "auc_status": 0.9490850603807415,
+      "auc_event": 0.44725029490494983,
+      "auc_precursor": 0.44725029490494983
     },
     {
       "event_id": 78,
       "event_type": "anomaly",
       "event_description": "P20_Grounding role brake disc + P20_cove",
       "n_test": 586,
-      "auc_status": 0.9605745524707899,
-      "auc_event": 0.5794999067859807
+      "auc_status": 0.959545503269375,
+      "auc_event": 0.6436428038777033,
+      "auc_precursor": 0.6436428038777033
     },
     {
       "event_id": 79,
       "event_type": "anomaly",
       "event_description": "Communication fault BK1120 in NC300",
       "n_test": 721,
-      "auc_status": 0.990972719319176,
-      "auc_event": 0.7871732026143791
+      "auc_status": 0.9925236618150004,
+      "auc_event": 0.7922433679354095,
+      "auc_precursor": 0.7922433679354095
     },
     {
       "event_id": 30,
       "event_type": "anomaly",
       "event_description": "Pitch failure - defect fan on pitch moto",
       "n_test": 3551,
-      "auc_status": 0.9773511327386419,
-      "auc_event": 0.9444199696938742
+      "auc_status": 0.9787414036962998,
+      "auc_event": 0.9444252902918243,
+      "auc_precursor": 0.9444252902918243
     },
     {
       "event_id": 33,
       "event_type": "anomaly",
       "event_description": "P20_Blade3_Grease Collector missing",
       "n_test": 3313,
-      "auc_status": 0.950423062440472,
-      "auc_event": 0.5803331533546736
+      "auc_status": 0.9529374677640344,
+      "auc_event": 0.586786673865813,
+      "auc_precursor": 0.586786673865813
     },
     {
       "event_id": 11,
       "event_type": "anomaly",
       "event_description": "P20_DGUV-v3 RCD 28F1 NC310 defective + 0",
       "n_test": 4021,
-      "auc_status": 0.8881745299857212,
-      "auc_event": 0.2152176527176527
+      "auc_status": 0.8691967118832301,
+      "auc_event": 0.25842227442837196,
+      "auc_precursor": 0.25842227442837196
     },
     {
       "event_id": 44,
       "event_type": "anomaly",
       "event_description": "Valve in water cooling system was left i",
       "n_test": 10443,
-      "auc_status": 0.9791237348555678,
-      "auc_event": 0.5098658532482061
+      "auc_status": 0.9783728865956142,
+      "auc_event": 0.5457933774110245,
+      "auc_precursor": 0.6341449563667436
     },
     {
       "event_id": 49,
       "event_type": "anomaly",
       "event_description": "Failure 2023-04-05 03:30 - defective cou",
       "n_test": 1606,
-      "auc_status": 0.983788494224066,
-      "auc_event": 0.26492076763815897
+      "auc_status": 0.9856501886901161,
+      "auc_event": 0.2705247650899825,
+      "auc_precursor": 0.2705247650899825
     },
     {
       "event_id": 31,
       "event_type": "anomaly",
       "event_description": "Communication and Pitchfailure - slip ri",
       "n_test": 2029,
-      "auc_status": 0.992690755555736,
-      "auc_event": 0.9878610683581301
+      "auc_status": 0.9937184119918274,
+      "auc_event": 0.9878396918676056,
+      "auc_precursor": 0.9878396918676056
     },
     {
       "event_id": 67,
       "event_type": "anomaly",
       "event_description": "Turbine has some issues with overpressur",
       "n_test": 8929,
-      "auc_status": 0.9757346962481125,
-      "auc_event": 0.37383878214081434
+      "auc_status": 0.9788498954582414,
+      "auc_event": 0.3597911013341846,
+      "auc_precursor": 0.3597911013341846
     },
     {
       "event_id": 9,
       "event_type": "anomaly",
       "event_description": "PENDING19_PREV_YAW_Grease pump defective",
       "n_test": 3469,
-      "auc_status": 0.9878215035865732,
-      "auc_event": 0.4401616178246076
+      "auc_status": 0.9886907356768253,
+      "auc_event": 0.4450915559945853,
+      "auc_precursor": 0.4450915559945853
     },
     {
       "event_id": 91,
       "event_type": "anomaly",
       "event_description": "23020 : Axis 3 not ready-to-operate",
       "n_test": 4048,
-      "auc_status": 0.9007388382173506,
-      "auc_event": 0.2643804673112339
+      "auc_status": 0.898308064976417,
+      "auc_event": 0.27264677812308163,
+      "auc_precursor": 0.27264677812308163
     },
     {
       "event_id": 5,
       "event_type": "anomaly",
       "event_description": "WEC in failure - current measurement own",
       "n_test": 667,
-      "auc_status": 0.8407557720057721,
-      "auc_event": 0.7298836838750797
+      "auc_status": 0.8366071428571429,
+      "auc_event": 0.7446090928404503,
+      "auc_precursor": 0.7446090928404503
     },
     {
       "event_id": 90,
       "event_type": "anomaly",
       "event_description": "COMMUNICATION FAULT BK1120 IN NC300 A2",
       "n_test": 2320,
-      "auc_status": 0.9334542492940615,
-      "auc_event": 0.6367645419215087
+      "auc_status": 0.9498221088672301,
+      "auc_event": 0.5863854644495413,
+      "auc_precursor": 0.5863854644495413
     },
     {
       "event_id": 70,
       "event_type": "anomaly",
       "event_description": "21002 : Axis 1 DC-link voltage low, batt",
       "n_test": 3478,
-      "auc_status": 0.9887943676506531,
-      "auc_event": 0.49054052760548283
+      "auc_status": 0.9898772506313989,
+      "auc_event": 0.4841500593460449,
+      "auc_precursor": 0.4841500593460449
     },
     {
       "event_id": 35,
       "event_type": "anomaly",
       "event_description": "Turbine had several short standstills (m",
       "n_test": 1207,
-      "auc_status": 0.939199748662757,
-      "auc_event": 0.11944217748760733
+      "auc_status": 0.9456765160791389,
+      "auc_event": 0.11825202514810784,
+      "auc_precursor": 0.11825202514810784
     },
     {
       "event_id": 16,
       "event_type": "anomaly",
       "event_description": "WEC in failure - hub battery charger def",
       "n_test": 2304,
-      "auc_status": 0.9605708034402936,
-      "auc_event": 0.9233764146090535
+      "auc_status": 0.9622051241757379,
+      "auc_event": 0.9234889403292181,
+      "auc_precursor": 0.9234889403292181
     },
     {
       "event_id": 76,
       "event_type": "anomaly",
       "event_description": "WEC in failure with pitch battery issues",
       "n_test": 822,
-      "auc_status": 0.9724609223112217,
-      "auc_event": 0.8042005420054201
+      "auc_status": 0.9781087176296757,
+      "auc_event": 0.8155064363143631,
+      "auc_precursor": 0.8155064363143631
     },
     {
       "event_id": 8,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2242,
-      "auc_status": 0.8877742293807276,
-      "auc_event": null
+      "auc_status": 0.8987607608997501,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 85,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 1585,
-      "auc_status": 0.9361253469997866,
-      "auc_event": null
+      "auc_status": 0.9527813367499466,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 6,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2305,
-      "auc_status": 0.9753904652254928,
-      "auc_event": null
+      "auc_status": 0.9784379371114915,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 62,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 1032,
-      "auc_status": 0.9694606887589343,
-      "auc_event": null
+      "auc_status": 0.9767706302794021,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 36,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2888,
-      "auc_status": 0.7418335089567967,
-      "auc_event": null
+      "auc_status": 0.7409682421376373,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 56,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2296,
-      "auc_status": 0.965877259994907,
-      "auc_event": null
+      "auc_status": 0.9663653340123928,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 94,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2737,
-      "auc_status": 0.9747623942035606,
-      "auc_event": null
+      "auc_status": 0.9817211669014173,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 54,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3025,
-      "auc_status": 0.9226080550593887,
-      "auc_event": null
+      "auc_status": 0.933668372135267,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 43,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2593,
-      "auc_status": 0.9093392055444598,
-      "auc_event": null
+      "auc_status": 0.9155101483416125,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 50,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3457,
-      "auc_status": 0.9179197604043178,
-      "auc_event": null
+      "auc_status": 0.928894989704873,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 64,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 1873,
-      "auc_status": 0.9276313149552586,
-      "auc_event": null
+      "auc_status": 0.941454997793026,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 46,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2573,
-      "auc_status": 0.9321394716234596,
-      "auc_event": null
+      "auc_status": 0.9359518608580967,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 65,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3358,
-      "auc_status": 0.9051601141407737,
-      "auc_event": null
+      "auc_status": 0.9218373493975904,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 61,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3025,
-      "auc_status": 0.9663169733754775,
-      "auc_event": null
+      "auc_status": 0.9709030619170431,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 93,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3313,
-      "auc_status": 0.931499276458059,
-      "auc_event": null
+      "auc_status": 0.9392875144301904,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 75,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 3601,
-      "auc_status": 0.9730287686996548,
-      "auc_event": null
+      "auc_status": 0.9734292289988493,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 41,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 4258,
-      "auc_status": 0.9311490944826617,
-      "auc_event": null
+      "auc_status": 0.9336550610697739,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 58,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 1873,
-      "auc_status": 0.9611941303177167,
-      "auc_event": null
+      "auc_status": 0.9646943995691977,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 48,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2737,
-      "auc_status": 0.9391480521617508,
-      "auc_event": null
+      "auc_status": 0.9502859023406968,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 88,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2881,
-      "auc_status": 0.9743207089236328,
-      "auc_event": null
+      "auc_status": 0.975735169611108,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 57,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2449,
-      "auc_status": 0.9244955444930643,
-      "auc_event": null
+      "auc_status": 0.9303063050294966,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 32,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2449,
-      "auc_status": 0.8437293729372938,
-      "auc_event": null
+      "auc_status": 0.8514191419141915,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 89,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2737,
-      "auc_status": 0.8948836143228238,
-      "auc_event": null
+      "auc_status": 0.9252533998879438,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 59,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2737,
-      "auc_status": 0.919612174766814,
-      "auc_event": null
+      "auc_status": 0.9290448138018095,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 63,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2305,
-      "auc_status": 0.9038771469355804,
-      "auc_event": null
+      "auc_status": 0.9170926002670718,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 80,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2353,
-      "auc_status": 0.8952061855670104,
-      "auc_event": null
+      "auc_status": 0.9189347079037801,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 37,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2449,
-      "auc_status": 0.906237092110698,
-      "auc_event": null
+      "auc_status": 0.88909541511772,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 29,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2305,
-      "auc_status": 0.9133102160576154,
-      "auc_event": null
+      "auc_status": 0.9185878138932286,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 1,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2161,
-      "auc_status": 0.9765558698727015,
-      "auc_event": null
+      "auc_status": 0.98003300330033,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 20,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2593,
-      "auc_status": 0.9701381053033071,
-      "auc_event": null
+      "auc_status": 0.9735112756861561,
+      "auc_event": null,
+      "auc_precursor": null
     },
     {
       "event_id": 60,
       "event_type": "normal",
       "event_description": "nan",
       "n_test": 2449,
-      "auc_status": 0.9565979428993127,
-      "auc_event": null
+      "auc_status": 0.9584774687514414,
+      "auc_event": null,
+      "auc_precursor": null
     }
   ],
-  "total_time_s": 11648.531279563904
+  "total_time_s": 12823.731457233429
 }

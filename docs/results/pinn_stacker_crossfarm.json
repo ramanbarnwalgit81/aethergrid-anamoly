@@ -100,6 +100,294 @@
         "base_v7_auc": 0.4257,
         "pinn_stacker_auc": 0.5343,
         "delta_auc": 0.1086
+      },
+      {
+        "farm": "B",
+        "event_id": 34,
+        "fault_type": "high temperature",
+        "n_test": 4033,
+        "base_v7_auc": 0.3311,
+        "pinn_stacker_auc": 0.1929,
+        "delta_auc": -0.1382
+      },
+      {
+        "farm": "B",
+        "event_id": 7,
+        "fault_type": "high temperature",
+        "n_test": 5329,
+        "base_v7_auc": 0.406,
+        "pinn_stacker_auc": 0.4684,
+        "delta_auc": 0.0625
+      },
+      {
+        "farm": "B",
+        "event_id": 27,
+        "fault_type": "Turbine is stopped due to a main bearing damage",
+        "n_test": 9937,
+        "base_v7_auc": 0.1711,
+        "pinn_stacker_auc": 0.6049,
+        "delta_auc": 0.4338
+      },
+      {
+        "farm": "B",
+        "event_id": 19,
+        "fault_type": "high temperature",
+        "n_test": 3745,
+        "base_v7_auc": 0.4556,
+        "pinn_stacker_auc": 0.4257,
+        "delta_auc": -0.0299
+      },
+      {
+        "farm": "B",
+        "event_id": 77,
+        "fault_type": "Turbine is in standstill since 01.08 due to rotorbearing damage.",
+        "n_test": 9217,
+        "base_v7_auc": 0.266,
+        "pinn_stacker_auc": 0.718,
+        "delta_auc": 0.4519
+      },
+      {
+        "farm": "C",
+        "event_id": 55,
+        "fault_type": "Harting plug Nacelle/HUB damaged + NCR20_HUB: Wiring blade control system",
+        "n_test": 3193,
+        "base_v7_auc": 0.4753,
+        "pinn_stacker_auc": 0.4494,
+        "delta_auc": -0.026
+      },
+      {
+        "farm": "C",
+        "event_id": 81,
+        "fault_type": "Converter Failure from 17.11 12:30 - 18.11. 13:57, Fuse Filter Supply ",
+        "n_test": 1372,
+        "base_v7_auc": 0.6974,
+        "pinn_stacker_auc": 0.1915,
+        "delta_auc": -0.5058
+      },
+      {
+        "farm": "C",
+        "event_id": 47,
+        "fault_type": "Failure due to Rotorbrake and Hydraulic problemes - Hydraulic pump A disabeld, 2h later turbine back in production - Data shows anomaly in temp_hydraulic_oil_tank_1_average until 15.01.2023",
+        "n_test": 1577,
+        "base_v7_auc": 0.3162,
+        "pinn_stacker_auc": 0.5681,
+        "delta_auc": 0.2519
+      },
+      {
+        "farm": "C",
+        "event_id": 12,
+        "fault_type": "10115 : Oil level error, two-pump mode + Oil Leakage Gear Oil Supply + 12019: Rotor brake B cannot be closed + P20_yaw carbon brush damaged",
+        "n_test": 3547,
+        "base_v7_auc": 0.491,
+        "pinn_stacker_auc": 0.5257,
+        "delta_auc": 0.0347
+      },
+      {
+        "farm": "C",
+        "event_id": 4,
+        "fault_type": "23020 : Axis 3 not ready-to-operate",
+        "n_test": 3889,
+        "base_v7_auc": 0.4784,
+        "pinn_stacker_auc": 0.5159,
+        "delta_auc": 0.0375
+      },
+      {
+        "farm": "C",
+        "event_id": 18,
+        "fault_type": "We had some failures (st\u00f6rung 24VAC Versorgung Rotorbremse) on the 16th in the afternoon. From 17th onwards a longer standstill where we don't know the root cause to. ",
+        "n_test": 1728,
+        "base_v7_auc": 0.2973,
+        "pinn_stacker_auc": 0.5602,
+        "delta_auc": 0.2629
+      },
+      {
+        "farm": "C",
+        "event_id": 28,
+        "fault_type": "P20_spinner_carbonbrush defekt + P20_Accumulators_hydraulic system",
+        "n_test": 3358,
+        "base_v7_auc": 0.511,
+        "pinn_stacker_auc": 0.4361,
+        "delta_auc": -0.0749
+      },
+      {
+        "farm": "C",
+        "event_id": 39,
+        "fault_type": "15004 : Safety chain relay open + 93005 : Gear oil cooler bypass valve",
+        "n_test": 1167,
+        "base_v7_auc": 0.722,
+        "pinn_stacker_auc": 0.7178,
+        "delta_auc": -0.0042
+      },
+      {
+        "farm": "C",
+        "event_id": 66,
+        "fault_type": "Pitchfailure - defect Beckhoffcard, Axis 2, rectified on 23/01 - Anomalie liegt aber l\u00e4nger an als der Fehler, Batterien waren ok",
+        "n_test": 1807,
+        "base_v7_auc": 0.9205,
+        "pinn_stacker_auc": 0.5759,
+        "delta_auc": -0.3447
+      },
+      {
+        "farm": "C",
+        "event_id": 15,
+        "fault_type": "Randomn small failures regarding pitch resulting in a longer standstill due to a defect pitch encoder (26/02)",
+        "n_test": 2737,
+        "base_v7_auc": 0.4473,
+        "pinn_stacker_auc": 0.5898,
+        "delta_auc": 0.1426
+      },
+      {
+        "farm": "C",
+        "event_id": 78,
+        "fault_type": "P20_Grounding role brake disc + P20_cover-lightning-main-cabinet-hub",
+        "n_test": 586,
+        "base_v7_auc": 0.6436,
+        "pinn_stacker_auc": 0.6481,
+        "delta_auc": 0.0045
+      },
+      {
+        "farm": "C",
+        "event_id": 79,
+        "fault_type": "Communication fault BK1120 in NC300",
+        "n_test": 721,
+        "base_v7_auc": 0.7922,
+        "pinn_stacker_auc": 0.8774,
+        "delta_auc": 0.0852
+      },
+      {
+        "farm": "C",
+        "event_id": 30,
+        "fault_type": "Pitch failure - defect fan on pitch motor",
+        "n_test": 3551,
+        "base_v7_auc": 0.9444,
+        "pinn_stacker_auc": 0.8989,
+        "delta_auc": -0.0456
+      },
+      {
+        "farm": "C",
+        "event_id": 33,
+        "fault_type": "P20_Blade3_Grease Collector missing",
+        "n_test": 3313,
+        "base_v7_auc": 0.5868,
+        "pinn_stacker_auc": 0.58,
+        "delta_auc": -0.0068
+      },
+      {
+        "farm": "C",
+        "event_id": 11,
+        "fault_type": "P20_DGUV-v3 RCD 28F1 NC310 defective + 0 : P20_Blades_Cabinet Caps missing",
+        "n_test": 4021,
+        "base_v7_auc": 0.2584,
+        "pinn_stacker_auc": 0.6082,
+        "delta_auc": 0.3498
+      },
+      {
+        "farm": "C",
+        "event_id": 44,
+        "fault_type": "Valve in water cooling system was left in wrong position after maintenance actions on 05-08-2020",
+        "n_test": 10443,
+        "base_v7_auc": 0.5458,
+        "pinn_stacker_auc": 0.3679,
+        "delta_auc": -0.1779
+      },
+      {
+        "farm": "C",
+        "event_id": 49,
+        "fault_type": "Failure 2023-04-05 03:30 - defective coupling between gear oil pump and motor",
+        "n_test": 1606,
+        "base_v7_auc": 0.2705,
+        "pinn_stacker_auc": 0.4872,
+        "delta_auc": 0.2166
+      },
+      {
+        "farm": "C",
+        "event_id": 31,
+        "fault_type": "Communication and Pitchfailure - slip ring and Beckhoff card",
+        "n_test": 2029,
+        "base_v7_auc": 0.9878,
+        "pinn_stacker_auc": 0.2591,
+        "delta_auc": -0.7287
+      },
+      {
+        "farm": "C",
+        "event_id": 67,
+        "fault_type": "Turbine has some issues with overpressure on the main transformer",
+        "n_test": 8929,
+        "base_v7_auc": 0.3598,
+        "pinn_stacker_auc": 0.4739,
+        "delta_auc": 0.1141
+      },
+      {
+        "farm": "C",
+        "event_id": 9,
+        "fault_type": "PENDING19_PREV_YAW_Grease pump defective",
+        "n_test": 3469,
+        "base_v7_auc": 0.4451,
+        "pinn_stacker_auc": 0.4404,
+        "delta_auc": -0.0047
+      },
+      {
+        "farm": "C",
+        "event_id": 91,
+        "fault_type": "23020 : Axis 3 not ready-to-operate",
+        "n_test": 4048,
+        "base_v7_auc": 0.2726,
+        "pinn_stacker_auc": 0.4347,
+        "delta_auc": 0.162
+      },
+      {
+        "farm": "C",
+        "event_id": 5,
+        "fault_type": "WEC in failure - current measurement own consumption",
+        "n_test": 667,
+        "base_v7_auc": 0.7446,
+        "pinn_stacker_auc": 0.7877,
+        "delta_auc": 0.0431
+      },
+      {
+        "farm": "C",
+        "event_id": 90,
+        "fault_type": "COMMUNICATION FAULT BK1120 IN NC300 A2",
+        "n_test": 2320,
+        "base_v7_auc": 0.5864,
+        "pinn_stacker_auc": 0.5077,
+        "delta_auc": -0.0786
+      },
+      {
+        "farm": "C",
+        "event_id": 70,
+        "fault_type": "21002 : Axis 1 DC-link voltage low, batt",
+        "n_test": 3478,
+        "base_v7_auc": 0.4842,
+        "pinn_stacker_auc": 0.47,
+        "delta_auc": -0.0142
+      },
+      {
+        "farm": "C",
+        "event_id": 35,
+        "fault_type": "Turbine had several short standstills (max 8min) with failure \"Schwingungen Umrichter Drehmomenten Level 1\"",
+        "n_test": 1207,
+        "base_v7_auc": 0.1183,
+        "pinn_stacker_auc": 0.5306,
+        "delta_auc": 0.4123
+      },
+      {
+        "farm": "C",
+        "event_id": 16,
+        "fault_type": "WEC in failure - hub battery charger defect",
+        "n_test": 2304,
+        "base_v7_auc": 0.9235,
+        "pinn_stacker_auc": 0.5707,
+        "delta_auc": -0.3528
+      },
+      {
+        "farm": "C",
+        "event_id": 76,
+        "fault_type": "WEC in failure with pitch battery issues - rewiring",
+        "n_test": 822,
+        "base_v7_auc": 0.8155,
+        "pinn_stacker_auc": 0.6889,
+        "delta_auc": -0.1266
       }
     ],
     "y_precursor": [
@@ -192,6 +480,294 @@
         "base_v7_auc": 0.1673,
         "pinn_stacker_auc": 0.4187,
         "delta_auc": 0.2514
+      },
+      {
+        "farm": "B",
+        "event_id": 34,
+        "fault_type": "high temperature",
+        "n_test": 4033,
+        "base_v7_auc": 0.3311,
+        "pinn_stacker_auc": 0.1958,
+        "delta_auc": -0.1353
+      },
+      {
+        "farm": "B",
+        "event_id": 7,
+        "fault_type": "high temperature",
+        "n_test": 5329,
+        "base_v7_auc": 0.4112,
+        "pinn_stacker_auc": 0.4731,
+        "delta_auc": 0.0619
+      },
+      {
+        "farm": "B",
+        "event_id": 27,
+        "fault_type": "Turbine is stopped due to a main bearing damage",
+        "n_test": 9937,
+        "base_v7_auc": 0.1711,
+        "pinn_stacker_auc": 0.608,
+        "delta_auc": 0.4369
+      },
+      {
+        "farm": "B",
+        "event_id": 19,
+        "fault_type": "high temperature",
+        "n_test": 3745,
+        "base_v7_auc": 0.4556,
+        "pinn_stacker_auc": 0.4191,
+        "delta_auc": -0.0365
+      },
+      {
+        "farm": "B",
+        "event_id": 77,
+        "fault_type": "Turbine is in standstill since 01.08 due to rotorbearing damage.",
+        "n_test": 9217,
+        "base_v7_auc": 0.266,
+        "pinn_stacker_auc": 0.7177,
+        "delta_auc": 0.4517
+      },
+      {
+        "farm": "C",
+        "event_id": 55,
+        "fault_type": "Harting plug Nacelle/HUB damaged + NCR20_HUB: Wiring blade control system",
+        "n_test": 3193,
+        "base_v7_auc": 0.4753,
+        "pinn_stacker_auc": 0.4552,
+        "delta_auc": -0.0201
+      },
+      {
+        "farm": "C",
+        "event_id": 81,
+        "fault_type": "Converter Failure from 17.11 12:30 - 18.11. 13:57, Fuse Filter Supply ",
+        "n_test": 1372,
+        "base_v7_auc": 0.6974,
+        "pinn_stacker_auc": 0.209,
+        "delta_auc": -0.4883
+      },
+      {
+        "farm": "C",
+        "event_id": 47,
+        "fault_type": "Failure due to Rotorbrake and Hydraulic problemes - Hydraulic pump A disabeld, 2h later turbine back in production - Data shows anomaly in temp_hydraulic_oil_tank_1_average until 15.01.2023",
+        "n_test": 1577,
+        "base_v7_auc": 0.3162,
+        "pinn_stacker_auc": 0.4954,
+        "delta_auc": 0.1791
+      },
+      {
+        "farm": "C",
+        "event_id": 12,
+        "fault_type": "10115 : Oil level error, two-pump mode + Oil Leakage Gear Oil Supply + 12019: Rotor brake B cannot be closed + P20_yaw carbon brush damaged",
+        "n_test": 3547,
+        "base_v7_auc": 0.491,
+        "pinn_stacker_auc": 0.5424,
+        "delta_auc": 0.0514
+      },
+      {
+        "farm": "C",
+        "event_id": 4,
+        "fault_type": "23020 : Axis 3 not ready-to-operate",
+        "n_test": 3889,
+        "base_v7_auc": 0.4784,
+        "pinn_stacker_auc": 0.5215,
+        "delta_auc": 0.0431
+      },
+      {
+        "farm": "C",
+        "event_id": 18,
+        "fault_type": "We had some failures (st\u00f6rung 24VAC Versorgung Rotorbremse) on the 16th in the afternoon. From 17th onwards a longer standstill where we don't know the root cause to. ",
+        "n_test": 1728,
+        "base_v7_auc": 0.2973,
+        "pinn_stacker_auc": 0.5957,
+        "delta_auc": 0.2984
+      },
+      {
+        "farm": "C",
+        "event_id": 28,
+        "fault_type": "P20_spinner_carbonbrush defekt + P20_Accumulators_hydraulic system",
+        "n_test": 3358,
+        "base_v7_auc": 0.5144,
+        "pinn_stacker_auc": 0.4292,
+        "delta_auc": -0.0852
+      },
+      {
+        "farm": "C",
+        "event_id": 39,
+        "fault_type": "15004 : Safety chain relay open + 93005 : Gear oil cooler bypass valve",
+        "n_test": 1167,
+        "base_v7_auc": 0.722,
+        "pinn_stacker_auc": 0.7568,
+        "delta_auc": 0.0349
+      },
+      {
+        "farm": "C",
+        "event_id": 66,
+        "fault_type": "Pitchfailure - defect Beckhoffcard, Axis 2, rectified on 23/01 - Anomalie liegt aber l\u00e4nger an als der Fehler, Batterien waren ok",
+        "n_test": 1807,
+        "base_v7_auc": 0.9205,
+        "pinn_stacker_auc": 0.6188,
+        "delta_auc": -0.3018
+      },
+      {
+        "farm": "C",
+        "event_id": 15,
+        "fault_type": "Randomn small failures regarding pitch resulting in a longer standstill due to a defect pitch encoder (26/02)",
+        "n_test": 2737,
+        "base_v7_auc": 0.4473,
+        "pinn_stacker_auc": 0.5934,
+        "delta_auc": 0.1461
+      },
+      {
+        "farm": "C",
+        "event_id": 78,
+        "fault_type": "P20_Grounding role brake disc + P20_cover-lightning-main-cabinet-hub",
+        "n_test": 586,
+        "base_v7_auc": 0.6436,
+        "pinn_stacker_auc": 0.6492,
+        "delta_auc": 0.0056
+      },
+      {
+        "farm": "C",
+        "event_id": 79,
+        "fault_type": "Communication fault BK1120 in NC300",
+        "n_test": 721,
+        "base_v7_auc": 0.7922,
+        "pinn_stacker_auc": 0.8679,
+        "delta_auc": 0.0756
+      },
+      {
+        "farm": "C",
+        "event_id": 30,
+        "fault_type": "Pitch failure - defect fan on pitch motor",
+        "n_test": 3551,
+        "base_v7_auc": 0.9444,
+        "pinn_stacker_auc": 0.8984,
+        "delta_auc": -0.046
+      },
+      {
+        "farm": "C",
+        "event_id": 33,
+        "fault_type": "P20_Blade3_Grease Collector missing",
+        "n_test": 3313,
+        "base_v7_auc": 0.5868,
+        "pinn_stacker_auc": 0.5983,
+        "delta_auc": 0.0115
+      },
+      {
+        "farm": "C",
+        "event_id": 11,
+        "fault_type": "P20_DGUV-v3 RCD 28F1 NC310 defective + 0 : P20_Blades_Cabinet Caps missing",
+        "n_test": 4021,
+        "base_v7_auc": 0.2584,
+        "pinn_stacker_auc": 0.6083,
+        "delta_auc": 0.3499
+      },
+      {
+        "farm": "C",
+        "event_id": 44,
+        "fault_type": "Valve in water cooling system was left in wrong position after maintenance actions on 05-08-2020",
+        "n_test": 10443,
+        "base_v7_auc": 0.6341,
+        "pinn_stacker_auc": 0.3554,
+        "delta_auc": -0.2787
+      },
+      {
+        "farm": "C",
+        "event_id": 49,
+        "fault_type": "Failure 2023-04-05 03:30 - defective coupling between gear oil pump and motor",
+        "n_test": 1606,
+        "base_v7_auc": 0.2705,
+        "pinn_stacker_auc": 0.4813,
+        "delta_auc": 0.2107
+      },
+      {
+        "farm": "C",
+        "event_id": 31,
+        "fault_type": "Communication and Pitchfailure - slip ring and Beckhoff card",
+        "n_test": 2029,
+        "base_v7_auc": 0.9878,
+        "pinn_stacker_auc": 0.2705,
+        "delta_auc": -0.7174
+      },
+      {
+        "farm": "C",
+        "event_id": 67,
+        "fault_type": "Turbine has some issues with overpressure on the main transformer",
+        "n_test": 8929,
+        "base_v7_auc": 0.3598,
+        "pinn_stacker_auc": 0.4877,
+        "delta_auc": 0.1279
+      },
+      {
+        "farm": "C",
+        "event_id": 9,
+        "fault_type": "PENDING19_PREV_YAW_Grease pump defective",
+        "n_test": 3469,
+        "base_v7_auc": 0.4451,
+        "pinn_stacker_auc": 0.4276,
+        "delta_auc": -0.0175
+      },
+      {
+        "farm": "C",
+        "event_id": 91,
+        "fault_type": "23020 : Axis 3 not ready-to-operate",
+        "n_test": 4048,
+        "base_v7_auc": 0.2726,
+        "pinn_stacker_auc": 0.4311,
+        "delta_auc": 0.1584
+      },
+      {
+        "farm": "C",
+        "event_id": 5,
+        "fault_type": "WEC in failure - current measurement own consumption",
+        "n_test": 667,
+        "base_v7_auc": 0.7446,
+        "pinn_stacker_auc": 0.7817,
+        "delta_auc": 0.0371
+      },
+      {
+        "farm": "C",
+        "event_id": 90,
+        "fault_type": "COMMUNICATION FAULT BK1120 IN NC300 A2",
+        "n_test": 2320,
+        "base_v7_auc": 0.5864,
+        "pinn_stacker_auc": 0.4895,
+        "delta_auc": -0.0969
+      },
+      {
+        "farm": "C",
+        "event_id": 70,
+        "fault_type": "21002 : Axis 1 DC-link voltage low, batt",
+        "n_test": 3478,
+        "base_v7_auc": 0.4842,
+        "pinn_stacker_auc": 0.484,
+        "delta_auc": -0.0001
+      },
+      {
+        "farm": "C",
+        "event_id": 35,
+        "fault_type": "Turbine had several short standstills (max 8min) with failure \"Schwingungen Umrichter Drehmomenten Level 1\"",
+        "n_test": 1207,
+        "base_v7_auc": 0.1183,
+        "pinn_stacker_auc": 0.5467,
+        "delta_auc": 0.4284
+      },
+      {
+        "farm": "C",
+        "event_id": 16,
+        "fault_type": "WEC in failure - hub battery charger defect",
+        "n_test": 2304,
+        "base_v7_auc": 0.9235,
+        "pinn_stacker_auc": 0.5956,
+        "delta_auc": -0.3279
+      },
+      {
+        "farm": "C",
+        "event_id": 76,
+        "fault_type": "WEC in failure with pitch battery issues - rewiring",
+        "n_test": 822,
+        "base_v7_auc": 0.8155,
+        "pinn_stacker_auc": 0.7062,
+        "delta_auc": -0.1093
       }
     ],
     "y_status": [
@@ -275,6 +851,303 @@
         "base_v7_auc": 0.7713,
         "pinn_stacker_auc": 0.9826,
         "delta_auc": 0.2114
+      },
+      {
+        "farm": "B",
+        "event_id": 34,
+        "fault_type": "high temperature",
+        "n_test": 4033,
+        "base_v7_auc": 0.9273,
+        "pinn_stacker_auc": 0.9566,
+        "delta_auc": 0.0292
+      },
+      {
+        "farm": "B",
+        "event_id": 7,
+        "fault_type": "high temperature",
+        "n_test": 5329,
+        "base_v7_auc": 0.9539,
+        "pinn_stacker_auc": 0.964,
+        "delta_auc": 0.0101
+      },
+      {
+        "farm": "B",
+        "event_id": 53,
+        "fault_type": "Rotor Bearing 2 - Damage",
+        "n_test": 6048,
+        "base_v7_auc": 0.9745,
+        "pinn_stacker_auc": 0.9805,
+        "delta_auc": 0.006
+      },
+      {
+        "farm": "B",
+        "event_id": 27,
+        "fault_type": "Turbine is stopped due to a main bearing damage",
+        "n_test": 9937,
+        "base_v7_auc": 0.9832,
+        "pinn_stacker_auc": 0.9924,
+        "delta_auc": 0.0092
+      },
+      {
+        "farm": "B",
+        "event_id": 19,
+        "fault_type": "high temperature",
+        "n_test": 3745,
+        "base_v7_auc": 0.9004,
+        "pinn_stacker_auc": 0.979,
+        "delta_auc": 0.0786
+      },
+      {
+        "farm": "B",
+        "event_id": 77,
+        "fault_type": "Turbine is in standstill since 01.08 due to rotorbearing damage.",
+        "n_test": 9217,
+        "base_v7_auc": 0.947,
+        "pinn_stacker_auc": 0.9625,
+        "delta_auc": 0.0155
+      },
+      {
+        "farm": "C",
+        "event_id": 55,
+        "fault_type": "Harting plug Nacelle/HUB damaged + NCR20_HUB: Wiring blade control system",
+        "n_test": 3193,
+        "base_v7_auc": 0.9794,
+        "pinn_stacker_auc": 0.9964,
+        "delta_auc": 0.017
+      },
+      {
+        "farm": "C",
+        "event_id": 81,
+        "fault_type": "Converter Failure from 17.11 12:30 - 18.11. 13:57, Fuse Filter Supply ",
+        "n_test": 1372,
+        "base_v7_auc": 0.9864,
+        "pinn_stacker_auc": 0.9951,
+        "delta_auc": 0.0087
+      },
+      {
+        "farm": "C",
+        "event_id": 47,
+        "fault_type": "Failure due to Rotorbrake and Hydraulic problemes - Hydraulic pump A disabeld, 2h later turbine back in production - Data shows anomaly in temp_hydraulic_oil_tank_1_average until 15.01.2023",
+        "n_test": 1577,
+        "base_v7_auc": 0.9054,
+        "pinn_stacker_auc": 0.8634,
+        "delta_auc": -0.042
+      },
+      {
+        "farm": "C",
+        "event_id": 12,
+        "fault_type": "10115 : Oil level error, two-pump mode + Oil Leakage Gear Oil Supply + 12019: Rotor brake B cannot be closed + P20_yaw carbon brush damaged",
+        "n_test": 3547,
+        "base_v7_auc": 0.9769,
+        "pinn_stacker_auc": 0.9933,
+        "delta_auc": 0.0164
+      },
+      {
+        "farm": "C",
+        "event_id": 4,
+        "fault_type": "23020 : Axis 3 not ready-to-operate",
+        "n_test": 3889,
+        "base_v7_auc": 0.9781,
+        "pinn_stacker_auc": 0.9924,
+        "delta_auc": 0.0143
+      },
+      {
+        "farm": "C",
+        "event_id": 18,
+        "fault_type": "We had some failures (st\u00f6rung 24VAC Versorgung Rotorbremse) on the 16th in the afternoon. From 17th onwards a longer standstill where we don't know the root cause to. ",
+        "n_test": 1728,
+        "base_v7_auc": 0.9581,
+        "pinn_stacker_auc": 0.9671,
+        "delta_auc": 0.009
+      },
+      {
+        "farm": "C",
+        "event_id": 28,
+        "fault_type": "P20_spinner_carbonbrush defekt + P20_Accumulators_hydraulic system",
+        "n_test": 3358,
+        "base_v7_auc": 0.9843,
+        "pinn_stacker_auc": 0.9961,
+        "delta_auc": 0.0118
+      },
+      {
+        "farm": "C",
+        "event_id": 39,
+        "fault_type": "15004 : Safety chain relay open + 93005 : Gear oil cooler bypass valve",
+        "n_test": 1167,
+        "base_v7_auc": 0.9586,
+        "pinn_stacker_auc": 0.9978,
+        "delta_auc": 0.0392
+      },
+      {
+        "farm": "C",
+        "event_id": 66,
+        "fault_type": "Pitchfailure - defect Beckhoffcard, Axis 2, rectified on 23/01 - Anomalie liegt aber l\u00e4nger an als der Fehler, Batterien waren ok",
+        "n_test": 1807,
+        "base_v7_auc": 0.9953,
+        "pinn_stacker_auc": 0.9986,
+        "delta_auc": 0.0033
+      },
+      {
+        "farm": "C",
+        "event_id": 15,
+        "fault_type": "Randomn small failures regarding pitch resulting in a longer standstill due to a defect pitch encoder (26/02)",
+        "n_test": 2737,
+        "base_v7_auc": 0.9491,
+        "pinn_stacker_auc": 0.9812,
+        "delta_auc": 0.0321
+      },
+      {
+        "farm": "C",
+        "event_id": 78,
+        "fault_type": "P20_Grounding role brake disc + P20_cover-lightning-main-cabinet-hub",
+        "n_test": 586,
+        "base_v7_auc": 0.9595,
+        "pinn_stacker_auc": 0.9921,
+        "delta_auc": 0.0326
+      },
+      {
+        "farm": "C",
+        "event_id": 79,
+        "fault_type": "Communication fault BK1120 in NC300",
+        "n_test": 721,
+        "base_v7_auc": 0.9925,
+        "pinn_stacker_auc": 0.9993,
+        "delta_auc": 0.0068
+      },
+      {
+        "farm": "C",
+        "event_id": 30,
+        "fault_type": "Pitch failure - defect fan on pitch motor",
+        "n_test": 3551,
+        "base_v7_auc": 0.9787,
+        "pinn_stacker_auc": 0.9903,
+        "delta_auc": 0.0115
+      },
+      {
+        "farm": "C",
+        "event_id": 33,
+        "fault_type": "P20_Blade3_Grease Collector missing",
+        "n_test": 3313,
+        "base_v7_auc": 0.9529,
+        "pinn_stacker_auc": 0.9639,
+        "delta_auc": 0.011
+      },
+      {
+        "farm": "C",
+        "event_id": 11,
+        "fault_type": "P20_DGUV-v3 RCD 28F1 NC310 defective + 0 : P20_Blades_Cabinet Caps missing",
+        "n_test": 4021,
+        "base_v7_auc": 0.8692,
+        "pinn_stacker_auc": 0.8773,
+        "delta_auc": 0.0081
+      },
+      {
+        "farm": "C",
+        "event_id": 44,
+        "fault_type": "Valve in water cooling system was left in wrong position after maintenance actions on 05-08-2020",
+        "n_test": 10443,
+        "base_v7_auc": 0.9784,
+        "pinn_stacker_auc": 0.9909,
+        "delta_auc": 0.0126
+      },
+      {
+        "farm": "C",
+        "event_id": 49,
+        "fault_type": "Failure 2023-04-05 03:30 - defective coupling between gear oil pump and motor",
+        "n_test": 1606,
+        "base_v7_auc": 0.9857,
+        "pinn_stacker_auc": 0.9983,
+        "delta_auc": 0.0127
+      },
+      {
+        "farm": "C",
+        "event_id": 31,
+        "fault_type": "Communication and Pitchfailure - slip ring and Beckhoff card",
+        "n_test": 2029,
+        "base_v7_auc": 0.9937,
+        "pinn_stacker_auc": 0.9991,
+        "delta_auc": 0.0054
+      },
+      {
+        "farm": "C",
+        "event_id": 67,
+        "fault_type": "Turbine has some issues with overpressure on the main transformer",
+        "n_test": 8929,
+        "base_v7_auc": 0.9788,
+        "pinn_stacker_auc": 0.9971,
+        "delta_auc": 0.0183
+      },
+      {
+        "farm": "C",
+        "event_id": 9,
+        "fault_type": "PENDING19_PREV_YAW_Grease pump defective",
+        "n_test": 3469,
+        "base_v7_auc": 0.9887,
+        "pinn_stacker_auc": 0.9956,
+        "delta_auc": 0.0069
+      },
+      {
+        "farm": "C",
+        "event_id": 91,
+        "fault_type": "23020 : Axis 3 not ready-to-operate",
+        "n_test": 4048,
+        "base_v7_auc": 0.8983,
+        "pinn_stacker_auc": 0.9159,
+        "delta_auc": 0.0176
+      },
+      {
+        "farm": "C",
+        "event_id": 5,
+        "fault_type": "WEC in failure - current measurement own consumption",
+        "n_test": 667,
+        "base_v7_auc": 0.8366,
+        "pinn_stacker_auc": 0.7573,
+        "delta_auc": -0.0793
+      },
+      {
+        "farm": "C",
+        "event_id": 90,
+        "fault_type": "COMMUNICATION FAULT BK1120 IN NC300 A2",
+        "n_test": 2320,
+        "base_v7_auc": 0.9498,
+        "pinn_stacker_auc": 0.981,
+        "delta_auc": 0.0311
+      },
+      {
+        "farm": "C",
+        "event_id": 70,
+        "fault_type": "21002 : Axis 1 DC-link voltage low, batt",
+        "n_test": 3478,
+        "base_v7_auc": 0.9899,
+        "pinn_stacker_auc": 0.9968,
+        "delta_auc": 0.007
+      },
+      {
+        "farm": "C",
+        "event_id": 35,
+        "fault_type": "Turbine had several short standstills (max 8min) with failure \"Schwingungen Umrichter Drehmomenten Level 1\"",
+        "n_test": 1207,
+        "base_v7_auc": 0.9457,
+        "pinn_stacker_auc": 0.9883,
+        "delta_auc": 0.0427
+      },
+      {
+        "farm": "C",
+        "event_id": 16,
+        "fault_type": "WEC in failure - hub battery charger defect",
+        "n_test": 2304,
+        "base_v7_auc": 0.9622,
+        "pinn_stacker_auc": 0.9938,
+        "delta_auc": 0.0316
+      },
+      {
+        "farm": "C",
+        "event_id": 76,
+        "fault_type": "WEC in failure with pitch battery issues - rewiring",
+        "n_test": 822,
+        "base_v7_auc": 0.9781,
+        "pinn_stacker_auc": 0.9992,
+        "delta_auc": 0.0211
       }
     ]
   },
@@ -290,19 +1163,39 @@
           ],
           "zero_in_ci": true,
           "p_one_sided": 0.1605
+        },
+        "B": {
+          "n": 5,
+          "observed_mean_delta": 0.156,
+          "bootstrap_95ci_mean_delta": [
+            -0.0547,
+            0.3668
+          ],
+          "zero_in_ci": true,
+          "p_one_sided": 0.077
+        },
+        "C": {
+          "n": 27,
+          "observed_mean_delta": -0.0139,
+          "bootstrap_95ci_mean_delta": [
+            -0.1084,
+            0.0756
+          ],
+          "zero_in_ci": true,
+          "p_one_sided": 0.589
         }
       },
       "pooled_across_farms": {
-        "n": 11,
-        "observed_mean_delta": 0.0722,
+        "n": 43,
+        "observed_mean_delta": 0.0279,
         "bootstrap_95ci_mean_delta": [
-          -0.0691,
-          0.2
+          -0.0493,
+          0.0971
         ],
         "zero_in_ci": true,
-        "p_one_sided": 0.166
+        "p_one_sided": 0.2275
       },
-      "n_total_events": 11
+      "n_total_events": 43
     },
     "y_precursor": {
       "per_farm": {
@@ -310,24 +1203,44 @@
           "n": 10,
           "observed_mean_delta": 0.1269,
           "bootstrap_95ci_mean_delta": [
-            -0.0319,
-            0.2749
+            -0.0356,
+            0.2758
           ],
           "zero_in_ci": true,
-          "p_one_sided": 0.058
+          "p_one_sided": 0.0675
+        },
+        "B": {
+          "n": 5,
+          "observed_mean_delta": 0.1557,
+          "bootstrap_95ci_mean_delta": [
+            -0.0564,
+            0.3678
+          ],
+          "zero_in_ci": true,
+          "p_one_sided": 0.076
+        },
+        "C": {
+          "n": 27,
+          "observed_mean_delta": -0.0123,
+          "bootstrap_95ci_mean_delta": [
+            -0.1038,
+            0.0727
+          ],
+          "zero_in_ci": true,
+          "p_one_sided": 0.583
         }
       },
       "pooled_across_farms": {
-        "n": 10,
-        "observed_mean_delta": 0.1269,
+        "n": 42,
+        "observed_mean_delta": 0.0409,
         "bootstrap_95ci_mean_delta": [
-          -0.0306,
-          0.2741
+          -0.0388,
+          0.1188
         ],
         "zero_in_ci": true,
-        "p_one_sided": 0.054
+        "p_one_sided": 0.153
       },
-      "n_total_events": 10
+      "n_total_events": 42
     },
     "y_status": {
       "per_farm": {
@@ -335,24 +1248,44 @@
           "n": 9,
           "observed_mean_delta": 0.0155,
           "bootstrap_95ci_mean_delta": [
-            -0.102,
-            0.1144
+            -0.106,
+            0.117
           ],
           "zero_in_ci": true,
-          "p_one_sided": 0.3725
+          "p_one_sided": 0.3785
+        },
+        "B": {
+          "n": 6,
+          "observed_mean_delta": 0.0248,
+          "bootstrap_95ci_mean_delta": [
+            0.0096,
+            0.0474
+          ],
+          "zero_in_ci": false,
+          "p_one_sided": 0.0
+        },
+        "C": {
+          "n": 27,
+          "observed_mean_delta": 0.0114,
+          "bootstrap_95ci_mean_delta": [
+            0.0013,
+            0.0191
+          ],
+          "zero_in_ci": false,
+          "p_one_sided": 0.0145
         }
       },
       "pooled_across_farms": {
-        "n": 9,
-        "observed_mean_delta": 0.0155,
+        "n": 42,
+        "observed_mean_delta": 0.0142,
         "bootstrap_95ci_mean_delta": [
-          -0.0977,
-          0.1172
+          -0.0115,
+          0.0372
         ],
         "zero_in_ci": true,
-        "p_one_sided": 0.3605
+        "p_one_sided": 0.1415
       },
-      "n_total_events": 9
+      "n_total_events": 42
     }
   }
 }
