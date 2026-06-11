@@ -1,0 +1,47 @@
+[
+  {
+    "model": "Isolation Forest",
+    "auc_roc": 0.8872,
+    "auc_pr": 0.181,
+    "recall_at_fpr_0.10": 0.75,
+    "recall_at_fpr_0.15": 0.875,
+    "best_f1": 0.2906,
+    "best_f1_threshold": 79.26
+  },
+  {
+    "model": "LSTM-AE",
+    "auc_roc": 0.7695,
+    "auc_pr": 0.0714,
+    "recall_at_fpr_0.10": 0.3333,
+    "recall_at_fpr_0.15": 0.4167,
+    "best_f1": 0.1772,
+    "best_f1_threshold": 99.35
+  },
+  {
+    "model": "One-Class SVM",
+    "auc_roc": 0.9306,
+    "auc_pr": 0.4022,
+    "recall_at_fpr_0.10": 0.7917,
+    "recall_at_fpr_0.15": 0.7917,
+    "best_f1": 0.5385,
+    "best_f1_threshold": 99.81
+  },
+  {
+    "model": "Dense-AE",
+    "auc_roc": 0.9086,
+    "auc_pr": 0.4144,
+    "recall_at_fpr_0.10": 0.7083,
+    "recall_at_fpr_0.15": 0.8333,
+    "best_f1": 0.56,
+    "best_f1_threshold": 99.7
+  },
+  {
+    "model": "Ensemble (IF+LSTM)",
+    "auc_roc": 0.9072,
+    "auc_pr": 0.2276,
+    "recall_at_fpr_0.10": 0.8333,
+    "recall_at_fpr_0.15": 0.875,
+    "best_f1": 0.4286,
+    "best_f1_threshold": 86.88
+  }
+]

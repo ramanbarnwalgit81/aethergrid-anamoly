@@ -1,0 +1,68 @@
+{
+  "grid": {
+    "capacity_factor": [
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45
+    ],
+    "ppa_usd_per_mwh": [
+      30,
+      45,
+      60,
+      80
+    ],
+    "collateral_multiplier": [
+      1.3,
+      1.5,
+      1.7,
+      2.0,
+      2.5
+    ]
+  },
+  "baseline_scenario": {
+    "cf": 0.35,
+    "ppa": 45,
+    "mult": 1.7
+  },
+  "per_fault_savings_distribution": {
+    "Gearbox failure": {
+      "min": 106512,
+      "p05": 107706,
+      "median": 253467,
+      "p95": 549192,
+      "max": 561288,
+      "baseline": 252409
+    },
+    "Transformer failure": {
+      "min": 76080,
+      "p05": 76933,
+      "median": 181048,
+      "p95": 392280,
+      "max": 400920,
+      "baseline": 180292
+    },
+    "Generator bearing failure": {
+      "min": 30324,
+      "p05": 30579,
+      "median": 71814,
+      "p95": 155184,
+      "max": 157776,
+      "baseline": 71588
+    },
+    "Hydraulic group": {
+      "min": 9081,
+      "p05": 9145,
+      "median": 21454,
+      "p95": 46296,
+      "max": 46944,
+      "baseline": 21397
+    }
+  },
+  "gearbox_robustness": {
+    "P[savings >= 100k]": 1.0,
+    "P[savings >= 150k]": 0.8
+  },
+  "n_scenarios": 100
+}

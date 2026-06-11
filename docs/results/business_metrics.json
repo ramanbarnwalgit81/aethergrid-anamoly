@@ -1,0 +1,138 @@
+{
+  "production": {
+    "total_hours": 79833,
+    "turbines": 6,
+    "availability_pct": 84.9,
+    "mwh_produced": 48251.4,
+    "mwh_per_turbine": 8041.9,
+    "capacity_factor_pct": 30.22,
+    "estimated_revenue_usd": 2171314.0
+  },
+  "fleet_health": {
+    "per_turbine": [
+      {
+        "turbine_id": "KWF-001",
+        "availability_pct": 85.33,
+        "mwh_produced": 8231.2,
+        "capacity_factor_pct": 30.87
+      },
+      {
+        "turbine_id": "KWF-002",
+        "availability_pct": 87.23,
+        "mwh_produced": 9184.0,
+        "capacity_factor_pct": 34.44
+      },
+      {
+        "turbine_id": "KWF-003",
+        "availability_pct": 84.94,
+        "mwh_produced": 7876.4,
+        "capacity_factor_pct": 29.65
+      },
+      {
+        "turbine_id": "KWF-004",
+        "availability_pct": 86.27,
+        "mwh_produced": 8507.2,
+        "capacity_factor_pct": 31.96
+      },
+      {
+        "turbine_id": "KWF-005",
+        "availability_pct": 84.89,
+        "mwh_produced": 7723.9,
+        "capacity_factor_pct": 29.03
+      },
+      {
+        "turbine_id": "KWF-006",
+        "availability_pct": 80.74,
+        "mwh_produced": 6728.7,
+        "capacity_factor_pct": 25.35
+      }
+    ]
+  },
+  "detection_savings": {
+    "Isolation Forest": {
+      "n_faults": 4,
+      "faults_caught": 2,
+      "recall": 0.5,
+      "false_alarms": 19,
+      "missed_faults": 2,
+      "savings_per_fault_usd": 300000,
+      "total_direct_savings_usd": 600000,
+      "revenue_protected_usd": 90720,
+      "false_alarm_cost_usd": 28500,
+      "missed_fault_cost_usd": 800000,
+      "net_benefit_usd": -137780,
+      "alert_threshold": 90.0
+    },
+    "LSTM-AE": {
+      "n_faults": 4,
+      "faults_caught": 4,
+      "recall": 1.0,
+      "false_alarms": 213,
+      "missed_faults": 0,
+      "savings_per_fault_usd": 300000,
+      "total_direct_savings_usd": 1200000,
+      "revenue_protected_usd": 181440,
+      "false_alarm_cost_usd": 319500,
+      "missed_fault_cost_usd": 0,
+      "net_benefit_usd": 1061940,
+      "alert_threshold": 90.0
+    },
+    "One-Class SVM": {
+      "n_faults": 4,
+      "faults_caught": 4,
+      "recall": 1.0,
+      "false_alarms": 230,
+      "missed_faults": 0,
+      "savings_per_fault_usd": 300000,
+      "total_direct_savings_usd": 1200000,
+      "revenue_protected_usd": 181440,
+      "false_alarm_cost_usd": 345000,
+      "missed_fault_cost_usd": 0,
+      "net_benefit_usd": 1036440,
+      "alert_threshold": 90.0
+    },
+    "Dense-AE": {
+      "n_faults": 4,
+      "faults_caught": 4,
+      "recall": 1.0,
+      "false_alarms": 190,
+      "missed_faults": 0,
+      "savings_per_fault_usd": 300000,
+      "total_direct_savings_usd": 1200000,
+      "revenue_protected_usd": 181440,
+      "false_alarm_cost_usd": 285000,
+      "missed_fault_cost_usd": 0,
+      "net_benefit_usd": 1096440,
+      "alert_threshold": 90.0
+    },
+    "Ensemble": {
+      "n_faults": 4,
+      "faults_caught": 4,
+      "recall": 1.0,
+      "false_alarms": 20,
+      "missed_faults": 0,
+      "savings_per_fault_usd": 300000,
+      "total_direct_savings_usd": 1200000,
+      "revenue_protected_usd": 181440,
+      "false_alarm_cost_usd": 30000,
+      "missed_fault_cost_usd": 0,
+      "net_benefit_usd": 1351440,
+      "alert_threshold": 90.0
+    }
+  },
+  "roi_5yr": {
+    "system_dev_cost_usd": 50000,
+    "annual_cloud_cost_usd": 12000,
+    "annual_maintenance_usd": 20000,
+    "annual_savings_usd": 690720,
+    "5yr_cost_usd": 210000,
+    "5yr_savings_usd": 3453600,
+    "5yr_roi_pct": 1544.6,
+    "payback_period_months": 0.9,
+    "assumptions": {
+      "annual_faults_prevented": 2.0,
+      "savings_per_fault_usd": 300000,
+      "ppa_price_per_mwh_usd": 45
+    }
+  }
+}

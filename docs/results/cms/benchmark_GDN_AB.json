@@ -1,0 +1,560 @@
+{
+  "config": {
+    "farms": [
+      "A",
+      "B"
+    ],
+    "models": [
+      "GDN"
+    ],
+    "smooth_alphas": [
+      null,
+      0.05
+    ],
+    "quantiles": [
+      0.95,
+      0.99,
+      0.995
+    ]
+  },
+  "published_reference_CARE": {
+    "Random": 0.5,
+    "IsolationForest_paper": 0.45,
+    "Autoencoder_paper": 0.66
+  },
+  "runtime_sec": 475.7,
+  "calibrated": [
+    {
+      "model": "GDN",
+      "smooth": null,
+      "quantile": 0.95,
+      "agg_CARE": 0.5924,
+      "agg_AUC": 0.6265,
+      "agg_AP": 0.6165,
+      "coverage": 0.2645,
+      "earliness": 0.0825,
+      "reliability": 0.7143,
+      "accuracy": 0.9505,
+      "ev_tp": 7,
+      "ev_fp": 1,
+      "ev_fn": 10,
+      "per_farm_CARE": {
+        "A": 0.6087,
+        "B": 0.5671
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "GDN",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.5916,
+      "agg_AUC": 0.7971,
+      "agg_AP": 0.7395,
+      "coverage": 0.1536,
+      "earliness": 0.04,
+      "reliability": 0.7895,
+      "accuracy": 0.9874,
+      "ev_tp": 9,
+      "ev_fp": 1,
+      "ev_fn": 8,
+      "per_farm_CARE": {
+        "A": 0.6121,
+        "B": 0.5557
+      },
+      "selection": "calibrated_fp<=1"
+    }
+  ],
+  "rows": [
+    {
+      "model": "GDN",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.5991,
+      "agg_AUC": 0.7971,
+      "agg_AP": 0.7395,
+      "coverage": 0.1256,
+      "earliness": 0.0313,
+      "reliability": 0.8491,
+      "accuracy": 0.9947,
+      "ev_tp": 9,
+      "ev_fp": 0,
+      "ev_fn": 8,
+      "per_farm_CARE": {
+        "A": 0.6072,
+        "B": 0.583
+      }
+    },
+    {
+      "model": "GDN",
+      "smooth": null,
+      "quantile": 0.95,
+      "agg_CARE": 0.5924,
+      "agg_AUC": 0.6265,
+      "agg_AP": 0.6165,
+      "coverage": 0.2645,
+      "earliness": 0.0825,
+      "reliability": 0.7143,
+      "accuracy": 0.9505,
+      "ev_tp": 7,
+      "ev_fp": 1,
+      "ev_fn": 10,
+      "per_farm_CARE": {
+        "A": 0.6087,
+        "B": 0.5671
+      }
+    },
+    {
+      "model": "GDN",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.5916,
+      "agg_AUC": 0.7971,
+      "agg_AP": 0.7395,
+      "coverage": 0.1536,
+      "earliness": 0.04,
+      "reliability": 0.7895,
+      "accuracy": 0.9874,
+      "ev_tp": 9,
+      "ev_fp": 1,
+      "ev_fn": 8,
+      "per_farm_CARE": {
+        "A": 0.6121,
+        "B": 0.5557
+      }
+    },
+    {
+      "model": "GDN",
+      "smooth": 0.05,
+      "quantile": 0.95,
+      "agg_CARE": 0.5713,
+      "agg_AUC": 0.7971,
+      "agg_AP": 0.7395,
+      "coverage": 0.2893,
+      "earliness": 0.097,
+      "reliability": 0.618,
+      "accuracy": 0.9261,
+      "ev_tp": 11,
+      "ev_fp": 7,
+      "ev_fn": 6,
+      "per_farm_CARE": {
+        "A": 0.587,
+        "B": 0.543
+      }
+    },
+    {
+      "model": "GDN",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.4948,
+      "agg_AUC": 0.6265,
+      "agg_AP": 0.6165,
+      "coverage": 0.0775,
+      "earliness": 0.0212,
+      "reliability": 0.4,
+      "accuracy": 0.9876,
+      "ev_tp": 2,
+      "ev_fp": 0,
+      "ev_fn": 15,
+      "per_farm_CARE": {
+        "A": 0.4837,
+        "B": 0.511
+      }
+    },
+    {
+      "model": "GDN",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.4561,
+      "agg_AUC": 0.6265,
+      "agg_AP": 0.6165,
+      "coverage": 0.0422,
+      "earliness": 0.012,
+      "reliability": 0.2381,
+      "accuracy": 0.994,
+      "ev_tp": 1,
+      "ev_fp": 0,
+      "ev_fn": 16,
+      "per_farm_CARE": {
+        "A": 0.0,
+        "B": 0.5076
+      }
+    }
+  ],
+  "level_scores": {
+    "GDN|None": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 81.83812512887386
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 24.131109599025404
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 40.442630167406435
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 49.3255996874884
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 57.326479175282365
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 35.865215545783244
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 27.58572205213808
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 23.199284627135206
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 19.877267523723674
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 32.26736613678674
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 26.308160365366014
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 38.628194824758914
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 33.68638240766883
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 12.520633056310167
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 58.07910175252711
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 20.77210373329833
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 26.062414639089962
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 35.38119722210939
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 54.66435695996202
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 19.491846563461795
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 28.113330560259453
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 25.47549231618494
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 72.73580581857794
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 330.8706617972454
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 31.344048995586277
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 39.86580229362201
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 27.68797088094251
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 1737.6862798254756
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1643.1898762506476
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 29.577417760872628
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 24.840700394580324
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 64.59285384928982
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 31.88783423852257
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 35.16594758426536
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 24.20902234119539
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 18.754682288863386
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 32.987145649643416
+      }
+    ],
+    "GDN|0.05": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 12.403772066302583
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 9.58763384529008
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 9.78498831896554
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 13.516543678313646
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 14.858983899797087
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 8.064662459753244
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 23.55719900638864
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 15.622403156423708
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 15.032257132146912
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 14.236754138927402
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 21.073294835031394
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.254475983317876
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.527288336286874
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 7.093430649081224
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 8.262628823728766
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 14.22295038642685
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.185125722656885
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 12.706848323627135
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 22.642657415268296
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 8.094947571826332
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 6.539935822532538
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.630045488541942
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 12.004242978241702
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 33.6611965491719
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 15.046022709820964
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 14.328000435752193
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 4.576717138116804
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 143.37002812703162
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 140.79939457797434
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 5.98475286896581
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 6.841763050514477
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 8.49341551705215
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 7.214741554160579
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 6.494481712730172
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 5.145053801094116
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 4.455765419431891
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 10.546378045369192
+      }
+    ]
+  }
+}

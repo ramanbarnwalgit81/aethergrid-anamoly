@@ -1,0 +1,239 @@
+{
+  "n_events_evaluated": 11,
+  "n_anomaly_events": 11,
+  "mean_auc_roc": 0.5410363636363636,
+  "median_auc_roc": 0.5265,
+  "per_event": [
+    {
+      "event_id": 68,
+      "event_type": "anomaly",
+      "event_description": "Transformer failure",
+      "n_rows": 54358,
+      "n_anomaly_rows": 2014,
+      "n_test_rows": 21744,
+      "n_features": 84,
+      "auc_roc": 0.5901,
+      "recall_at_fpr_0.10": 0.07249255213505462
+    },
+    {
+      "event_id": 22,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53036,
+      "n_anomaly_rows": 1005,
+      "n_test_rows": 21215,
+      "n_features": 84,
+      "auc_roc": 0.678,
+      "recall_at_fpr_0.10": 0.16119402985074627
+    },
+    {
+      "event_id": 72,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_rows": 54082,
+      "n_anomaly_rows": 1009,
+      "n_test_rows": 21633,
+      "n_features": 84,
+      "auc_roc": 0.423,
+      "recall_at_fpr_0.10": 0.035678889990089196
+    },
+    {
+      "event_id": 73,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 54042,
+      "n_anomaly_rows": 1009,
+      "n_test_rows": 21617,
+      "n_features": 84,
+      "auc_roc": 0.5265,
+      "recall_at_fpr_0.10": 0.11397423191278494
+    },
+    {
+      "event_id": 0,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_rows": 54986,
+      "n_anomaly_rows": 2012,
+      "n_test_rows": 21995,
+      "n_features": 84,
+      "auc_roc": 0.6833,
+      "recall_at_fpr_0.10": 0.16401590457256462
+    },
+    {
+      "event_id": 26,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53702,
+      "n_anomaly_rows": 1009,
+      "n_test_rows": 21481,
+      "n_features": 84,
+      "auc_roc": 0.3034,
+      "recall_at_fpr_0.10": 0.006937561942517344
+    },
+    {
+      "event_id": 40,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_rows": 56158,
+      "n_anomaly_rows": 4508,
+      "n_test_rows": 22464,
+      "n_features": 84,
+      "auc_roc": 0.6831,
+      "recall_at_fpr_0.10": 0.30789707187222715
+    },
+    {
+      "event_id": 42,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53886,
+      "n_anomaly_rows": 1007,
+      "n_test_rows": 21555,
+      "n_features": 84,
+      "auc_roc": 0.5104,
+      "recall_at_fpr_0.10": 0.10526315789473684
+    },
+    {
+      "event_id": 10,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_rows": 53592,
+      "n_anomaly_rows": 981,
+      "n_test_rows": 21437,
+      "n_features": 84,
+      "auc_roc": 0.4092,
+      "recall_at_fpr_0.10": 0.10499490316004077
+    },
+    {
+      "event_id": 45,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53739,
+      "n_anomaly_rows": 1008,
+      "n_test_rows": 21496,
+      "n_features": 84,
+      "auc_roc": 0.6187,
+      "recall_at_fpr_0.10": 0.3521825396825397
+    },
+    {
+      "event_id": 84,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53772,
+      "n_anomaly_rows": 1005,
+      "n_test_rows": 21509,
+      "n_features": 84,
+      "auc_roc": 0.5257,
+      "recall_at_fpr_0.10": 0.08159203980099503
+    },
+    {
+      "event_id": 25,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54712,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21885,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 69,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54813,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21926,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 13,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54010,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21604,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 24,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 55003,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 22002,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 3,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 55487,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 22195,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 17,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 55090,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 22036,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 38,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54835,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21934,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 71,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54744,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21898,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 14,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54197,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21679,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 92,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54067,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21627,
+      "n_features": 84,
+      "auc_roc": null
+    },
+    {
+      "event_id": 51,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54436,
+      "n_anomaly_rows": 0,
+      "n_test_rows": 21775,
+      "n_features": 84,
+      "auc_roc": null
+    }
+  ]
+}

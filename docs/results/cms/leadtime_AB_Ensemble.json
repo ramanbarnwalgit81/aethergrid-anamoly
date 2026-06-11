@@ -1,0 +1,170 @@
+{
+  "model": "Ensemble",
+  "farms": [
+    "A",
+    "B"
+  ],
+  "quantile": 0.99,
+  "n_anomaly_events": 17,
+  "n_detected": 11,
+  "median_lead_hours_all": -148.0,
+  "positive_lead_fraction": 0.0,
+  "per_subsystem": {
+    "transformer": {
+      "n_events": 1,
+      "detected": 1,
+      "detection_rate": 1.0,
+      "median_lead_hours": -60.8,
+      "mean_lead_hours": -60.8
+    },
+    "hydraulic": {
+      "n_events": 6,
+      "detected": 4,
+      "detection_rate": 0.667,
+      "median_lead_hours": -155.1,
+      "mean_lead_hours": -123.7
+    },
+    "gearbox": {
+      "n_events": 2,
+      "detected": 1,
+      "detection_rate": 0.5,
+      "median_lead_hours": -24.5,
+      "mean_lead_hours": -24.5
+    },
+    "bearing": {
+      "n_events": 5,
+      "detected": 4,
+      "detection_rate": 0.8,
+      "median_lead_hours": -223.0,
+      "mean_lead_hours": -307.0
+    },
+    "other": {
+      "n_events": 3,
+      "detected": 1,
+      "detection_rate": 0.333,
+      "median_lead_hours": -405.3,
+      "mean_lead_hours": -405.3
+    }
+  },
+  "per_event": [
+    {
+      "farm": "A",
+      "event_id": 68,
+      "subsystem": "transformer",
+      "detected": true,
+      "lead_hours": -60.8
+    },
+    {
+      "farm": "A",
+      "event_id": 22,
+      "subsystem": "hydraulic",
+      "detected": false,
+      "lead_hours": null
+    },
+    {
+      "farm": "A",
+      "event_id": 72,
+      "subsystem": "gearbox",
+      "detected": false,
+      "lead_hours": null
+    },
+    {
+      "farm": "A",
+      "event_id": 73,
+      "subsystem": "hydraulic",
+      "detected": true,
+      "lead_hours": -164.7
+    },
+    {
+      "farm": "A",
+      "event_id": 0,
+      "subsystem": "bearing",
+      "detected": true,
+      "lead_hours": -32.8
+    },
+    {
+      "farm": "A",
+      "event_id": 26,
+      "subsystem": "hydraulic",
+      "detected": false,
+      "lead_hours": null
+    },
+    {
+      "farm": "A",
+      "event_id": 40,
+      "subsystem": "bearing",
+      "detected": true,
+      "lead_hours": -322.0
+    },
+    {
+      "farm": "A",
+      "event_id": 42,
+      "subsystem": "hydraulic",
+      "detected": true,
+      "lead_hours": -162.2
+    },
+    {
+      "farm": "A",
+      "event_id": 10,
+      "subsystem": "gearbox",
+      "detected": true,
+      "lead_hours": -24.5
+    },
+    {
+      "farm": "A",
+      "event_id": 45,
+      "subsystem": "hydraulic",
+      "detected": true,
+      "lead_hours": -20.0
+    },
+    {
+      "farm": "A",
+      "event_id": 84,
+      "subsystem": "hydraulic",
+      "detected": true,
+      "lead_hours": -148.0
+    },
+    {
+      "farm": "B",
+      "event_id": 34,
+      "subsystem": "other",
+      "detected": false,
+      "lead_hours": null
+    },
+    {
+      "farm": "B",
+      "event_id": 7,
+      "subsystem": "other",
+      "detected": true,
+      "lead_hours": -405.3
+    },
+    {
+      "farm": "B",
+      "event_id": 53,
+      "subsystem": "bearing",
+      "detected": true,
+      "lead_hours": -124.0
+    },
+    {
+      "farm": "B",
+      "event_id": 27,
+      "subsystem": "bearing",
+      "detected": false,
+      "lead_hours": null
+    },
+    {
+      "farm": "B",
+      "event_id": 19,
+      "subsystem": "other",
+      "detected": false,
+      "lead_hours": null
+    },
+    {
+      "farm": "B",
+      "event_id": 77,
+      "subsystem": "bearing",
+      "detected": true,
+      "lead_hours": -749.3
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "stacking": {
+    "base_learners": [
+      "sev_IF",
+      "sev_OCSVM",
+      "sev_Dense-AE",
+      "sev_LSTM-AE",
+      "sev_Transformer-AE"
+    ],
+    "weights_normalized": {
+      "sev_IF": 0.21415249112049756,
+      "sev_OCSVM": 0.2561413786717313,
+      "sev_Dense-AE": 0.24736945964581208,
+      "sev_LSTM-AE": 0.2314286410637068,
+      "sev_Transformer-AE": 0.05090802949825215
+    },
+    "coefficients": {
+      "sev_IF": 0.025989629829315745,
+      "sev_OCSVM": 0.031085417595741023,
+      "sev_Dense-AE": 0.03002085408222067,
+      "sev_LSTM-AE": 0.02808627012311052,
+      "sev_Transformer-AE": 0.006178218311058542
+    },
+    "intercept": -9.48913288825614,
+    "best_C": 0.0001,
+    "cv_auc_roc": 0.9402356902356902,
+    "cv_auc_pr": 0.3933679482017538,
+    "n_samples": 1014,
+    "n_positive": 24
+  },
+  "bma": {
+    "individual_aucs": {
+      "sev_IF": 0.8872053872053872,
+      "sev_OCSVM": 0.9306186868686869,
+      "sev_Dense-AE": 0.9086279461279462,
+      "sev_LSTM-AE": 0.769486531986532,
+      "sev_Transformer-AE": 0.7768939393939395
+    },
+    "bma_weights": {
+      "sev_IF": 0.2261161387757819,
+      "sev_OCSVM": 0.34903833280846164,
+      "sev_Dense-AE": 0.2801357605838054,
+      "sev_LSTM-AE": 0.06967629806491647,
+      "sev_Transformer-AE": 0.07503346976703466
+    },
+    "temperature": 0.1,
+    "bma_auc_roc": 0.9393097643097643
+  }
+}

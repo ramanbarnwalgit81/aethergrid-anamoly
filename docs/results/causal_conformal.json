@@ -1,0 +1,188 @@
+{
+  "marginal_crc": {
+    "y_event": {
+      "empirical_fpr_mean": 0.056950010546298245,
+      "holds": true
+    },
+    "y_status": {
+      "empirical_fpr_mean": 0.03556889549720877,
+      "holds": true
+    }
+  },
+  "ccrc_by_cluster": {
+    "y_event": {
+      "empirical_fpr_mean": 0.11457493310889041,
+      "holds": false,
+      "delta_vs_marginal": 0.05762492256259217,
+      "per_event": [
+        {
+          "event_id": 68,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 22,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 72,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 73,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 0,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.5944309927360775,
+          "delta_fpr": 0.5944309927360775
+        },
+        {
+          "event_id": 26,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 40,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.6264501160092807,
+          "ccrc_fpr": 0.665893271461717,
+          "delta_fpr": 0.03944315545243626
+        },
+        {
+          "event_id": 42,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 10,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 45,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 84,
+          "cluster": 2,
+          "n_peers_in_cluster": 0,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        }
+      ]
+    },
+    "y_status": {
+      "empirical_fpr_mean": 0.06101723472891776,
+      "holds": false,
+      "delta_vs_marginal": 0.025448339231708993,
+      "per_event": [
+        {
+          "event_id": 68,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.003972194637537239,
+          "delta_fpr": 0.003972194637537239
+        },
+        {
+          "event_id": 22,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.012948207171314742,
+          "delta_fpr": 0.012948207171314742
+        },
+        {
+          "event_id": 72,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 73,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.003472222222222222,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": -0.003472222222222222
+        },
+        {
+          "event_id": 0,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0008456659619450317,
+          "ccrc_fpr": 0.12304439746300211,
+          "delta_fpr": 0.12219873150105708
+        },
+        {
+          "event_id": 26,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 40,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.3158021712907117,
+          "ccrc_fpr": 0.3531966224366707,
+          "delta_fpr": 0.03739445114595902
+        },
+        {
+          "event_id": 42,
+          "cluster": 0,
+          "n_peers_in_cluster": 5,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.0,
+          "delta_fpr": 0.0
+        },
+        {
+          "event_id": 10,
+          "cluster": 1,
+          "n_peers_in_cluster": 3,
+          "marginal_fpr": 0.0,
+          "ccrc_fpr": 0.055993690851735015,
+          "delta_fpr": 0.055993690851735015
+        }
+      ]
+    }
+  }
+}

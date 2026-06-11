@@ -1,0 +1,1759 @@
+{
+  "method": "PCMCI+ (tau_max=24, alpha=0.05) + counterfactual Shapley",
+  "signals": [
+    "gearbox_oil_temp_c",
+    "ambient_temp_c",
+    "active_power_kw",
+    "wind_speed_ms",
+    "generator_rpm"
+  ],
+  "per_event": [
+    {
+      "event_id": 68,
+      "fault": "Transformer failure",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.700388097630678,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.1320864390114924,
+            "p_value": 1.16998367226572e-20
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 8,
+            "coefficient": 0.06531429626954012,
+            "p_value": 4.369769262972829e-06
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 8,
+            "coefficient": 0.048337238196326605,
+            "p_value": 0.0006783779353828321
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.03869348714210033,
+            "p_value": 0.00652458732214387
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.22248211960902836,
+            "p_value": 1.7772695258330246e-56
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.10104729175156354,
+            "p_value": 1.0906765738570925e-12
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6563783431810718,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.09814974232403958,
+            "p_value": 4.707791027901415e-12
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 5,
+            "coefficient": 0.03957717154196776,
+            "p_value": 0.005391923156760211
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 12,
+            "coefficient": -0.058378964473496345,
+            "p_value": 4.0247833411071806e-05
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.703541988314003,
+            "p_value": 0.0
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 10,
+            "coefficient": 0.02887484615319143,
+            "p_value": 0.042314960636473525
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.03433778811600606,
+            "p_value": 0.015766770467943572
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 9,
+            "coefficient": 0.030412048248796272,
+            "p_value": 0.032472106003490216
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.6733441682378972,
+            "p_value": 0.0
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.11178447586578424,
+            "p_value": 3.18354018859426e-15
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.08424809475246334,
+            "p_value": 2.9774436562091063e-09
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.57924896619597,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 6,
+            "coefficient": 0.07297732949925465,
+            "p_value": 2.8015505052656743e-07
+          }
+        ]
+      },
+      "n_significant_links": 20,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 3.9325,
+        "sensor_0_avg": 3.122,
+        "power_30_avg": 0.0482,
+        "wind_speed_3_avg": 1.4166,
+        "sensor_18_avg": 598.8595
+      }
+    },
+    {
+      "event_id": 22,
+      "fault": "Hydraulic group",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.6972628938236903,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.06333607730371299,
+            "p_value": 8.409678312999702e-06
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 17,
+            "coefficient": 0.04197637429032864,
+            "p_value": 0.0031626875573111625
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.12678846459853427,
+            "p_value": 3.622236638848412e-19
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.14558728136885313,
+            "p_value": 8.334747765602167e-25
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.07993413782099364,
+            "p_value": 1.859128623616711e-08
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6463381028514449,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.13813094384368352,
+            "p_value": 1.741505503656768e-22
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 12,
+            "coefficient": -0.05576094750916615,
+            "p_value": 8.766553992712336e-05
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.736231382144727,
+            "p_value": 0.0
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": -0.10991372513636784,
+            "p_value": 9.191864455762826e-15
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 3,
+            "coefficient": 0.02912076976830079,
+            "p_value": 0.040629135685149795
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 9,
+            "coefficient": 0.038216514191780016,
+            "p_value": 0.007206019596334966
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.029427724099505746,
+            "p_value": 0.038517667817317525
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 24,
+            "coefficient": 0.03810668489352652,
+            "p_value": 0.007362558742091287
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.7030381747013404,
+            "p_value": 0.0
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 9,
+            "coefficient": 0.036056314431523614,
+            "p_value": 0.0112638272940116
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.19497864715446778,
+            "p_value": 1.5074679619198138e-43
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.10818043282886876,
+            "p_value": 2.4313053855334827e-14
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5631265193489904,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": 0.06312298826866096,
+            "p_value": 9.037213171829935e-06
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 4,
+            "coefficient": 0.06304552644472174,
+            "p_value": 9.288511328469774e-06
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 9,
+            "coefficient": 0.03839379654048635,
+            "p_value": 0.006975634817341271
+          }
+        ]
+      },
+      "n_significant_links": 23,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 4.276,
+        "sensor_0_avg": 2.4095,
+        "power_30_avg": 0.3634,
+        "wind_speed_3_avg": 3.8334,
+        "sensor_18_avg": 545.6036
+      }
+    },
+    {
+      "event_id": 72,
+      "fault": "Gearbox failure",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.7164303413350842,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.18924763754840176,
+            "p_value": 4.830894636978865e-41
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 4,
+            "coefficient": 0.07156016598102997,
+            "p_value": 4.809051243015352e-07
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 5,
+            "coefficient": 0.0381001006619919,
+            "p_value": 0.007420671976205828
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 12,
+            "coefficient": 0.03966850818382166,
+            "p_value": 0.005290687729129565
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.12437851214358657,
+            "p_value": 1.7404947935950266e-18
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6495390013408806,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.09959285795518238,
+            "p_value": 2.2440022740154804e-12
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 3,
+            "coefficient": 0.04983048380859791,
+            "p_value": 0.00045712777186337073
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 21,
+            "coefficient": -0.04768039246279945,
+            "p_value": 0.0007985424182021428
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.47398920954563845,
+            "p_value": 2.0235299167317696e-275
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": -0.0703739266148578,
+            "p_value": 7.321631885314332e-07
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.03540027525786594,
+            "p_value": 0.012809608750389775
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.6996536053931041,
+            "p_value": 0.0
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.1197675522415647,
+            "p_value": 2.9448765910354517e-17
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.17470980479685302,
+            "p_value": 3.5505402341851117e-35
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.05749419406054289,
+            "p_value": 5.251823517879893e-05
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5906009561883481,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 3,
+            "coefficient": 0.07342099176940194,
+            "p_value": 2.383975461181963e-07
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 14,
+            "coefficient": 0.044262831001299865,
+            "p_value": 0.0018577929048861062
+          }
+        ]
+      },
+      "n_significant_links": 20,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 2.0555,
+        "sensor_0_avg": 2.3685,
+        "power_30_avg": 0.3054,
+        "wind_speed_3_avg": 2.2622,
+        "sensor_18_avg": 268.201
+      }
+    },
+    {
+      "event_id": 73,
+      "fault": "Hydraulic group",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.721446498173096,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.18214798349243444,
+            "p_value": 3.703946376877022e-38
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 4,
+            "coefficient": 0.07450369125014299,
+            "p_value": 1.5618288371199333e-07
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.15497904073905341,
+            "p_value": 6.127971845872975e-28
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6233412402130478,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.10739804558685423,
+            "p_value": 3.6665803109385575e-14
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 5,
+            "coefficient": 0.030825370535324498,
+            "p_value": 0.03018696239062083
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.04113775134466104,
+            "p_value": 0.0038153768185703527
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.5275990985371595,
+            "p_value": 0.0
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.06286002898665713,
+            "p_value": 9.72627914425397e-06
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.04968427592502936,
+            "p_value": 0.0004751271521746305
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.046567153493778324,
+            "p_value": 0.0010544389408236978
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.6849149067724781,
+            "p_value": 0.0
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 5,
+            "coefficient": 0.03201065553788521,
+            "p_value": 0.024413180083342048
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.04614661877688544,
+            "p_value": 0.0011732107840798152
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 6,
+            "coefficient": -0.03506027038869017,
+            "p_value": 0.013716654528565964
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.12371205517252049,
+            "p_value": 2.587009932273074e-18
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.07084699874899987,
+            "p_value": 6.196203222099475e-07
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.6110216469304974,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 5,
+            "coefficient": 0.055778711498564414,
+            "p_value": 8.793323080961754e-05
+          }
+        ]
+      },
+      "n_significant_links": 20,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 4.9855,
+        "sensor_0_avg": 2.499,
+        "power_30_avg": 0.3291,
+        "wind_speed_3_avg": 3.6434,
+        "sensor_18_avg": 617.2272
+      }
+    },
+    {
+      "event_id": 0,
+      "fault": "Generator bearing failure",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.6945798570943515,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.053447794166564006,
+            "p_value": 0.00017236297965157748
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.07138321075853675,
+            "p_value": 5.105200417221005e-07
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.056876618384192945,
+            "p_value": 6.35027603828701e-05
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.1928756240769747,
+            "p_value": 1.3603011151158269e-42
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.0832852927159192,
+            "p_value": 4.627325174485219e-09
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6461156564418633,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.11884757992735911,
+            "p_value": 5.143461347381069e-17
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 15,
+            "coefficient": -0.06523438627087902,
+            "p_value": 4.429719364187525e-06
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.7245573879126713,
+            "p_value": 0.0
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": -0.045647755999417,
+            "p_value": 0.0013249541818715288
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 15,
+            "coefficient": 0.051485676456219286,
+            "p_value": 0.0002931688997803512
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 19,
+            "coefficient": -0.04537592458201407,
+            "p_value": 0.0014175286211041908
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.67637012097081,
+            "p_value": 0.0
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.14052325104312596,
+            "p_value": 3.291073422177976e-23
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 3,
+            "coefficient": -0.04209297869720965,
+            "p_value": 0.00308565629107498
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5922343077036273,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 3,
+            "coefficient": 0.05774058154410447,
+            "p_value": 4.9192324633450946e-05
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 5,
+            "coefficient": 0.0509273496819657,
+            "p_value": 0.00034342587176528383
+          }
+        ]
+      },
+      "n_significant_links": 19,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 4.208,
+        "sensor_0_avg": 2.9475,
+        "power_30_avg": 0.2031,
+        "wind_speed_3_avg": 2.3698,
+        "sensor_18_avg": 645.4003
+      }
+    },
+    {
+      "event_id": 26,
+      "fault": "Hydraulic group",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.6994956303576249,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.13105006619529205,
+            "p_value": 2.3383642796254973e-20
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 4,
+            "coefficient": 0.04384000670351428,
+            "p_value": 0.00206477152915553
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 5,
+            "coefficient": 0.06063295400986091,
+            "p_value": 2.02351018012985e-05
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 11,
+            "coefficient": 0.0475793349818195,
+            "p_value": 0.0008213233307829636
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.08464161635314531,
+            "p_value": 2.5591823350241624e-09
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.18187179876553702,
+            "p_value": 5.399838892211876e-38
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.05592354419501733,
+            "p_value": 8.428407854833167e-05
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.644879117041354,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.114049966996432,
+            "p_value": 8.616217535486655e-16
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 3,
+            "coefficient": 0.059553267391520684,
+            "p_value": 2.78355422346194e-05
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.47165335569264544,
+            "p_value": 2.2973313583998676e-272
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": -0.08457040514038153,
+            "p_value": 2.600506660317369e-09
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.04407459688030414,
+            "p_value": 0.0019326422353208106
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 9,
+            "coefficient": 0.03786888777154399,
+            "p_value": 0.00773283026246857
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.7094519994498005,
+            "p_value": 0.0
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.12601428555933386,
+            "p_value": 5.908143010124411e-19
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": 0.050470242100683696,
+            "p_value": 0.00038612445050678715
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.20504113597124612,
+            "p_value": 4.2626394683935017e-48
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.12405036196349356,
+            "p_value": 2.0421839422354383e-18
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5427890801071751,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": 0.07755935598512255,
+            "p_value": 4.797260329441433e-08
+          }
+        ]
+      },
+      "n_significant_links": 22,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 2.7615,
+        "sensor_0_avg": 2.001,
+        "power_30_avg": 0.2694,
+        "wind_speed_3_avg": 2.0854,
+        "sensor_18_avg": 250.3957
+      }
+    },
+    {
+      "event_id": 40,
+      "fault": "Generator bearing failure",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.6071698838601778,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 5,
+            "coefficient": 0.060875307407548714,
+            "p_value": 1.8598536586521456e-05
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.19701499174588058,
+            "p_value": 2.0781738281259725e-44
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 7,
+            "coefficient": -0.044073934881452934,
+            "p_value": 0.0019473266551530534
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.14734676933163451,
+            "p_value": 2.2694079658192435e-25
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.10243105071432723,
+            "p_value": 5.419091073601945e-13
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6150947412991071,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.11168668984714944,
+            "p_value": 3.3016115785408895e-15
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 4,
+            "coefficient": 0.040346976009971,
+            "p_value": 0.004536312186151179
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.4354203781633627,
+            "p_value": 6.668425843458608e-228
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 11,
+            "coefficient": 0.06925930965128241,
+            "p_value": 1.093612952079712e-06
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 18,
+            "coefficient": -0.032739036861220455,
+            "p_value": 0.02133325659174185
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 19,
+            "coefficient": 0.04540128136727008,
+            "p_value": 0.0014087953488710898
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.06808504631096504,
+            "p_value": 1.6661602532649936e-06
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.037864751675829075,
+            "p_value": 0.007758134663579653
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 11,
+            "coefficient": 0.03193895531734918,
+            "p_value": 0.024763919544208802
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 19,
+            "coefficient": 0.028657639430618508,
+            "p_value": 0.043976590506458996
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.6827185621629189,
+            "p_value": 0.0
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 7,
+            "coefficient": 0.0344544556679813,
+            "p_value": 0.015456732350756047
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 13,
+            "coefficient": 0.029900401682778577,
+            "p_value": 0.035653854620989675
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.04218628940482808,
+            "p_value": 0.0030176022482280964
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.15870279927442477,
+            "p_value": 3.1104310482317333e-29
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": 0.04625499794578634,
+            "p_value": 0.0011474642669136524
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.26336914914110254,
+            "p_value": 3.6923420516609325e-79
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.112431849615403,
+            "p_value": 2.318116727013497e-15
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5376354473057918,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 10,
+            "coefficient": 0.04467263565580997,
+            "p_value": 0.001695226585279798
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 14,
+            "coefficient": 0.03426914333043862,
+            "p_value": 0.01606263262765956
+          }
+        ]
+      },
+      "n_significant_links": 28,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 4.401,
+        "sensor_0_avg": 1.065,
+        "power_30_avg": 0.2611,
+        "wind_speed_3_avg": 2.052,
+        "sensor_18_avg": 315.8027
+      }
+    },
+    {
+      "event_id": 42,
+      "fault": "Hydraulic group",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.7240192348229199,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.13737439137840848,
+            "p_value": 3.1054359236920688e-22
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.07457072820191107,
+            "p_value": 1.544333812053281e-07
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.07388853228326887,
+            "p_value": 2.0086839102846074e-07
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.12428553993937536,
+            "p_value": 1.831217737895158e-18
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.04178040592142419,
+            "p_value": 0.003319540406535897
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6470331050575182,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.10998344967861391,
+            "p_value": 8.731948512753925e-15
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 3,
+            "coefficient": 0.04536970012069425,
+            "p_value": 0.0014165105991589767
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.4488322343767275,
+            "p_value": 1.095086404878378e-243
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 6,
+            "coefficient": 0.03918843433617513,
+            "p_value": 0.00585913666118284
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.10198375422515889,
+            "p_value": 6.620644641124913e-13
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.0313261391794968,
+            "p_value": 0.02763609265865773
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 7,
+            "coefficient": 0.0854220673742621,
+            "p_value": 1.7966249975973107e-09
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 8,
+            "coefficient": -0.045674082738323324,
+            "p_value": 0.0013194170485127533
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 10,
+            "coefficient": 0.03873014825639853,
+            "p_value": 0.006468471394092056
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.6842625607819108,
+            "p_value": 0.0
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.1259721976228799,
+            "p_value": 6.1189079434187975e-19
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": 0.06425541761815075,
+            "p_value": 6.178523257806255e-06
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.2095160536666264,
+            "p_value": 3.875458015851278e-50
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.13718439082128164,
+            "p_value": 3.4782590081343757e-22
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5322258499445829,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": 0.08351402404416994,
+            "p_value": 4.152909455452188e-09
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 9,
+            "coefficient": 0.02994140899801659,
+            "p_value": 0.035364315821493665
+          }
+        ]
+      },
+      "n_significant_links": 24,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 5.3525,
+        "sensor_0_avg": 2.076,
+        "power_30_avg": 0.1486,
+        "wind_speed_3_avg": 2.0226,
+        "sensor_18_avg": 593.9801
+      }
+    },
+    {
+      "event_id": 10,
+      "fault": "Gearbox failure",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.6846942776982721,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.1793693488473719,
+            "p_value": 5.681000141219411e-37
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 3,
+            "coefficient": 0.04013128217454667,
+            "p_value": 0.0048036794192883835
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 4,
+            "coefficient": 0.07237860750911387,
+            "p_value": 3.5717831369396514e-07
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.04884965669127042,
+            "p_value": 0.0005942213623177026
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.15481161914404012,
+            "p_value": 7.345395268745337e-28
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.044585214309311505,
+            "p_value": 0.0017292722850898571
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6185314892534882,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.13180682460805315,
+            "p_value": 1.3499282512735765e-20
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 3,
+            "coefficient": 0.061899322955671396,
+            "p_value": 1.3360428274053212e-05
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 9,
+            "coefficient": -0.03479209483121436,
+            "p_value": 0.014455674291339817
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 19,
+            "coefficient": -0.038247814412810846,
+            "p_value": 0.007170327041530069
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.7115385169661325,
+            "p_value": 0.0
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": -0.05501497481667022,
+            "p_value": 0.00010819978348687303
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 8,
+            "coefficient": 0.06678163984097771,
+            "p_value": 2.587101500635401e-06
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": -0.02901986355818615,
+            "p_value": 0.04133062252736614
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.6911288203883432,
+            "p_value": 0.0
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 8,
+            "coefficient": 0.04288600721341973,
+            "p_value": 0.0025631178375529373
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": -0.036067511417748534,
+            "p_value": 0.011246774173923047
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.06639783322919482,
+            "p_value": 2.980297647722603e-06
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": 0.049561977086260756,
+            "p_value": 0.0004913359935631442
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.17129209876848245,
+            "p_value": 7.467745891348266e-34
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.10889504047792357,
+            "p_value": 1.659398468869363e-14
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5895169218870467,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 3,
+            "coefficient": 0.07201681815372694,
+            "p_value": 4.0739147991130206e-07
+          }
+        ]
+      },
+      "n_significant_links": 25,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 3.423,
+        "sensor_0_avg": 2.3665,
+        "power_30_avg": 0.2761,
+        "wind_speed_3_avg": 2.1878,
+        "sensor_18_avg": 361.8232
+      }
+    },
+    {
+      "event_id": 45,
+      "fault": "Hydraulic group",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.7087501596267213,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.09682693589235597,
+            "p_value": 9.072965283374923e-12
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.16532981389881574,
+            "p_value": 1.2532945561252572e-31
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.07770172138082135,
+            "p_value": 4.5472590968603895e-08
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.06404016530067419,
+            "p_value": 6.665469220240708e-06
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.621124860202964,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.11530707834035958,
+            "p_value": 4.1968563615818134e-16
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 4,
+            "coefficient": 0.04345875739623187,
+            "p_value": 0.0022423424152478986
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 13,
+            "coefficient": -0.04930046797302558,
+            "p_value": 0.0005255705353332361
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 19,
+            "coefficient": -0.03542474119058034,
+            "p_value": 0.012747722844206033
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.4255822295517538,
+            "p_value": 8.894453304684944e-217
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 10,
+            "coefficient": 0.042509395311750735,
+            "p_value": 0.0027908166645231017
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 24,
+            "coefficient": 0.04312872231928568,
+            "p_value": 0.002417456254146099
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.05675491904139917,
+            "p_value": 6.517239051895999e-05
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.6667657929308517,
+            "p_value": 0.0
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.09150648474177042,
+            "p_value": 1.1529831938201296e-10
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": 0.05941611290472835,
+            "p_value": 2.9262946105207845e-05
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.1601482931864605,
+            "p_value": 9.46364938902139e-30
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.0966660313463407,
+            "p_value": 9.82085959965927e-12
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5849161385525613,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 4,
+            "coefficient": 0.04968716545344789,
+            "p_value": 0.00047792085610478163
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 8,
+            "coefficient": 0.04843320726622649,
+            "p_value": 0.0006634923084801916
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 13,
+            "coefficient": -0.05735622698870281,
+            "p_value": 5.521835510912269e-05
+          }
+        ]
+      },
+      "n_significant_links": 23,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 4.6265,
+        "sensor_0_avg": 1.9385,
+        "power_30_avg": 0.3809,
+        "wind_speed_3_avg": 3.85,
+        "sensor_18_avg": 400.7278
+      }
+    },
+    {
+      "event_id": 84,
+      "fault": "Hydraulic group",
+      "pcmci_parents": {
+        "sensor_12_avg": [
+          {
+            "source": "sensor_12_avg",
+            "lag": 1,
+            "coefficient": 0.7162201477382585,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 2,
+            "coefficient": -0.1593575400589684,
+            "p_value": 1.8042352028300262e-29
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 4,
+            "coefficient": 0.03524582145164964,
+            "p_value": 0.013225046733898776
+          },
+          {
+            "source": "sensor_12_avg",
+            "lag": 6,
+            "coefficient": 0.05035803392282377,
+            "p_value": 0.0003989582909842541
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.15369644268868748,
+            "p_value": 1.723069825241287e-27
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 2,
+            "coefficient": -0.08666506530279332,
+            "p_value": 1.0608833218029695e-09
+          }
+        ],
+        "sensor_0_avg": [
+          {
+            "source": "sensor_0_avg",
+            "lag": 1,
+            "coefficient": 0.6469313532996753,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 2,
+            "coefficient": 0.12379927053264202,
+            "p_value": 2.373539336872377e-18
+          },
+          {
+            "source": "sensor_0_avg",
+            "lag": 3,
+            "coefficient": 0.05386238864060233,
+            "p_value": 0.0001509910380576261
+          }
+        ],
+        "power_30_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.6970779583959799,
+            "p_value": 0.0
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 5,
+            "coefficient": 0.03999985538842743,
+            "p_value": 0.004904620350225679
+          }
+        ],
+        "wind_speed_3_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": 0.02799156614243465,
+            "p_value": 0.04901358458700005
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.42754189846793933,
+            "p_value": 5.668892714722421e-219
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 10,
+            "coefficient": 0.034104345835470694,
+            "p_value": 0.01646990296526075
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 23,
+            "coefficient": 0.032747088524148635,
+            "p_value": 0.02128821867954828
+          }
+        ],
+        "sensor_18_avg": [
+          {
+            "source": "power_30_avg",
+            "lag": 1,
+            "coefficient": -0.11857825837268321,
+            "p_value": 6.094241438626266e-17
+          },
+          {
+            "source": "power_30_avg",
+            "lag": 2,
+            "coefficient": 0.06934352405209274,
+            "p_value": 1.0665082917638033e-06
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 1,
+            "coefficient": 0.22803123543738538,
+            "p_value": 2.525884064106105e-59
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 2,
+            "coefficient": -0.0932120309397149,
+            "p_value": 5.213028855953862e-11
+          },
+          {
+            "source": "wind_speed_3_avg",
+            "lag": 4,
+            "coefficient": -0.05094542702906248,
+            "p_value": 0.00034033619500085244
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 1,
+            "coefficient": 0.5398379579512568,
+            "p_value": 0.0
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 3,
+            "coefficient": 0.04579122394710833,
+            "p_value": 0.0012864277111595513
+          },
+          {
+            "source": "sensor_18_avg",
+            "lag": 4,
+            "coefficient": 0.04016407535304066,
+            "p_value": 0.00476501778011209
+          }
+        ]
+      },
+      "n_significant_links": 23,
+      "counterfactual_contributions": {
+        "sensor_12_avg": 3.769,
+        "sensor_0_avg": 2.3205,
+        "power_30_avg": 0.1754,
+        "wind_speed_3_avg": 2.0204,
+        "sensor_18_avg": 521.2892
+      }
+    }
+  ],
+  "total_time_s": 69.76406860351562
+}

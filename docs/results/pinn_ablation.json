@@ -1,0 +1,45 @@
+{
+  "dataset": "data\\processed\\scada_full.parquet",
+  "n_train_normal": 47899,
+  "n_test": 31934,
+  "n_test_anomaly": 24,
+  "configs": [
+    {
+      "config": "baseline_steady_no_mono",
+      "use_ema_thermal": false,
+      "use_monotonicity": false,
+      "val_loss": 0.0016,
+      "test_auc": 0.6005,
+      "train_time_s": 72.7
+    },
+    {
+      "config": "+EMA_thermal_only",
+      "use_ema_thermal": true,
+      "use_monotonicity": false,
+      "val_loss": 0.0028,
+      "test_auc": 0.6005,
+      "train_time_s": 76.6
+    },
+    {
+      "config": "+monotonicity_only",
+      "use_ema_thermal": false,
+      "use_monotonicity": true,
+      "val_loss": 0.0018,
+      "test_auc": 0.6005,
+      "train_time_s": 81.0
+    },
+    {
+      "config": "+both_(full_v7)",
+      "use_ema_thermal": true,
+      "use_monotonicity": true,
+      "val_loss": 0.0027,
+      "test_auc": 0.6005,
+      "train_time_s": 90.0
+    }
+  ],
+  "deltas_vs_baseline": {
+    "ema_thermal_alone": 0.0,
+    "monotonicity_alone": 0.0,
+    "both_components": 0.0
+  }
+}

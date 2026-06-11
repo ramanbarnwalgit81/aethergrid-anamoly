@@ -1,0 +1,17 @@
+{
+  "transfer": {
+    "n_rows": 21473,
+    "n_turbines": 5,
+    "n_injected": 12,
+    "n_clean": 21461,
+    "n_alerts": 11770,
+    "recall": 0.75,
+    "fpr": 0.5480173337682307,
+    "auc_roc": 0.5955978286193561
+  },
+  "in_domain_baseline": {
+    "auc_roc": 0.887,
+    "recall": 0.958,
+    "fpr": 0.143
+  }
+}

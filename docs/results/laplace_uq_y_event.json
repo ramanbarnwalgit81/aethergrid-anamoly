@@ -1,0 +1,62 @@
+{
+  "label": "y_event",
+  "n_train": 37944,
+  "n_test": 12649,
+  "auc_baseline_sigmoid": 0.5947195638500958,
+  "auc_laplace": 0.5947195497276803,
+  "ece_baseline_sigmoid": 0.020385760383668534,
+  "ece_laplace": 0.020385772109105086,
+  "epistemic_std_mean": 0.005363827090559046,
+  "epistemic_std_on_anomalies": 0.005947257887173548,
+  "epistemic_std_on_normals": 0.00507576330210307,
+  "reliability_diagram": [
+    {
+      "bin_center": 0.15000000000000002,
+      "n_samples": 2,
+      "mean_confidence": 0.1995630238732421,
+      "accuracy": 0.0
+    },
+    {
+      "bin_center": 0.25,
+      "n_samples": 7070,
+      "mean_confidence": 0.26696468683185687,
+      "accuracy": 0.2838755304101839
+    },
+    {
+      "bin_center": 0.35000000000000003,
+      "n_samples": 4047,
+      "mean_confidence": 0.3192245975126386,
+      "accuracy": 0.3283914010378058
+    },
+    {
+      "bin_center": 0.45,
+      "n_samples": 461,
+      "mean_confidence": 0.44385710679674434,
+      "accuracy": 0.45770065075921906
+    },
+    {
+      "bin_center": 0.55,
+      "n_samples": 690,
+      "mean_confidence": 0.5634172484238108,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "bin_center": 0.6500000000000001,
+      "n_samples": 202,
+      "mean_confidence": 0.6245598592123468,
+      "accuracy": 0.35148514851485146
+    },
+    {
+      "bin_center": 0.75,
+      "n_samples": 140,
+      "mean_confidence": 0.766099030626469,
+      "accuracy": 0.7571428571428571
+    },
+    {
+      "bin_center": 0.8500000000000001,
+      "n_samples": 37,
+      "mean_confidence": 0.8171929948019161,
+      "accuracy": 1.0
+    }
+  ]
+}

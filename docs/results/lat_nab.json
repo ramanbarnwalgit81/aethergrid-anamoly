@@ -1,0 +1,320 @@
+{
+  "benchmark": "Numenta Anomaly Benchmark (NAB)",
+  "label_conventions": [
+    "combined_windows.json",
+    "combined_windows_relaxed.json"
+  ],
+  "endpoint_jaccard_all_series": [
+    {
+      "series": "artificialWithAnomaly/art_daily_flatmiddle.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "artificialWithAnomaly/art_daily_jumpsdown.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "artificialWithAnomaly/art_daily_jumpsup.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "artificialWithAnomaly/art_daily_nojump.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "artificialWithAnomaly/art_increase_spike_density.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "artificialWithAnomaly/art_load_balancer_spikes.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_24ae8d.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_53ea38.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_5f5533.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_77c1ca.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_825cc2.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_ac20cd.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_fe7f93.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_disk_write_bytes_1ef3de.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_disk_write_bytes_c0d644.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_network_in_257a54.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/ec2_network_in_5abac7.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/elb_request_count_8c0756.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/grok_asg_anomaly.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/iio_us-east-1_i-a2eb1cd9_NetworkIn.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/rds_cpu_utilization_cc0c53.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAWSCloudwatch/rds_cpu_utilization_e47b3b.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAdExchange/exchange-2_cpc_results.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAdExchange/exchange-2_cpm_results.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAdExchange/exchange-3_cpc_results.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAdExchange/exchange-3_cpm_results.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAdExchange/exchange-4_cpc_results.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realAdExchange/exchange-4_cpm_results.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realKnownCause/ambient_temperature_system_failure.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realKnownCause/cpu_utilization_asg_misconfiguration.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realKnownCause/ec2_request_latency_system_failure.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realKnownCause/machine_temperature_system_failure.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realKnownCause/nyc_taxi.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realKnownCause/rogue_agent_key_hold.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realKnownCause/rogue_agent_key_updown.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTraffic/TravelTime_387.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTraffic/TravelTime_451.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTraffic/occupancy_6005.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTraffic/occupancy_t4013.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTraffic/speed_6005.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTraffic/speed_7578.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTraffic/speed_t4013.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_AAPL.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_AMZN.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_CRM.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_CVS.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_FB.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_GOOG.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_IBM.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_KO.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_PFE.csv",
+      "endpoint_jaccard": 1.0
+    },
+    {
+      "series": "realTweets/Twitter_volume_UPS.csv",
+      "endpoint_jaccard": 1.0
+    }
+  ],
+  "subset_full_lat": [
+    {
+      "las_data_jaccard": 0.9952,
+      "las_model_mean_delta_auc": 0.1388,
+      "las_rank_one_minus_tau": 0.0068,
+      "series": "realKnownCause/nyc_taxi.csv",
+      "n_rows": 10320,
+      "n_tight": 5,
+      "n_relax": 1035
+    },
+    {
+      "las_data_jaccard": 0.9972,
+      "las_model_mean_delta_auc": 0.331,
+      "las_rank_one_minus_tau": 0.0005,
+      "series": "realKnownCause/ambient_temperature_system_failure.csv",
+      "n_rows": 7267,
+      "n_tight": 2,
+      "n_relax": 726
+    },
+    {
+      "las_data_jaccard": 0.9987,
+      "las_model_mean_delta_auc": 0.1456,
+      "las_rank_one_minus_tau": 0.0018,
+      "series": "realKnownCause/cpu_utilization_asg_misconfiguration.csv",
+      "n_rows": 18050,
+      "n_tight": 2,
+      "n_relax": 1499
+    },
+    {
+      "las_data_jaccard": 0.9913,
+      "las_model_mean_delta_auc": 0.4918,
+      "las_rank_one_minus_tau": 0.0005,
+      "series": "realKnownCause/ec2_request_latency_system_failure.csv",
+      "n_rows": 4032,
+      "n_tight": 3,
+      "n_relax": 346
+    },
+    {
+      "las_data_jaccard": 0.9982,
+      "las_model_mean_delta_auc": 0.1772,
+      "las_rank_one_minus_tau": 0.0018,
+      "series": "realKnownCause/machine_temperature_system_failure.csv",
+      "n_rows": 22695,
+      "n_tight": 4,
+      "n_relax": 2268
+    },
+    {
+      "las_data_jaccard": 0.9895,
+      "las_model_mean_delta_auc": 0.1168,
+      "las_rank_one_minus_tau": 0.0302,
+      "series": "realKnownCause/rogue_agent_key_hold.csv",
+      "n_rows": 1882,
+      "n_tight": 2,
+      "n_relax": 190
+    },
+    {
+      "las_data_jaccard": 0.9958,
+      "las_model_mean_delta_auc": 0.5153,
+      "las_rank_one_minus_tau": 0.0001,
+      "series": "realTraffic/occupancy_6005.csv",
+      "n_rows": 2380,
+      "n_tight": 1,
+      "n_relax": 239
+    },
+    {
+      "las_data_jaccard": 0.9655,
+      "las_model_mean_delta_auc": 0.3146,
+      "las_rank_one_minus_tau": 0.0126,
+      "series": "realTraffic/speed_7578.csv",
+      "n_rows": 1127,
+      "n_tight": 4,
+      "n_relax": 116
+    },
+    {
+      "las_data_jaccard": 0.988,
+      "las_model_mean_delta_auc": 0.1672,
+      "las_rank_one_minus_tau": 0.0122,
+      "series": "realTraffic/TravelTime_387.csv",
+      "n_rows": 2500,
+      "n_tight": 3,
+      "n_relax": 249
+    },
+    {
+      "las_data_jaccard": 0.995,
+      "las_model_mean_delta_auc": 0.434,
+      "las_rank_one_minus_tau": 0.001,
+      "series": "realAWSCloudwatch/ec2_cpu_utilization_5f5533.csv",
+      "n_rows": 4032,
+      "n_tight": 2,
+      "n_relax": 402
+    }
+  ],
+  "aggregate_subset": {
+    "n_series_subset": 10,
+    "mean_las_data": 0.9914,
+    "mean_las_model": 0.2832,
+    "mean_las_rank": 0.0068
+  },
+  "care_farm_a_reference": {
+    "las_data": 0.985,
+    "las_model": 0.102,
+    "las_rank": 0.319
+  }
+}

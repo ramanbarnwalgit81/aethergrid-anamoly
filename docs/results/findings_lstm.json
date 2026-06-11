@@ -1,0 +1,83 @@
+{
+  "model": "LSTM-AE (IEEE Standard)",
+  "architecture": {
+    "type": "LSTM Autoencoder",
+    "hidden_size": 48,
+    "num_layers": 2,
+    "window_size": 24,
+    "scoring": "EWMA-smoothed reconstruction error + fleet-relative + adaptive POT threshold"
+  },
+  "run_at": "2026-04-16T07:31:12.761541+00:00",
+  "test_cutoff": "2018-12-24T23:00:00+00:00",
+  "test_rows": 1014,
+  "findings": {
+    "1_detection": {
+      "name": "Detection rate on injected faults",
+      "recall": 0.4583333333333333,
+      "false_positive_rate": 0.21515151515151515,
+      "injected_rows": 24,
+      "clean_rows": 990,
+      "target": "recall >= 0.85 AND FPR <= 0.15",
+      "passed": false
+    },
+    "2_fatigue_reduction": {
+      "name": "Alert fatigue reduction vs global rule",
+      "rule_thresholds": "gearbox>54.1C OR vib_composite>93.28",
+      "rule_alerts": 651,
+      "if_alerts": 224,
+      "fatigue_reduction_pct": 65.59139784946237,
+      "target": "reduction > 60%",
+      "passed": true
+    },
+    "3_latency": {
+      "name": "LSTM-AE scoring latency per micro-batch",
+      "n_batches": 169,
+      "mean_ms": 55.40772840262187,
+      "p50_ms": 54.25680000917055,
+      "p95_ms": 64.70769999432378,
+      "p99_ms": 71.69658001395874,
+      "target": "mean < 2000 ms",
+      "passed": true
+    },
+    "4_shap_alignment": {
+      "name": "SHAP top-2 includes expected sensor for fault type",
+      "true_positives_explained": 11,
+      "alignment_hits": 11,
+      "alignment_accuracy": 1.0,
+      "target": "accuracy > 85%",
+      "passed": true
+    },
+    "5_severity_monotonic": {
+      "name": "Severity monotonicity through fault window (Spearman)",
+      "per_window": [
+        {
+          "turbine": "KWF-001",
+          "fault": "gearbox_spike",
+          "rho": 0.942857142857143,
+          "n": 6
+        },
+        {
+          "turbine": "KWF-003",
+          "fault": "vibration_anomaly",
+          "rho": 0.942857142857143,
+          "n": 6
+        },
+        {
+          "turbine": "KWF-004",
+          "fault": "bearing_fault",
+          "rho": -0.8804062740424288,
+          "n": 6
+        },
+        {
+          "turbine": "KWF-006",
+          "fault": "gearbox_spike",
+          "rho": 0.9856107606091623,
+          "n": 6
+        }
+      ],
+      "mean_rho": 0.49772969307025483,
+      "target": "mean_rho > 0.50",
+      "passed": false
+    }
+  }
+}

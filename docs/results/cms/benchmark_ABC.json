@@ -1,0 +1,275 @@
+{
+  "config": {
+    "farms": [
+      "A",
+      "B",
+      "C"
+    ],
+    "models": [
+      "TemporalNBM"
+    ],
+    "smooth_alphas": [
+      null,
+      0.05
+    ],
+    "quantiles": [
+      0.9,
+      0.95,
+      0.97,
+      0.99,
+      0.995
+    ]
+  },
+  "published_reference_CARE": {
+    "Random": 0.5,
+    "IsolationForest_paper": 0.45,
+    "Autoencoder_paper": 0.66
+  },
+  "runtime_sec": 3927.2,
+  "calibrated": [
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.6364,
+      "agg_AUC": 0.6805,
+      "agg_AP": 0.6607,
+      "coverage": 0.4475,
+      "earliness": 0.4331,
+      "reliability": 0.5873,
+      "accuracy": 0.8571,
+      "ev_tp": 39,
+      "ev_fp": 33,
+      "ev_fn": 5,
+      "per_farm_CARE": {
+        "A": 0.6549,
+        "B": 0.5941,
+        "C": 0.6537
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6303,
+      "agg_AUC": 0.7237,
+      "agg_AP": 0.6925,
+      "coverage": 0.4808,
+      "earliness": 0.4776,
+      "reliability": 0.5758,
+      "accuracy": 0.8087,
+      "ev_tp": 41,
+      "ev_fp": 37,
+      "ev_fn": 3,
+      "per_farm_CARE": {
+        "A": 0.6345,
+        "B": 0.6185,
+        "C": 0.6378
+      },
+      "selection": "calibrated_fp<=1"
+    }
+  ],
+  "rows": [
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.6364,
+      "agg_AUC": 0.6805,
+      "agg_AP": 0.6607,
+      "coverage": 0.4475,
+      "earliness": 0.4331,
+      "reliability": 0.5873,
+      "accuracy": 0.8571,
+      "ev_tp": 39,
+      "ev_fp": 33,
+      "ev_fn": 5,
+      "per_farm_CARE": {
+        "A": 0.6549,
+        "B": 0.5941,
+        "C": 0.6537
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.6351,
+      "agg_AUC": 0.6805,
+      "agg_AP": 0.6607,
+      "coverage": 0.4756,
+      "earliness": 0.4603,
+      "reliability": 0.5758,
+      "accuracy": 0.8318,
+      "ev_tp": 41,
+      "ev_fp": 37,
+      "ev_fn": 3,
+      "per_farm_CARE": {
+        "A": 0.635,
+        "B": 0.6209,
+        "C": 0.6452
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6303,
+      "agg_AUC": 0.7237,
+      "agg_AP": 0.6925,
+      "coverage": 0.4808,
+      "earliness": 0.4776,
+      "reliability": 0.5758,
+      "accuracy": 0.8087,
+      "ev_tp": 41,
+      "ev_fp": 37,
+      "ev_fn": 3,
+      "per_farm_CARE": {
+        "A": 0.6345,
+        "B": 0.6185,
+        "C": 0.6378
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.6258,
+      "agg_AUC": 0.7237,
+      "agg_AP": 0.6925,
+      "coverage": 0.5055,
+      "earliness": 0.5061,
+      "reliability": 0.5694,
+      "accuracy": 0.7739,
+      "ev_tp": 41,
+      "ev_fp": 38,
+      "ev_fn": 3,
+      "per_farm_CARE": {
+        "A": 0.6283,
+        "B": 0.6286,
+        "C": 0.6289
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.97,
+      "agg_CARE": 0.6188,
+      "agg_AUC": 0.6805,
+      "agg_AP": 0.6607,
+      "coverage": 0.5242,
+      "earliness": 0.5158,
+      "reliability": 0.5526,
+      "accuracy": 0.7508,
+      "ev_tp": 42,
+      "ev_fp": 42,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6246,
+        "B": 0.6025,
+        "C": 0.6209
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.97,
+      "agg_CARE": 0.6068,
+      "agg_AUC": 0.7237,
+      "agg_AP": 0.6925,
+      "coverage": 0.5513,
+      "earliness": 0.5686,
+      "reliability": 0.55,
+      "accuracy": 0.6821,
+      "ev_tp": 44,
+      "ev_fp": 45,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.6124,
+        "B": 0.5908,
+        "C": 0.6064
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.95,
+      "agg_CARE": 0.6054,
+      "agg_AUC": 0.6805,
+      "agg_AP": 0.6607,
+      "coverage": 0.5536,
+      "earliness": 0.5538,
+      "reliability": 0.5412,
+      "accuracy": 0.6893,
+      "ev_tp": 42,
+      "ev_fp": 44,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6173,
+        "B": 0.5752,
+        "C": 0.6074
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.95,
+      "agg_CARE": 0.594,
+      "agg_AUC": 0.7237,
+      "agg_AP": 0.6925,
+      "coverage": 0.5809,
+      "earliness": 0.6119,
+      "reliability": 0.534,
+      "accuracy": 0.6217,
+      "ev_tp": 44,
+      "ev_fp": 48,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.6045,
+        "B": 0.5668,
+        "C": 0.5944
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.9,
+      "agg_CARE": 0.5844,
+      "agg_AUC": 0.6805,
+      "agg_AP": 0.6607,
+      "coverage": 0.5978,
+      "earliness": 0.6231,
+      "reliability": 0.5238,
+      "accuracy": 0.5887,
+      "ev_tp": 44,
+      "ev_fp": 50,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.6,
+        "B": 0.548,
+        "C": 0.587
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.9,
+      "agg_CARE": 0.5675,
+      "agg_AUC": 0.7237,
+      "agg_AP": 0.6925,
+      "coverage": 0.6159,
+      "earliness": 0.6741,
+      "reliability": 0.5189,
+      "accuracy": 0.5145,
+      "ev_tp": 44,
+      "ev_fp": 51,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.5753,
+        "B": 0.539,
+        "C": 0.451
+      }
+    }
+  ]
+}

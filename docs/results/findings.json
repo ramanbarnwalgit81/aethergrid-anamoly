@@ -1,0 +1,75 @@
+{
+  "run_at": "2026-04-16T03:03:59.661104+00:00",
+  "test_cutoff": "2025-12-24T23:00:00+00:00",
+  "test_rows": 2028,
+  "findings": {
+    "1_detection": {
+      "name": "Detection rate on injected faults",
+      "recall": 0.9583333333333334,
+      "false_positive_rate": 0.14321357285429143,
+      "injected_rows": 24,
+      "clean_rows": 2004,
+      "target": "recall >= 0.85 AND FPR <= 0.15",
+      "passed": true
+    },
+    "2_fatigue_reduction": {
+      "name": "Alert fatigue reduction vs global rule",
+      "rule_thresholds": "gearbox>64.3C OR vib_composite>0.94",
+      "rule_alerts": 1299,
+      "if_alerts": 310,
+      "fatigue_reduction_pct": 76.13548883756735,
+      "target": "reduction > 60%",
+      "passed": true
+    },
+    "3_latency": {
+      "name": "Scoring latency per 30-sec micro-batch (12 turbines)",
+      "n_batches": 169,
+      "mean_ms": 79.30272011831678,
+      "p50_ms": 78.6128000181634,
+      "p95_ms": 96.29356000223197,
+      "p99_ms": 104.61603599484073,
+      "target": "mean < 2000 ms",
+      "passed": true
+    },
+    "4_shap_alignment": {
+      "name": "SHAP top-2 includes expected sensor for fault type",
+      "true_positives_explained": 23,
+      "alignment_hits": 23,
+      "alignment_accuracy": 1.0,
+      "target": "accuracy > 85%",
+      "passed": true
+    },
+    "5_severity_monotonic": {
+      "name": "Severity monotonicity through fault window (Spearman)",
+      "per_window": [
+        {
+          "turbine": "WTG-003",
+          "fault": "gearbox_spike",
+          "rho": 0.8986451052612952,
+          "n": 6
+        },
+        {
+          "turbine": "WTG-005",
+          "fault": "vibration_anomaly",
+          "rho": 0.8285714285714287,
+          "n": 6
+        },
+        {
+          "turbine": "WTG-008",
+          "fault": "bearing_fault",
+          "rho": 0.7775419143502353,
+          "n": 6
+        },
+        {
+          "turbine": "WTG-011",
+          "fault": "gearbox_spike",
+          "rho": 0.7714285714285715,
+          "n": 6
+        }
+      ],
+      "mean_rho": 0.8190467549028826,
+      "target": "mean_rho > 0.50",
+      "passed": true
+    }
+  }
+}

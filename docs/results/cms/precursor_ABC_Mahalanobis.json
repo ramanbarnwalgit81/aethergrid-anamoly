@@ -1,0 +1,576 @@
+{
+  "task": "CARE-Precursor (predictive: detect before operator event_start)",
+  "model": "Mahalanobis",
+  "farms": [
+    "A",
+    "B",
+    "C"
+  ],
+  "lead_steps": 1008,
+  "guard_steps": 144,
+  "lead_hours": 168.0,
+  "aggregation": "mean",
+  "n_datasets": 92,
+  "n_anomaly": 41,
+  "n_normal": 51,
+  "precursor_auc": 0.5581,
+  "precursor_auc_ci95": [
+    0.4352,
+    0.6731
+  ],
+  "precursor_ap": 0.4864,
+  "per_dataset": [
+    {
+      "farm": "A",
+      "event_id": 68,
+      "label": "anomaly",
+      "precursor_score": 88.18797
+    },
+    {
+      "farm": "A",
+      "event_id": 22,
+      "label": "anomaly",
+      "precursor_score": 107.03178
+    },
+    {
+      "farm": "A",
+      "event_id": 72,
+      "label": "anomaly",
+      "precursor_score": 73.89969
+    },
+    {
+      "farm": "A",
+      "event_id": 73,
+      "label": "anomaly",
+      "precursor_score": 100.21821
+    },
+    {
+      "farm": "A",
+      "event_id": 0,
+      "label": "anomaly",
+      "precursor_score": 111.21781
+    },
+    {
+      "farm": "A",
+      "event_id": 26,
+      "label": "anomaly",
+      "precursor_score": 85.25125
+    },
+    {
+      "farm": "A",
+      "event_id": 40,
+      "label": "anomaly",
+      "precursor_score": 63.55308
+    },
+    {
+      "farm": "A",
+      "event_id": 42,
+      "label": "anomaly",
+      "precursor_score": 126.4023
+    },
+    {
+      "farm": "A",
+      "event_id": 10,
+      "label": "anomaly",
+      "precursor_score": 76.76203
+    },
+    {
+      "farm": "A",
+      "event_id": 25,
+      "label": "normal",
+      "precursor_score": 67.30525
+    },
+    {
+      "farm": "A",
+      "event_id": 69,
+      "label": "normal",
+      "precursor_score": 85.12413
+    },
+    {
+      "farm": "A",
+      "event_id": 13,
+      "label": "normal",
+      "precursor_score": 47.84011
+    },
+    {
+      "farm": "A",
+      "event_id": 24,
+      "label": "normal",
+      "precursor_score": 89.76449
+    },
+    {
+      "farm": "A",
+      "event_id": 3,
+      "label": "normal",
+      "precursor_score": 97.15653
+    },
+    {
+      "farm": "A",
+      "event_id": 17,
+      "label": "normal",
+      "precursor_score": 52.60694
+    },
+    {
+      "farm": "A",
+      "event_id": 38,
+      "label": "normal",
+      "precursor_score": 75.45117
+    },
+    {
+      "farm": "A",
+      "event_id": 71,
+      "label": "normal",
+      "precursor_score": 57.80417
+    },
+    {
+      "farm": "A",
+      "event_id": 14,
+      "label": "normal",
+      "precursor_score": 76.43949
+    },
+    {
+      "farm": "A",
+      "event_id": 92,
+      "label": "normal",
+      "precursor_score": 55.2935
+    },
+    {
+      "farm": "A",
+      "event_id": 51,
+      "label": "normal",
+      "precursor_score": 60.31101
+    },
+    {
+      "farm": "B",
+      "event_id": 34,
+      "label": "anomaly",
+      "precursor_score": 85.0028
+    },
+    {
+      "farm": "B",
+      "event_id": 7,
+      "label": "anomaly",
+      "precursor_score": 85.12811
+    },
+    {
+      "farm": "B",
+      "event_id": 53,
+      "label": "anomaly",
+      "precursor_score": 70.90548
+    },
+    {
+      "farm": "B",
+      "event_id": 27,
+      "label": "anomaly",
+      "precursor_score": 78.16939
+    },
+    {
+      "farm": "B",
+      "event_id": 19,
+      "label": "anomaly",
+      "precursor_score": 78.08706
+    },
+    {
+      "farm": "B",
+      "event_id": 77,
+      "label": "anomaly",
+      "precursor_score": 107.33656
+    },
+    {
+      "farm": "B",
+      "event_id": 83,
+      "label": "normal",
+      "precursor_score": 288.40673
+    },
+    {
+      "farm": "B",
+      "event_id": 52,
+      "label": "normal",
+      "precursor_score": 57.50961
+    },
+    {
+      "farm": "B",
+      "event_id": 21,
+      "label": "normal",
+      "precursor_score": 110.7123
+    },
+    {
+      "farm": "B",
+      "event_id": 2,
+      "label": "normal",
+      "precursor_score": 103.54827
+    },
+    {
+      "farm": "B",
+      "event_id": 23,
+      "label": "normal",
+      "precursor_score": 75.05892
+    },
+    {
+      "farm": "B",
+      "event_id": 87,
+      "label": "normal",
+      "precursor_score": 72.12657
+    },
+    {
+      "farm": "B",
+      "event_id": 74,
+      "label": "normal",
+      "precursor_score": 142.32767
+    },
+    {
+      "farm": "B",
+      "event_id": 86,
+      "label": "normal",
+      "precursor_score": 219.18215
+    },
+    {
+      "farm": "B",
+      "event_id": 82,
+      "label": "normal",
+      "precursor_score": 85.92113
+    },
+    {
+      "farm": "C",
+      "event_id": 55,
+      "label": "anomaly",
+      "precursor_score": 69.02283
+    },
+    {
+      "farm": "C",
+      "event_id": 81,
+      "label": "anomaly",
+      "precursor_score": 56.42881
+    },
+    {
+      "farm": "C",
+      "event_id": 47,
+      "label": "anomaly",
+      "precursor_score": 124.94716
+    },
+    {
+      "farm": "C",
+      "event_id": 12,
+      "label": "anomaly",
+      "precursor_score": 231.1758
+    },
+    {
+      "farm": "C",
+      "event_id": 4,
+      "label": "anomaly",
+      "precursor_score": 71.67242
+    },
+    {
+      "farm": "C",
+      "event_id": 18,
+      "label": "anomaly",
+      "precursor_score": 110.27704
+    },
+    {
+      "farm": "C",
+      "event_id": 28,
+      "label": "anomaly",
+      "precursor_score": 88.73699
+    },
+    {
+      "farm": "C",
+      "event_id": 39,
+      "label": "anomaly",
+      "precursor_score": 80.68924
+    },
+    {
+      "farm": "C",
+      "event_id": 66,
+      "label": "anomaly",
+      "precursor_score": 96.89962
+    },
+    {
+      "farm": "C",
+      "event_id": 15,
+      "label": "anomaly",
+      "precursor_score": 94.25575
+    },
+    {
+      "farm": "C",
+      "event_id": 78,
+      "label": "anomaly",
+      "precursor_score": 102.47439
+    },
+    {
+      "farm": "C",
+      "event_id": 79,
+      "label": "anomaly",
+      "precursor_score": 75.06646
+    },
+    {
+      "farm": "C",
+      "event_id": 30,
+      "label": "anomaly",
+      "precursor_score": 93.21321
+    },
+    {
+      "farm": "C",
+      "event_id": 33,
+      "label": "anomaly",
+      "precursor_score": 1041.85576
+    },
+    {
+      "farm": "C",
+      "event_id": 44,
+      "label": "anomaly",
+      "precursor_score": 142.88884
+    },
+    {
+      "farm": "C",
+      "event_id": 49,
+      "label": "anomaly",
+      "precursor_score": 68.74304
+    },
+    {
+      "farm": "C",
+      "event_id": 31,
+      "label": "anomaly",
+      "precursor_score": 93.02243
+    },
+    {
+      "farm": "C",
+      "event_id": 67,
+      "label": "anomaly",
+      "precursor_score": 98.55543
+    },
+    {
+      "farm": "C",
+      "event_id": 9,
+      "label": "anomaly",
+      "precursor_score": 993.60239
+    },
+    {
+      "farm": "C",
+      "event_id": 91,
+      "label": "anomaly",
+      "precursor_score": 175.84993
+    },
+    {
+      "farm": "C",
+      "event_id": 5,
+      "label": "anomaly",
+      "precursor_score": 32764920.4069
+    },
+    {
+      "farm": "C",
+      "event_id": 90,
+      "label": "anomaly",
+      "precursor_score": 93.82806
+    },
+    {
+      "farm": "C",
+      "event_id": 70,
+      "label": "anomaly",
+      "precursor_score": 101.12368
+    },
+    {
+      "farm": "C",
+      "event_id": 35,
+      "label": "anomaly",
+      "precursor_score": 124.14792
+    },
+    {
+      "farm": "C",
+      "event_id": 16,
+      "label": "anomaly",
+      "precursor_score": 250.11971
+    },
+    {
+      "farm": "C",
+      "event_id": 76,
+      "label": "anomaly",
+      "precursor_score": 169.40631
+    },
+    {
+      "farm": "C",
+      "event_id": 8,
+      "label": "normal",
+      "precursor_score": 164.97488
+    },
+    {
+      "farm": "C",
+      "event_id": 85,
+      "label": "normal",
+      "precursor_score": 70.87128
+    },
+    {
+      "farm": "C",
+      "event_id": 6,
+      "label": "normal",
+      "precursor_score": 69.29273
+    },
+    {
+      "farm": "C",
+      "event_id": 62,
+      "label": "normal",
+      "precursor_score": 66.9106
+    },
+    {
+      "farm": "C",
+      "event_id": 36,
+      "label": "normal",
+      "precursor_score": 9314275.49151
+    },
+    {
+      "farm": "C",
+      "event_id": 56,
+      "label": "normal",
+      "precursor_score": 106.6792
+    },
+    {
+      "farm": "C",
+      "event_id": 94,
+      "label": "normal",
+      "precursor_score": 330.27911
+    },
+    {
+      "farm": "C",
+      "event_id": 54,
+      "label": "normal",
+      "precursor_score": 78.20033
+    },
+    {
+      "farm": "C",
+      "event_id": 43,
+      "label": "normal",
+      "precursor_score": 55.01237
+    },
+    {
+      "farm": "C",
+      "event_id": 50,
+      "label": "normal",
+      "precursor_score": 59.2269
+    },
+    {
+      "farm": "C",
+      "event_id": 64,
+      "label": "normal",
+      "precursor_score": 16209.02974
+    },
+    {
+      "farm": "C",
+      "event_id": 46,
+      "label": "normal",
+      "precursor_score": 82.06213
+    },
+    {
+      "farm": "C",
+      "event_id": 65,
+      "label": "normal",
+      "precursor_score": 71.65399
+    },
+    {
+      "farm": "C",
+      "event_id": 61,
+      "label": "normal",
+      "precursor_score": 67.47274
+    },
+    {
+      "farm": "C",
+      "event_id": 93,
+      "label": "normal",
+      "precursor_score": 80.06856
+    },
+    {
+      "farm": "C",
+      "event_id": 75,
+      "label": "normal",
+      "precursor_score": 98.17432
+    },
+    {
+      "farm": "C",
+      "event_id": 41,
+      "label": "normal",
+      "precursor_score": 160.96493
+    },
+    {
+      "farm": "C",
+      "event_id": 58,
+      "label": "normal",
+      "precursor_score": 113.15142
+    },
+    {
+      "farm": "C",
+      "event_id": 48,
+      "label": "normal",
+      "precursor_score": 120.14775
+    },
+    {
+      "farm": "C",
+      "event_id": 88,
+      "label": "normal",
+      "precursor_score": 136.53656
+    },
+    {
+      "farm": "C",
+      "event_id": 57,
+      "label": "normal",
+      "precursor_score": 3522.75828
+    },
+    {
+      "farm": "C",
+      "event_id": 32,
+      "label": "normal",
+      "precursor_score": 131.8946
+    },
+    {
+      "farm": "C",
+      "event_id": 89,
+      "label": "normal",
+      "precursor_score": 110.88319
+    },
+    {
+      "farm": "C",
+      "event_id": 59,
+      "label": "normal",
+      "precursor_score": 104.20379
+    },
+    {
+      "farm": "C",
+      "event_id": 63,
+      "label": "normal",
+      "precursor_score": 151.72691
+    },
+    {
+      "farm": "C",
+      "event_id": 80,
+      "label": "normal",
+      "precursor_score": 74.46729
+    },
+    {
+      "farm": "C",
+      "event_id": 37,
+      "label": "normal",
+      "precursor_score": 120.25609
+    },
+    {
+      "farm": "C",
+      "event_id": 29,
+      "label": "normal",
+      "precursor_score": 148.41373
+    },
+    {
+      "farm": "C",
+      "event_id": 1,
+      "label": "normal",
+      "precursor_score": 133.22148
+    },
+    {
+      "farm": "C",
+      "event_id": 20,
+      "label": "normal",
+      "precursor_score": 69.59139
+    },
+    {
+      "farm": "C",
+      "event_id": 60,
+      "label": "normal",
+      "precursor_score": 81.02955
+    }
+  ]
+}

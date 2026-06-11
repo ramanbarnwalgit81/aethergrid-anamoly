@@ -1,0 +1,146 @@
+{
+  "beta": 4.0,
+  "lambda_iec": 5.0,
+  "iec_axes": [
+    "wind_speed_ms",
+    "ambient_temp_c",
+    "active_power_kw",
+    "rotor_speed_rpm"
+  ],
+  "mean_auc_reconstruction": 0.4822182960545668,
+  "mean_auc_latent_prior": 0.45987848698424666,
+  "per_event": [
+    {
+      "event_id": 68,
+      "fault": "Transformer failure",
+      "auc_reconstruction": 0.4340488466853025,
+      "auc_latent_prior": 0.3592733428279623,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.42503127455711365,
+        "ambient_temp_c": 0.517785370349884,
+        "active_power_kw": 0.3961225152015686,
+        "rotor_speed_rpm": 0.9988051652908325
+      }
+    },
+    {
+      "event_id": 22,
+      "fault": "Hydraulic group",
+      "auc_reconstruction": 0.4942212016838883,
+      "auc_latent_prior": 0.542093727168354,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.4887251853942871,
+        "ambient_temp_c": 0.5521841049194336,
+        "active_power_kw": 0.5082546472549438,
+        "rotor_speed_rpm": 0.5597942471504211
+      }
+    },
+    {
+      "event_id": 72,
+      "fault": "Gearbox failure",
+      "auc_reconstruction": 0.5480113502288924,
+      "auc_latent_prior": 0.5153342142935801,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.19071899354457855,
+        "ambient_temp_c": 0.17642070353031158,
+        "active_power_kw": 0.23213015496730804,
+        "rotor_speed_rpm": 0.3731430768966675
+      }
+    },
+    {
+      "event_id": 73,
+      "fault": "Hydraulic group",
+      "auc_reconstruction": 0.48435744962008587,
+      "auc_latent_prior": 0.5428243034908049,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.46024659276008606,
+        "ambient_temp_c": 0.4019496440887451,
+        "active_power_kw": 0.5671278834342957,
+        "rotor_speed_rpm": 0.7168076634407043
+      }
+    },
+    {
+      "event_id": 0,
+      "fault": "Generator bearing failure",
+      "auc_reconstruction": 0.374173843139709,
+      "auc_latent_prior": 0.18656402986439713,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.40202391147613525,
+        "ambient_temp_c": 0.5409752130508423,
+        "active_power_kw": 0.48823732137680054,
+        "rotor_speed_rpm": 1.1372928619384766
+      }
+    },
+    {
+      "event_id": 26,
+      "fault": "Hydraulic group",
+      "auc_reconstruction": 0.5312924420952172,
+      "auc_latent_prior": 0.38140531512682163,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.23528459668159485,
+        "ambient_temp_c": 0.15337765216827393,
+        "active_power_kw": 0.2718668580055237,
+        "rotor_speed_rpm": 0.4721987247467041
+      }
+    },
+    {
+      "event_id": 40,
+      "fault": "Generator bearing failure",
+      "auc_reconstruction": 0.3308215145232914,
+      "auc_latent_prior": 0.41005369160677485,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.2785820960998535,
+        "ambient_temp_c": 0.3969038724899292,
+        "active_power_kw": 0.28263962268829346,
+        "rotor_speed_rpm": 1.7121208906173706
+      }
+    },
+    {
+      "event_id": 42,
+      "fault": "Hydraulic group",
+      "auc_reconstruction": 0.5544642364559196,
+      "auc_latent_prior": 0.4209319485821472,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.30289703607559204,
+        "ambient_temp_c": 0.17287875711917877,
+        "active_power_kw": 0.25637540221214294,
+        "rotor_speed_rpm": 1.2617743015289307
+      }
+    },
+    {
+      "event_id": 10,
+      "fault": "Gearbox failure",
+      "auc_reconstruction": 0.5219730433797711,
+      "auc_latent_prior": 0.5353770245780949,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.19346489012241364,
+        "ambient_temp_c": 0.23316209018230438,
+        "active_power_kw": 0.2618349492549896,
+        "rotor_speed_rpm": 0.45640116930007935
+      }
+    },
+    {
+      "event_id": 45,
+      "fault": "Hydraulic group",
+      "auc_reconstruction": 0.5345936213991769,
+      "auc_latent_prior": 0.6426940953850677,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.6553486585617065,
+        "ambient_temp_c": 0.054423172026872635,
+        "active_power_kw": 0.5007234215736389,
+        "rotor_speed_rpm": 0.3488013744354248
+      }
+    },
+    {
+      "event_id": 84,
+      "fault": "Hydraulic group",
+      "auc_reconstruction": 0.496443707388981,
+      "auc_latent_prior": 0.5221116639027086,
+      "per_iec_axis_deviation": {
+        "wind_speed_ms": 0.18387329578399658,
+        "ambient_temp_c": 0.3645409941673279,
+        "active_power_kw": 0.18169495463371277,
+        "rotor_speed_rpm": 0.7312321066856384
+      }
+    }
+  ]
+}

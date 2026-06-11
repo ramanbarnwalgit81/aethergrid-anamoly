@@ -1,0 +1,126 @@
+{
+  "method": "Label Ambiguity Test (LAT)",
+  "description": "Three LAS variants measuring label ambiguity on CARE Farm A",
+  "agg": {
+    "las_data_mean": 0.9850040853488186,
+    "las_model_mean": 0.10199764694627576,
+    "las_rank_mean": 0.3184868087699048
+  },
+  "per_event": [
+    {
+      "event_id": 68,
+      "fault": "Transformer failure",
+      "las_data_jaccard": 1.0,
+      "las_model_mean_delta_auc": 0.03374976408642003,
+      "las_rank_spearman_complement": 0.49500859360891714,
+      "n_rows": 54358,
+      "n_event_label_pos": 2014,
+      "n_status_label_pos": 11907
+    },
+    {
+      "event_id": 22,
+      "fault": "Hydraulic group",
+      "las_data_jaccard": 0.9999182472204055,
+      "las_model_mean_delta_auc": 0.1274019582248628,
+      "las_rank_spearman_complement": 0.30148361869000306,
+      "n_rows": 53036,
+      "n_event_label_pos": 1005,
+      "n_status_label_pos": 11228
+    },
+    {
+      "event_id": 72,
+      "fault": "Gearbox failure",
+      "las_data_jaccard": 0.9999260136134951,
+      "las_model_mean_delta_auc": 0.12344453042071857,
+      "las_rank_spearman_complement": 0.27619015064564967,
+      "n_rows": 54082,
+      "n_event_label_pos": 1009,
+      "n_status_label_pos": 12508
+    },
+    {
+      "event_id": 73,
+      "fault": "Hydraulic group",
+      "las_data_jaccard": 0.9999217649820059,
+      "las_model_mean_delta_auc": 0.07241700588296819,
+      "las_rank_spearman_complement": 0.29059691086659256,
+      "n_rows": 54042,
+      "n_event_label_pos": 1009,
+      "n_status_label_pos": 11774
+    },
+    {
+      "event_id": 0,
+      "fault": "Generator bearing failure",
+      "las_data_jaccard": 1.0,
+      "las_model_mean_delta_auc": 0.10285557935743275,
+      "las_rank_spearman_complement": 0.4522545125412104,
+      "n_rows": 54986,
+      "n_event_label_pos": 2012,
+      "n_status_label_pos": 13472
+    },
+    {
+      "event_id": 26,
+      "fault": "Hydraulic group",
+      "las_data_jaccard": 0.9999378766229732,
+      "las_model_mean_delta_auc": 0.13463582546557618,
+      "las_rank_spearman_complement": 0.23492043549753772,
+      "n_rows": 53702,
+      "n_event_label_pos": 1009,
+      "n_status_label_pos": 15089
+    },
+    {
+      "event_id": 40,
+      "fault": "Generator bearing failure",
+      "las_data_jaccard": 0.9701281067359349,
+      "las_model_mean_delta_auc": 0.17958756062934872,
+      "las_rank_spearman_complement": 0.7528208546144133,
+      "n_rows": 56158,
+      "n_event_label_pos": 4508,
+      "n_status_label_pos": 12937
+    },
+    {
+      "event_id": 42,
+      "fault": "Hydraulic group",
+      "las_data_jaccard": 0.9999389424838198,
+      "las_model_mean_delta_auc": 0.12441527370025854,
+      "las_rank_spearman_complement": 0.23070792659654715,
+      "n_rows": 53886,
+      "n_event_label_pos": 1007,
+      "n_status_label_pos": 15372
+    },
+    {
+      "event_id": 10,
+      "fault": "Gearbox failure",
+      "las_data_jaccard": 0.9999411660881332,
+      "las_model_mean_delta_auc": 0.08217876863401921,
+      "las_rank_spearman_complement": 0.21740808008597934,
+      "n_rows": 53592,
+      "n_event_label_pos": 981,
+      "n_status_label_pos": 16017
+    },
+    {
+      "event_id": 45,
+      "fault": "Hydraulic group",
+      "las_data_jaccard": 0.9270991538294641,
+      "las_model_mean_delta_auc": 0.08401362427503498,
+      "las_rank_spearman_complement": 0.13068429084973943,
+      "n_rows": 53739,
+      "n_event_label_pos": 1008,
+      "n_status_label_pos": 13827
+    },
+    {
+      "event_id": 84,
+      "fault": "Hydraulic group",
+      "las_data_jaccard": 0.9382336672607707,
+      "las_model_mean_delta_auc": 0.05727422573239357,
+      "las_rank_spearman_complement": 0.12127952247236262,
+      "n_rows": 53772,
+      "n_event_label_pos": 1005,
+      "n_status_label_pos": 16271
+    }
+  ],
+  "interpretation": {
+    "las_data": "0=identical label sets, 1=disjoint",
+    "las_model": "Average |\u0394AUC| across reference detectors; >0.15 flags high ambiguity",
+    "las_rank": "1 - Spearman correlation of score rankings; higher = more disagreement"
+  }
+}

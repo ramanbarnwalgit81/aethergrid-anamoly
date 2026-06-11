@@ -1,0 +1,163 @@
+{
+  "total_checks": 31,
+  "passed": 31,
+  "failed": 0,
+  "pass_rate_pct": 100.0,
+  "results": [
+    {
+      "check": "schema_has_event_ts",
+      "status": "PASS",
+      "detail": "Required column 'event_ts' found"
+    },
+    {
+      "check": "schema_has_turbine_id",
+      "status": "PASS",
+      "detail": "Required column 'turbine_id' found"
+    },
+    {
+      "check": "schema_has_wind_speed_ms",
+      "status": "PASS",
+      "detail": "Required column 'wind_speed_ms' found"
+    },
+    {
+      "check": "schema_has_active_power_kw",
+      "status": "PASS",
+      "detail": "Required column 'active_power_kw' found"
+    },
+    {
+      "check": "schema_has_gearbox_temp_c",
+      "status": "PASS",
+      "detail": "Required column 'gearbox_temp_c' found"
+    },
+    {
+      "check": "schema_has_main_bearing_temp_c",
+      "status": "PASS",
+      "detail": "Required column 'main_bearing_temp_c' found"
+    },
+    {
+      "check": "schema_has_ambient_temp_c",
+      "status": "PASS",
+      "detail": "Required column 'ambient_temp_c' found"
+    },
+    {
+      "check": "type_event_ts_is_datetime",
+      "status": "PASS",
+      "detail": "event_ts dtype: datetime64[ns, UTC]"
+    },
+    {
+      "check": "range_wind_speed_ms",
+      "status": "PASS",
+      "detail": "0/79833 values outside [0, 40] (0.00%)"
+    },
+    {
+      "check": "range_wind_direction_deg",
+      "status": "PASS",
+      "detail": "0/79833 values outside [0, 360] (0.00%)"
+    },
+    {
+      "check": "range_ambient_temp_c",
+      "status": "PASS",
+      "detail": "0/79833 values outside [-40, 50] (0.00%)"
+    },
+    {
+      "check": "range_active_power_kw",
+      "status": "PASS",
+      "detail": "0/79833 values outside [-100, 2200] (0.00%)"
+    },
+    {
+      "check": "range_rotor_speed_rpm",
+      "status": "PASS",
+      "detail": "0/79833 values outside [0, 20] (0.00%)"
+    },
+    {
+      "check": "range_gearbox_temp_c",
+      "status": "PASS",
+      "detail": "0/79833 values outside [-20, 120] (0.00%)"
+    },
+    {
+      "check": "range_main_bearing_temp_c",
+      "status": "PASS",
+      "detail": "0/79833 values outside [-20, 130] (0.00%)"
+    },
+    {
+      "check": "range_nacelle_temp_c",
+      "status": "PASS",
+      "detail": "0/79833 values outside [-20, 60] (0.00%)"
+    },
+    {
+      "check": "range_vibration_x_rms",
+      "status": "PASS",
+      "detail": "0/79833 values outside [0, 1000] (0.00%)"
+    },
+    {
+      "check": "range_vibration_y_rms",
+      "status": "PASS",
+      "detail": "0/79833 values outside [0, 1000] (0.00%)"
+    },
+    {
+      "check": "completeness_event_ts",
+      "status": "PASS",
+      "detail": "0.00% NaN (limit: 30.0%)"
+    },
+    {
+      "check": "completeness_turbine_id",
+      "status": "PASS",
+      "detail": "0.00% NaN (limit: 30.0%)"
+    },
+    {
+      "check": "completeness_wind_speed_ms",
+      "status": "PASS",
+      "detail": "0.00% NaN (limit: 30.0%)"
+    },
+    {
+      "check": "completeness_active_power_kw",
+      "status": "PASS",
+      "detail": "0.00% NaN (limit: 30.0%)"
+    },
+    {
+      "check": "completeness_gearbox_temp_c",
+      "status": "PASS",
+      "detail": "0.00% NaN (limit: 30.0%)"
+    },
+    {
+      "check": "completeness_main_bearing_temp_c",
+      "status": "PASS",
+      "detail": "0.00% NaN (limit: 30.0%)"
+    },
+    {
+      "check": "completeness_ambient_temp_c",
+      "status": "PASS",
+      "detail": "0.00% NaN (limit: 30.0%)"
+    },
+    {
+      "check": "uniqueness_ts_turbine",
+      "status": "PASS",
+      "detail": "0 duplicate (ts, turbine_id) pairs (0.000%)"
+    },
+    {
+      "check": "freshness",
+      "status": "PASS",
+      "detail": "Latest data age: 64009.7 hours (historical OK)"
+    },
+    {
+      "check": "sanity_low_wind_zero_power",
+      "status": "PASS",
+      "detail": "0/8438 rows producing >500kW at wind<3m/s (0.00%)"
+    },
+    {
+      "check": "sanity_power_below_rated",
+      "status": "PASS",
+      "detail": "0 rows exceed rated 2200kW (0.000%)"
+    },
+    {
+      "check": "coverage_turbines",
+      "status": "PASS",
+      "detail": "6/6 turbines present"
+    },
+    {
+      "check": "balance_across_turbines",
+      "status": "PASS",
+      "detail": "Min/max rows per turbine: 13272/13333 (ratio 0.995)"
+    }
+  ]
+}

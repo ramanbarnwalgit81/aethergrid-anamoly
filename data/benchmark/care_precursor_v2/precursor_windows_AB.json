@@ -1,0 +1,286 @@
+{
+  "lead_steps": 1008,
+  "guard_steps": 144,
+  "windows": [
+    {
+      "farm": "A",
+      "event_id": 68,
+      "label": "anomaly",
+      "precursor_start_id": 51055,
+      "precursor_end_id": 52063,
+      "n_precursor_rows": 593
+    },
+    {
+      "farm": "A",
+      "event_id": 22,
+      "label": "anomaly",
+      "precursor_start_id": 50880,
+      "precursor_end_id": 51888,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 72,
+      "label": "anomaly",
+      "precursor_start_id": 51489,
+      "precursor_end_id": 52497,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 73,
+      "label": "anomaly",
+      "precursor_start_id": 51737,
+      "precursor_end_id": 52745,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 0,
+      "label": "anomaly",
+      "precursor_start_id": 51428,
+      "precursor_end_id": 52436,
+      "n_precursor_rows": 614
+    },
+    {
+      "farm": "A",
+      "event_id": 26,
+      "label": "anomaly",
+      "precursor_start_id": 51253,
+      "precursor_end_id": 52261,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 40,
+      "label": "anomaly",
+      "precursor_start_id": 50355,
+      "precursor_end_id": 51363,
+      "n_precursor_rows": 804
+    },
+    {
+      "farm": "A",
+      "event_id": 42,
+      "label": "anomaly",
+      "precursor_start_id": 51295,
+      "precursor_end_id": 52303,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 10,
+      "label": "anomaly",
+      "precursor_start_id": 51603,
+      "precursor_end_id": 52611,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 25,
+      "label": "normal",
+      "precursor_start_id": 51281,
+      "precursor_end_id": 52289,
+      "n_precursor_rows": 878
+    },
+    {
+      "farm": "A",
+      "event_id": 69,
+      "label": "normal",
+      "precursor_start_id": 51356,
+      "precursor_end_id": 52364,
+      "n_precursor_rows": 802
+    },
+    {
+      "farm": "A",
+      "event_id": 13,
+      "label": "normal",
+      "precursor_start_id": 49851,
+      "precursor_end_id": 50859,
+      "n_precursor_rows": 779
+    },
+    {
+      "farm": "A",
+      "event_id": 24,
+      "label": "normal",
+      "precursor_start_id": 51712,
+      "precursor_end_id": 52720,
+      "n_precursor_rows": 860
+    },
+    {
+      "farm": "A",
+      "event_id": 3,
+      "label": "normal",
+      "precursor_start_id": 51177,
+      "precursor_end_id": 52185,
+      "n_precursor_rows": 921
+    },
+    {
+      "farm": "A",
+      "event_id": 17,
+      "label": "normal",
+      "precursor_start_id": 51589,
+      "precursor_end_id": 52597,
+      "n_precursor_rows": 898
+    },
+    {
+      "farm": "A",
+      "event_id": 38,
+      "label": "normal",
+      "precursor_start_id": 51715,
+      "precursor_end_id": 52723,
+      "n_precursor_rows": 851
+    },
+    {
+      "farm": "A",
+      "event_id": 71,
+      "label": "normal",
+      "precursor_start_id": 51431,
+      "precursor_end_id": 52439,
+      "n_precursor_rows": 1003
+    },
+    {
+      "farm": "A",
+      "event_id": 14,
+      "label": "normal",
+      "precursor_start_id": 51576,
+      "precursor_end_id": 52584,
+      "n_precursor_rows": 649
+    },
+    {
+      "farm": "A",
+      "event_id": 92,
+      "label": "normal",
+      "precursor_start_id": 51429,
+      "precursor_end_id": 52437,
+      "n_precursor_rows": 906
+    },
+    {
+      "farm": "A",
+      "event_id": 51,
+      "label": "normal",
+      "precursor_start_id": 51323,
+      "precursor_end_id": 52331,
+      "n_precursor_rows": 949
+    },
+    {
+      "farm": "B",
+      "event_id": 34,
+      "label": "anomaly",
+      "precursor_start_id": 51523,
+      "precursor_end_id": 52531,
+      "n_precursor_rows": 917
+    },
+    {
+      "farm": "B",
+      "event_id": 7,
+      "label": "anomaly",
+      "precursor_start_id": 51695,
+      "precursor_end_id": 52703,
+      "n_precursor_rows": 929
+    },
+    {
+      "farm": "B",
+      "event_id": 53,
+      "label": "anomaly",
+      "precursor_start_id": 51551,
+      "precursor_end_id": 52559,
+      "n_precursor_rows": 1007
+    },
+    {
+      "farm": "B",
+      "event_id": 27,
+      "label": "anomaly",
+      "precursor_start_id": 51611,
+      "precursor_end_id": 52619,
+      "n_precursor_rows": 1006
+    },
+    {
+      "farm": "B",
+      "event_id": 19,
+      "label": "anomaly",
+      "precursor_start_id": 51665,
+      "precursor_end_id": 52673,
+      "n_precursor_rows": 1007
+    },
+    {
+      "farm": "B",
+      "event_id": 77,
+      "label": "anomaly",
+      "precursor_start_id": 51983,
+      "precursor_end_id": 52991,
+      "n_precursor_rows": 968
+    },
+    {
+      "farm": "B",
+      "event_id": 83,
+      "label": "normal",
+      "precursor_start_id": 51321,
+      "precursor_end_id": 52329,
+      "n_precursor_rows": 1005
+    },
+    {
+      "farm": "B",
+      "event_id": 52,
+      "label": "normal",
+      "precursor_start_id": 51667,
+      "precursor_end_id": 52675,
+      "n_precursor_rows": 1007
+    },
+    {
+      "farm": "B",
+      "event_id": 21,
+      "label": "normal",
+      "precursor_start_id": 51209,
+      "precursor_end_id": 52217,
+      "n_precursor_rows": 972
+    },
+    {
+      "farm": "B",
+      "event_id": 2,
+      "label": "normal",
+      "precursor_start_id": 51695,
+      "precursor_end_id": 52703,
+      "n_precursor_rows": 944
+    },
+    {
+      "farm": "B",
+      "event_id": 23,
+      "label": "normal",
+      "precursor_start_id": 51551,
+      "precursor_end_id": 52559,
+      "n_precursor_rows": 981
+    },
+    {
+      "farm": "B",
+      "event_id": 87,
+      "label": "normal",
+      "precursor_start_id": 51467,
+      "precursor_end_id": 52475,
+      "n_precursor_rows": 144
+    },
+    {
+      "farm": "B",
+      "event_id": 74,
+      "label": "normal",
+      "precursor_start_id": 51809,
+      "precursor_end_id": 52817,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "B",
+      "event_id": 86,
+      "label": "normal",
+      "precursor_start_id": 51695,
+      "precursor_end_id": 52703,
+      "n_precursor_rows": 957
+    },
+    {
+      "farm": "B",
+      "event_id": 82,
+      "label": "normal",
+      "precursor_start_id": 51967,
+      "precursor_end_id": 52975,
+      "n_precursor_rows": 978
+    }
+  ]
+}

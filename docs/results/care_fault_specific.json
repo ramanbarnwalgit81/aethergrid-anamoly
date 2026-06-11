@@ -1,0 +1,110 @@
+{
+  "per_event": [
+    {
+      "event_id": 68,
+      "fault_type": "Transformer failure",
+      "event_type": "anomaly",
+      "n_fault_cols": 49,
+      "n_train": 32614,
+      "n_test": 21744,
+      "auc_specialist": 0.3996
+    },
+    {
+      "event_id": 22,
+      "fault_type": "Hydraulic group",
+      "event_type": "anomaly",
+      "n_fault_cols": 64,
+      "n_train": 31821,
+      "n_test": 21215,
+      "auc_specialist": 0.4368
+    },
+    {
+      "event_id": 72,
+      "fault_type": "Gearbox failure",
+      "event_type": "anomaly",
+      "n_fault_cols": 81,
+      "n_train": 32449,
+      "n_test": 21633,
+      "auc_specialist": 0.5325
+    },
+    {
+      "event_id": 73,
+      "fault_type": "Hydraulic group",
+      "event_type": "anomaly",
+      "n_fault_cols": 64,
+      "n_train": 32425,
+      "n_test": 21617,
+      "auc_specialist": 0.5304
+    },
+    {
+      "event_id": 0,
+      "fault_type": "Generator bearing failure",
+      "event_type": "anomaly",
+      "n_fault_cols": 96,
+      "n_train": 32991,
+      "n_test": 21995,
+      "auc_specialist": 0.6024
+    },
+    {
+      "event_id": 26,
+      "fault_type": "Hydraulic group",
+      "event_type": "anomaly",
+      "n_fault_cols": 64,
+      "n_train": 32221,
+      "n_test": 21481,
+      "auc_specialist": 0.5514
+    },
+    {
+      "event_id": 40,
+      "fault_type": "Generator bearing failure",
+      "event_type": "anomaly",
+      "n_fault_cols": 96,
+      "n_train": 33694,
+      "n_test": 22464,
+      "auc_specialist": 0.5821
+    },
+    {
+      "event_id": 42,
+      "fault_type": "Hydraulic group",
+      "event_type": "anomaly",
+      "n_fault_cols": 64,
+      "n_train": 32331,
+      "n_test": 21555,
+      "auc_specialist": 0.5567
+    },
+    {
+      "event_id": 10,
+      "fault_type": "Gearbox failure",
+      "event_type": "anomaly",
+      "n_fault_cols": 81,
+      "n_train": 32155,
+      "n_test": 21437,
+      "auc_specialist": 0.5471
+    },
+    {
+      "event_id": 45,
+      "fault_type": "Hydraulic group",
+      "event_type": "anomaly",
+      "n_fault_cols": 64,
+      "n_train": 32243,
+      "n_test": 21496,
+      "auc_specialist": 0.6917
+    },
+    {
+      "event_id": 84,
+      "fault_type": "Hydraulic group",
+      "event_type": "anomaly",
+      "n_fault_cols": 64,
+      "n_train": 32263,
+      "n_test": 21509,
+      "auc_specialist": 0.4948
+    }
+  ],
+  "mean_auc": 0.5386818181818182,
+  "by_fault": {
+    "Transformer failure": 0.3996,
+    "Hydraulic group": 0.5436333333333334,
+    "Gearbox failure": 0.5398000000000001,
+    "Generator bearing failure": 0.5922499999999999
+  }
+}

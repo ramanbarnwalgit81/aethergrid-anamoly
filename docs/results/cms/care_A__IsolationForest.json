@@ -1,0 +1,202 @@
+{
+  "farm": "A",
+  "model": "IsolationForest",
+  "n_datasets": 22,
+  "train_quantile": 0.995,
+  "care": {
+    "care_score": 0.0,
+    "WA": 0.4172,
+    "coverage_fbeta": 0.0725,
+    "earliness_ws": 0.0171,
+    "reliability_efbeta": 0.0,
+    "accuracy": 0.9983,
+    "event_tp": 0,
+    "event_fp": 0,
+    "event_fn": 11,
+    "n_anomaly": 11,
+    "n_normal": 11,
+    "crit_threshold": 72,
+    "beta": 0.5
+  },
+  "event_level_auc": 0.8017,
+  "event_level_ap": 0.8469,
+  "runtime_sec": 42.4,
+  "per_dataset": [
+    {
+      "event_id": 68,
+      "label": "anomaly",
+      "n_train": 40437,
+      "n_pred": 2295,
+      "n_features": 79,
+      "ewma_peak": 0.5757
+    },
+    {
+      "event_id": 22,
+      "label": "anomaly",
+      "n_train": 40804,
+      "n_pred": 1148,
+      "n_features": 79,
+      "ewma_peak": 0.5272
+    },
+    {
+      "event_id": 72,
+      "label": "anomaly",
+      "n_train": 40053,
+      "n_pred": 2017,
+      "n_features": 79,
+      "ewma_peak": 0.5426
+    },
+    {
+      "event_id": 73,
+      "label": "anomaly",
+      "n_train": 40828,
+      "n_pred": 1729,
+      "n_features": 79,
+      "ewma_peak": 0.6029
+    },
+    {
+      "event_id": 0,
+      "label": "anomaly",
+      "n_train": 39149,
+      "n_pred": 2838,
+      "n_features": 79,
+      "ewma_peak": 0.5943
+    },
+    {
+      "event_id": 26,
+      "label": "anomaly",
+      "n_train": 37604,
+      "n_pred": 1441,
+      "n_features": 79,
+      "ewma_peak": 0.5144
+    },
+    {
+      "event_id": 40,
+      "label": "anomaly",
+      "n_train": 39076,
+      "n_pred": 4939,
+      "n_features": 79,
+      "ewma_peak": 0.6168
+    },
+    {
+      "event_id": 42,
+      "label": "anomaly",
+      "n_train": 37406,
+      "n_pred": 1583,
+      "n_features": 79,
+      "ewma_peak": 0.5661
+    },
+    {
+      "event_id": 10,
+      "label": "anomaly",
+      "n_train": 36307,
+      "n_pred": 1269,
+      "n_features": 79,
+      "ewma_peak": 0.5802
+    },
+    {
+      "event_id": 45,
+      "label": "anomaly",
+      "n_train": 39912,
+      "n_pred": 1440,
+      "n_features": 79,
+      "ewma_peak": 0.562
+    },
+    {
+      "event_id": 84,
+      "label": "anomaly",
+      "n_train": 37501,
+      "n_pred": 1437,
+      "n_features": 79,
+      "ewma_peak": 0.5991
+    },
+    {
+      "event_id": 25,
+      "label": "normal",
+      "n_train": 40838,
+      "n_pred": 2423,
+      "n_features": 79,
+      "ewma_peak": 0.5568
+    },
+    {
+      "event_id": 69,
+      "label": "normal",
+      "n_train": 38886,
+      "n_pred": 2593,
+      "n_features": 79,
+      "ewma_peak": 0.5318
+    },
+    {
+      "event_id": 13,
+      "label": "normal",
+      "n_train": 40074,
+      "n_pred": 3583,
+      "n_features": 79,
+      "ewma_peak": 0.5139
+    },
+    {
+      "event_id": 24,
+      "label": "normal",
+      "n_train": 40494,
+      "n_pred": 2714,
+      "n_features": 79,
+      "ewma_peak": 0.5161
+    },
+    {
+      "event_id": 3,
+      "label": "normal",
+      "n_train": 36877,
+      "n_pred": 3302,
+      "n_features": 79,
+      "ewma_peak": 0.5404
+    },
+    {
+      "event_id": 17,
+      "label": "normal",
+      "n_train": 35329,
+      "n_pred": 2781,
+      "n_features": 79,
+      "ewma_peak": 0.5562
+    },
+    {
+      "event_id": 38,
+      "label": "normal",
+      "n_train": 38484,
+      "n_pred": 2544,
+      "n_features": 79,
+      "ewma_peak": 0.5853
+    },
+    {
+      "event_id": 71,
+      "label": "normal",
+      "n_train": 40161,
+      "n_pred": 2449,
+      "n_features": 79,
+      "ewma_peak": 0.5161
+    },
+    {
+      "event_id": 14,
+      "label": "normal",
+      "n_train": 39143,
+      "n_pred": 1901,
+      "n_features": 79,
+      "ewma_peak": 0.5311
+    },
+    {
+      "event_id": 92,
+      "label": "normal",
+      "n_train": 40462,
+      "n_pred": 1774,
+      "n_features": 79,
+      "ewma_peak": 0.5229
+    },
+    {
+      "event_id": 51,
+      "label": "normal",
+      "n_train": 39749,
+      "n_pred": 2393,
+      "n_features": 79,
+      "ewma_peak": 0.5398
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "assumptions": {
+    "rated_power_kw": 2000,
+    "capacity_factor": 0.35,
+    "ppa_usd_per_mwh": 45.0,
+    "downtime_usd_per_day": 756.0,
+    "false_alarm_usd": 500
+  },
+  "per_fault_cost": [
+    {
+      "fault_type": "Gearbox failure",
+      "reactive_repair_cost_usd": 595000.0,
+      "reactive_downtime_cost_usd": 10584.0,
+      "reactive_total_usd": 605584.0,
+      "predictive_repair_cost_usd": 350000,
+      "predictive_downtime_cost_usd": 3780.0,
+      "predictive_total_usd": 353780.0,
+      "savings_usd_per_detected_event": 251804.0
+    },
+    {
+      "fault_type": "Generator bearing failure",
+      "reactive_repair_cost_usd": 170000.0,
+      "reactive_downtime_cost_usd": 5292.0,
+      "reactive_total_usd": 175292.0,
+      "predictive_repair_cost_usd": 100000,
+      "predictive_downtime_cost_usd": 2268.0,
+      "predictive_total_usd": 102268.0,
+      "savings_usd_per_detected_event": 73024.0
+    },
+    {
+      "fault_type": "Hydraulic group",
+      "reactive_repair_cost_usd": 51000.0,
+      "reactive_downtime_cost_usd": 1512.0,
+      "reactive_total_usd": 52512.0,
+      "predictive_repair_cost_usd": 30000,
+      "predictive_downtime_cost_usd": 756.0,
+      "predictive_total_usd": 30756.0,
+      "savings_usd_per_detected_event": 21756.0
+    },
+    {
+      "fault_type": "Transformer failure",
+      "reactive_repair_cost_usd": 425000.0,
+      "reactive_downtime_cost_usd": 7560.0,
+      "reactive_total_usd": 432560.0,
+      "predictive_repair_cost_usd": 250000,
+      "predictive_downtime_cost_usd": 2268.0,
+      "predictive_total_usd": 252268.0,
+      "savings_usd_per_detected_event": 180292.0
+    }
+  ],
+  "method_comparison": [
+    {
+      "method": "no_CMS",
+      "fleet_size": 6,
+      "expected_faults": 1.62,
+      "detection_rate": 0.0,
+      "fpr": 0.0,
+      "fault_cost_usd": 333431.0,
+      "false_alarm_cost_usd": 0.0,
+      "total_annual_cost_usd": 333431.0,
+      "savings_vs_no_CMS_usd": 0.0,
+      "vs_no_CMS_savings_usd": 0.0,
+      "per_turbine_savings_usd": 0.0
+    },
+    {
+      "method": "threshold_rules",
+      "fleet_size": 6,
+      "expected_faults": 1.62,
+      "detection_rate": 0.4,
+      "fpr": 0.2,
+      "fault_cost_usd": 277965.0,
+      "false_alarm_cost_usd": 90000.0,
+      "total_annual_cost_usd": 367965.0,
+      "savings_vs_no_CMS_usd": 55466.0,
+      "vs_no_CMS_savings_usd": -34534.0,
+      "per_turbine_savings_usd": -5755.666666666667
+    },
+    {
+      "method": "IsolationForest_baseline",
+      "fleet_size": 6,
+      "expected_faults": 1.62,
+      "detection_rate": 0.54,
+      "fpr": 0.15,
+      "fault_cost_usd": 258552.0,
+      "false_alarm_cost_usd": 67500.0,
+      "total_annual_cost_usd": 326052.0,
+      "savings_vs_no_CMS_usd": 74878.0,
+      "vs_no_CMS_savings_usd": 7379.0,
+      "per_turbine_savings_usd": 1229.8333333333333
+    },
+    {
+      "method": "CARE_paper_autoencoder",
+      "fleet_size": 6,
+      "expected_faults": 1.62,
+      "detection_rate": 0.6,
+      "fpr": 0.12,
+      "fault_cost_usd": 250232.0,
+      "false_alarm_cost_usd": 54000.0,
+      "total_annual_cost_usd": 304232.0,
+      "savings_vs_no_CMS_usd": 83198.0,
+      "vs_no_CMS_savings_usd": 29199.0,
+      "per_turbine_savings_usd": 4866.5
+    },
+    {
+      "method": "Ours_conformal_alpha10",
+      "fleet_size": 6,
+      "expected_faults": 1.62,
+      "detection_rate": 0.15,
+      "fpr": 0.086,
+      "fault_cost_usd": 312631.0,
+      "false_alarm_cost_usd": 38700.0,
+      "total_annual_cost_usd": 351331.0,
+      "savings_vs_no_CMS_usd": 20800.0,
+      "vs_no_CMS_savings_usd": -17900.0,
+      "per_turbine_savings_usd": -2983.3333333333335
+    },
+    {
+      "method": "Ours_conformal_alpha05",
+      "fleet_size": 6,
+      "expected_faults": 1.62,
+      "detection_rate": 0.09,
+      "fpr": 0.04,
+      "fault_cost_usd": 320951.0,
+      "false_alarm_cost_usd": 18000.0,
+      "total_annual_cost_usd": 338951.0,
+      "savings_vs_no_CMS_usd": 12480.0,
+      "vs_no_CMS_savings_usd": -5520.0,
+      "per_turbine_savings_usd": -920.0
+    },
+    {
+      "method": "no_CMS",
+      "fleet_size": 20,
+      "expected_faults": 5.4,
+      "detection_rate": 0.0,
+      "fpr": 0.0,
+      "fault_cost_usd": 1111436.0,
+      "false_alarm_cost_usd": 0.0,
+      "total_annual_cost_usd": 1111436.0,
+      "savings_vs_no_CMS_usd": 0.0,
+      "vs_no_CMS_savings_usd": 0.0,
+      "per_turbine_savings_usd": 0.0
+    },
+    {
+      "method": "threshold_rules",
+      "fleet_size": 20,
+      "expected_faults": 5.4,
+      "detection_rate": 0.4,
+      "fpr": 0.2,
+      "fault_cost_usd": 926551.0,
+      "false_alarm_cost_usd": 300000.0,
+      "total_annual_cost_usd": 1226551.0,
+      "savings_vs_no_CMS_usd": 184885.0,
+      "vs_no_CMS_savings_usd": -115115.0,
+      "per_turbine_savings_usd": -5755.75
+    },
+    {
+      "method": "IsolationForest_baseline",
+      "fleet_size": 20,
+      "expected_faults": 5.4,
+      "detection_rate": 0.54,
+      "fpr": 0.15,
+      "fault_cost_usd": 861841.0,
+      "false_alarm_cost_usd": 225000.0,
+      "total_annual_cost_usd": 1086841.0,
+      "savings_vs_no_CMS_usd": 249595.0,
+      "vs_no_CMS_savings_usd": 24595.0,
+      "per_turbine_savings_usd": 1229.75
+    },
+    {
+      "method": "CARE_paper_autoencoder",
+      "fleet_size": 20,
+      "expected_faults": 5.4,
+      "detection_rate": 0.6,
+      "fpr": 0.12,
+      "fault_cost_usd": 834108.0,
+      "false_alarm_cost_usd": 180000.0,
+      "total_annual_cost_usd": 1014108.0,
+      "savings_vs_no_CMS_usd": 277328.0,
+      "vs_no_CMS_savings_usd": 97328.0,
+      "per_turbine_savings_usd": 4866.4
+    },
+    {
+      "method": "Ours_conformal_alpha10",
+      "fleet_size": 20,
+      "expected_faults": 5.4,
+      "detection_rate": 0.15,
+      "fpr": 0.086,
+      "fault_cost_usd": 1042104.0,
+      "false_alarm_cost_usd": 129000.0,
+      "total_annual_cost_usd": 1171104.0,
+      "savings_vs_no_CMS_usd": 69332.0,
+      "vs_no_CMS_savings_usd": -59668.0,
+      "per_turbine_savings_usd": -2983.4
+    },
+    {
+      "method": "Ours_conformal_alpha05",
+      "fleet_size": 20,
+      "expected_faults": 5.4,
+      "detection_rate": 0.09,
+      "fpr": 0.04,
+      "fault_cost_usd": 1069837.0,
+      "false_alarm_cost_usd": 60000.0,
+      "total_annual_cost_usd": 1129837.0,
+      "savings_vs_no_CMS_usd": 41599.0,
+      "vs_no_CMS_savings_usd": -18401.0,
+      "per_turbine_savings_usd": -920.05
+    },
+    {
+      "method": "no_CMS",
+      "fleet_size": 100,
+      "expected_faults": 27.0,
+      "detection_rate": 0.0,
+      "fpr": 0.0,
+      "fault_cost_usd": 5557180.0,
+      "false_alarm_cost_usd": 0.0,
+      "total_annual_cost_usd": 5557180.0,
+      "savings_vs_no_CMS_usd": 0.0,
+      "vs_no_CMS_savings_usd": 0.0,
+      "per_turbine_savings_usd": 0.0
+    },
+    {
+      "method": "threshold_rules",
+      "fleet_size": 100,
+      "expected_faults": 27.0,
+      "detection_rate": 0.4,
+      "fpr": 0.2,
+      "fault_cost_usd": 4632754.0,
+      "false_alarm_cost_usd": 1500000.0,
+      "total_annual_cost_usd": 6132754.0,
+      "savings_vs_no_CMS_usd": 924426.0,
+      "vs_no_CMS_savings_usd": -575574.0,
+      "per_turbine_savings_usd": -5755.74
+    },
+    {
+      "method": "IsolationForest_baseline",
+      "fleet_size": 100,
+      "expected_faults": 27.0,
+      "detection_rate": 0.54,
+      "fpr": 0.15,
+      "fault_cost_usd": 4309205.0,
+      "false_alarm_cost_usd": 1125000.0,
+      "total_annual_cost_usd": 5434205.0,
+      "savings_vs_no_CMS_usd": 1247975.0,
+      "vs_no_CMS_savings_usd": 122975.0,
+      "per_turbine_savings_usd": 1229.75
+    },
+    {
+      "method": "CARE_paper_autoencoder",
+      "fleet_size": 100,
+      "expected_faults": 27.0,
+      "detection_rate": 0.6,
+      "fpr": 0.12,
+      "fault_cost_usd": 4170542.0,
+      "false_alarm_cost_usd": 900000.0,
+      "total_annual_cost_usd": 5070542.0,
+      "savings_vs_no_CMS_usd": 1386638.0,
+      "vs_no_CMS_savings_usd": 486638.0,
+      "per_turbine_savings_usd": 4866.38
+    },
+    {
+      "method": "Ours_conformal_alpha10",
+      "fleet_size": 100,
+      "expected_faults": 27.0,
+      "detection_rate": 0.15,
+      "fpr": 0.086,
+      "fault_cost_usd": 5210520.0,
+      "false_alarm_cost_usd": 645000.0,
+      "total_annual_cost_usd": 5855520.0,
+      "savings_vs_no_CMS_usd": 346660.0,
+      "vs_no_CMS_savings_usd": -298340.0,
+      "per_turbine_savings_usd": -2983.4
+    },
+    {
+      "method": "Ours_conformal_alpha05",
+      "fleet_size": 100,
+      "expected_faults": 27.0,
+      "detection_rate": 0.09,
+      "fpr": 0.04,
+      "fault_cost_usd": 5349184.0,
+      "false_alarm_cost_usd": 300000.0,
+      "total_annual_cost_usd": 5649184.0,
+      "savings_vs_no_CMS_usd": 207996.0,
+      "vs_no_CMS_savings_usd": -92004.0,
+      "per_turbine_savings_usd": -920.04
+    }
+  ],
+  "alpha_sweep_50_turbines": [
+    {
+      "alpha": 0.01,
+      "conformal_fpr": 0.0086,
+      "detection_rate": 0.0475,
+      "annual_fault_cost_usd": 2723702.0,
+      "annual_fa_cost_usd": 32250.0,
+      "annual_total_cost_usd": 2755952.0
+    },
+    {
+      "alpha": 0.02,
+      "conformal_fpr": 0.0172,
+      "detection_rate": 0.059,
+      "annual_fault_cost_usd": 2710414.0,
+      "annual_fa_cost_usd": 64500.0,
+      "annual_total_cost_usd": 2774914.0
+    },
+    {
+      "alpha": 0.05,
+      "conformal_fpr": 0.043,
+      "detection_rate": 0.0935,
+      "annual_fault_cost_usd": 2670548.0,
+      "annual_fa_cost_usd": 161250.0,
+      "annual_total_cost_usd": 2831798.0
+    },
+    {
+      "alpha": 0.1,
+      "conformal_fpr": 0.086,
+      "detection_rate": 0.151,
+      "annual_fault_cost_usd": 2604105.0,
+      "annual_fa_cost_usd": 322500.0,
+      "annual_total_cost_usd": 2926605.0
+    },
+    {
+      "alpha": 0.15,
+      "conformal_fpr": 0.129,
+      "detection_rate": 0.2085,
+      "annual_fault_cost_usd": 2537662.0,
+      "annual_fa_cost_usd": 483750.0,
+      "annual_total_cost_usd": 3021412.0
+    },
+    {
+      "alpha": 0.2,
+      "conformal_fpr": 0.172,
+      "detection_rate": 0.266,
+      "annual_fault_cost_usd": 2471218.0,
+      "annual_fa_cost_usd": 645000.0,
+      "annual_total_cost_usd": 3116218.0
+    }
+  ],
+  "paper_headlines": {
+    "fleet_6_savings_vs_no_cms_usd": -17900.0,
+    "fleet_6_savings_vs_threshold_usd": 16634.0,
+    "fleet_100_savings_vs_no_cms_usd": -298340.0,
+    "fleet_100_savings_vs_threshold_usd": 277234.0
+  }
+}

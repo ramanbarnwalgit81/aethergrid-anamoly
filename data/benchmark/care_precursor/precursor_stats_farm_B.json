@@ -1,0 +1,19 @@
+{
+  "farm": "B",
+  "horizon_days": 30.0,
+  "n_events": 15,
+  "n_anomaly": 6,
+  "n_precursor_found": 1,
+  "fraction_precursor_found": 0.16666666666666666,
+  "lead_time_hours_mean": 1.8333333333333333,
+  "lead_time_hours_median": 1.8333333333333333,
+  "lead_time_hours_min": 1.8333333333333333,
+  "lead_time_hours_max": 1.8333333333333333,
+  "per_fault_type": {
+    "high temperature": {
+      "n": 1,
+      "lead_time_hours_mean": 1.8333333333333333,
+      "lead_time_hours_median": 1.8333333333333333
+    }
+  }
+}

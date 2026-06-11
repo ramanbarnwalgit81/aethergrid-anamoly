@@ -1,0 +1,29 @@
+{
+  "farm": "A",
+  "horizon_days": 30.0,
+  "n_events": 22,
+  "n_anomaly": 11,
+  "n_precursor_found": 4,
+  "fraction_precursor_found": 0.36363636363636365,
+  "lead_time_hours_mean": 87.75,
+  "lead_time_hours_median": 89.08333333333333,
+  "lead_time_hours_min": 4.333333333333333,
+  "lead_time_hours_max": 168.5,
+  "per_fault_type": {
+    "Generator bearing failure": {
+      "n": 1,
+      "lead_time_hours_mean": 10.166666666666666,
+      "lead_time_hours_median": 10.166666666666666
+    },
+    "Hydraulic group": {
+      "n": 2,
+      "lead_time_hours_mean": 168.25,
+      "lead_time_hours_median": 168.25
+    },
+    "Transformer failure": {
+      "n": 1,
+      "lead_time_hours_mean": 4.333333333333333,
+      "lead_time_hours_median": 4.333333333333333
+    }
+  }
+}

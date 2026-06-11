@@ -1,0 +1,34 @@
+[
+  {
+    "recall": 1.0,
+    "fpr": 0.8131,
+    "alerts": 829,
+    "auc_roc": 0.7502,
+    "auc_pr": 0.0543,
+    "config": "Base (raw MSE + percentile)"
+  },
+  {
+    "recall": 1.0,
+    "fpr": 0.8202,
+    "alerts": 836,
+    "auc_roc": 0.7205,
+    "auc_pr": 0.0497,
+    "config": "+ EWMA smoothing"
+  },
+  {
+    "recall": 0.875,
+    "fpr": 0.5152,
+    "alerts": 531,
+    "auc_roc": 0.7503,
+    "auc_pr": 0.0569,
+    "config": "+ EWMA + POT threshold"
+  },
+  {
+    "recall": 0.4583,
+    "fpr": 0.2152,
+    "alerts": 224,
+    "auc_roc": 0.7695,
+    "auc_pr": 0.0714,
+    "config": "Full (+ EWMA + POT + Fleet)"
+  }
+]

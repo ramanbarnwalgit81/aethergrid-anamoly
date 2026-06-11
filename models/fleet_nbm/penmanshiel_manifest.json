@@ -1,0 +1,35 @@
+{
+  "source": "penmanshiel",
+  "conditioning_cols": [
+    "wind_speed_ms",
+    "ambient_temp_c",
+    "active_power_kw",
+    "rotor_speed_rpm",
+    "wind_direction_sin",
+    "wind_direction_cos",
+    "air_density_proxy"
+  ],
+  "targets": {
+    "main_bearing_temp_c": {
+      "model_path": "models\\fleet_nbm\\penmanshiel_main_bearing_temp.pt",
+      "mae": 4.948791980743408,
+      "val_loss": 0.7119762897491455
+    },
+    "generator_bearing_de_temp_c": {
+      "model_path": "models\\fleet_nbm\\penmanshiel_generator_bearing_de_temp.pt",
+      "mae": 2.6580262184143066,
+      "val_loss": 0.3256246745586395
+    },
+    "generator_bearing_nde_temp_c": {
+      "model_path": "models\\fleet_nbm\\penmanshiel_generator_bearing_nde_temp.pt",
+      "mae": 1.6065731048583984,
+      "val_loss": 0.34735754132270813
+    },
+    "nacelle_temp_c": {
+      "model_path": "models\\fleet_nbm\\penmanshiel_nacelle_temp.pt",
+      "mae": 1.5048531293869019,
+      "val_loss": 0.07531517744064331
+    }
+  },
+  "train_rows": 2589028
+}

@@ -1,0 +1,3625 @@
+{
+  "config": {
+    "farms": [
+      "A",
+      "B",
+      "C"
+    ],
+    "models": [
+      "PCARecon",
+      "Mahalanobis",
+      "Ensemble"
+    ],
+    "smooth_alphas": [
+      null,
+      0.05
+    ],
+    "quantiles": [
+      0.9,
+      0.95,
+      0.97,
+      0.99,
+      0.995
+    ]
+  },
+  "published_reference_CARE": {
+    "Random": 0.5,
+    "IsolationForest_paper": 0.45,
+    "Autoencoder_paper": 0.66
+  },
+  "runtime_sec": 2362.4,
+  "calibrated": [
+    {
+      "model": "Ensemble",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.6574,
+      "agg_AUC": 0.6546,
+      "agg_AP": 0.6367,
+      "coverage": 0.304,
+      "earliness": 0.31,
+      "reliability": 0.75,
+      "accuracy": 0.9615,
+      "ev_tp": 27,
+      "ev_fp": 7,
+      "ev_fn": 17,
+      "per_farm_CARE": {
+        "A": 0.6066,
+        "B": 0.5194,
+        "C": 0.7007
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "PCARecon",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.6564,
+      "agg_AUC": 0.6275,
+      "agg_AP": 0.6189,
+      "coverage": 0.3045,
+      "earliness": 0.309,
+      "reliability": 0.75,
+      "accuracy": 0.9591,
+      "ev_tp": 27,
+      "ev_fp": 7,
+      "ev_fn": 17,
+      "per_farm_CARE": {
+        "A": 0.6043,
+        "B": 0.5187,
+        "C": 0.7
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6434,
+      "agg_AUC": 0.6765,
+      "agg_AP": 0.6515,
+      "coverage": 0.3868,
+      "earliness": 0.3703,
+      "reliability": 0.6429,
+      "accuracy": 0.9085,
+      "ev_tp": 36,
+      "ev_fp": 23,
+      "ev_fn": 8,
+      "per_farm_CARE": {
+        "A": 0.6359,
+        "B": 0.5578,
+        "C": 0.6775
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "PCARecon",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6417,
+      "agg_AUC": 0.6791,
+      "agg_AP": 0.6631,
+      "coverage": 0.3784,
+      "earliness": 0.3746,
+      "reliability": 0.653,
+      "accuracy": 0.9013,
+      "ev_tp": 35,
+      "ev_fp": 21,
+      "ev_fn": 9,
+      "per_farm_CARE": {
+        "A": 0.6006,
+        "B": 0.5603,
+        "C": 0.6814
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "Ensemble",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.6406,
+      "agg_AUC": 0.6925,
+      "agg_AP": 0.6592,
+      "coverage": 0.4184,
+      "earliness": 0.4015,
+      "reliability": 0.6336,
+      "accuracy": 0.8747,
+      "ev_tp": 37,
+      "ev_fp": 25,
+      "ev_fn": 7,
+      "per_farm_CARE": {
+        "A": 0.6433,
+        "B": 0.5698,
+        "C": 0.6639
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.6343,
+      "agg_AUC": 0.6511,
+      "agg_AP": 0.635,
+      "coverage": 0.2478,
+      "earliness": 0.2585,
+      "reliability": 0.7188,
+      "accuracy": 0.9733,
+      "ev_tp": 23,
+      "ev_fp": 6,
+      "ev_fn": 21,
+      "per_farm_CARE": {
+        "A": 0.5681,
+        "B": 0.5095,
+        "C": 0.6797
+      },
+      "selection": "calibrated_fp<=1"
+    }
+  ],
+  "rows": [
+    {
+      "model": "Ensemble",
+      "smooth": null,
+      "quantile": 0.95,
+      "agg_CARE": 0.6646,
+      "agg_AUC": 0.6546,
+      "agg_AP": 0.6367,
+      "coverage": 0.462,
+      "earliness": 0.4156,
+      "reliability": 0.6944,
+      "accuracy": 0.8754,
+      "ev_tp": 35,
+      "ev_fp": 17,
+      "ev_fn": 9,
+      "per_farm_CARE": {
+        "A": 0.6638,
+        "B": 0.6221,
+        "C": 0.6862
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": null,
+      "quantile": 0.95,
+      "agg_CARE": 0.6637,
+      "agg_AUC": 0.6275,
+      "agg_AP": 0.6189,
+      "coverage": 0.4592,
+      "earliness": 0.4175,
+      "reliability": 0.6967,
+      "accuracy": 0.8726,
+      "ev_tp": 34,
+      "ev_fp": 16,
+      "ev_fn": 10,
+      "per_farm_CARE": {
+        "A": 0.6603,
+        "B": 0.6216,
+        "C": 0.6858
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": null,
+      "quantile": 0.97,
+      "agg_CARE": 0.6593,
+      "agg_AUC": 0.6275,
+      "agg_AP": 0.6189,
+      "coverage": 0.4093,
+      "earliness": 0.379,
+      "reliability": 0.692,
+      "accuracy": 0.9082,
+      "ev_tp": 31,
+      "ev_fp": 14,
+      "ev_fn": 13,
+      "per_farm_CARE": {
+        "A": 0.6455,
+        "B": 0.5803,
+        "C": 0.6898
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.6574,
+      "agg_AUC": 0.6546,
+      "agg_AP": 0.6367,
+      "coverage": 0.304,
+      "earliness": 0.31,
+      "reliability": 0.75,
+      "accuracy": 0.9615,
+      "ev_tp": 27,
+      "ev_fp": 7,
+      "ev_fn": 17,
+      "per_farm_CARE": {
+        "A": 0.6066,
+        "B": 0.5194,
+        "C": 0.7007
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.6564,
+      "agg_AUC": 0.6275,
+      "agg_AP": 0.6189,
+      "coverage": 0.3045,
+      "earliness": 0.309,
+      "reliability": 0.75,
+      "accuracy": 0.9591,
+      "ev_tp": 27,
+      "ev_fp": 7,
+      "ev_fn": 17,
+      "per_farm_CARE": {
+        "A": 0.6043,
+        "B": 0.5187,
+        "C": 0.7
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": null,
+      "quantile": 0.97,
+      "agg_CARE": 0.6563,
+      "agg_AUC": 0.6546,
+      "agg_AP": 0.6367,
+      "coverage": 0.3885,
+      "earliness": 0.3609,
+      "reliability": 0.7143,
+      "accuracy": 0.9091,
+      "ev_tp": 32,
+      "ev_fp": 13,
+      "ev_fn": 12,
+      "per_farm_CARE": {
+        "A": 0.6497,
+        "B": 0.5802,
+        "C": 0.6817
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": null,
+      "quantile": 0.95,
+      "agg_CARE": 0.6533,
+      "agg_AUC": 0.6511,
+      "agg_AP": 0.635,
+      "coverage": 0.4329,
+      "earliness": 0.3828,
+      "reliability": 0.6967,
+      "accuracy": 0.8769,
+      "ev_tp": 34,
+      "ev_fp": 16,
+      "ev_fn": 10,
+      "per_farm_CARE": {
+        "A": 0.6747,
+        "B": 0.6192,
+        "C": 0.6636
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": null,
+      "quantile": 0.97,
+      "agg_CARE": 0.6509,
+      "agg_AUC": 0.6511,
+      "agg_AP": 0.635,
+      "coverage": 0.3699,
+      "earliness": 0.3454,
+      "reliability": 0.7045,
+      "accuracy": 0.9172,
+      "ev_tp": 31,
+      "ev_fp": 13,
+      "ev_fn": 13,
+      "per_farm_CARE": {
+        "A": 0.6521,
+        "B": 0.5789,
+        "C": 0.6727
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.6475,
+      "agg_AUC": 0.6511,
+      "agg_AP": 0.635,
+      "coverage": 0.2938,
+      "earliness": 0.3008,
+      "reliability": 0.7222,
+      "accuracy": 0.9604,
+      "ev_tp": 26,
+      "ev_fp": 8,
+      "ev_fn": 18,
+      "per_farm_CARE": {
+        "A": 0.6045,
+        "B": 0.5174,
+        "C": 0.6879
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.6456,
+      "agg_AUC": 0.6791,
+      "agg_AP": 0.6631,
+      "coverage": 0.4194,
+      "earliness": 0.4054,
+      "reliability": 0.6424,
+      "accuracy": 0.8804,
+      "ev_tp": 37,
+      "ev_fp": 24,
+      "ev_fn": 7,
+      "per_farm_CARE": {
+        "A": 0.6391,
+        "B": 0.5722,
+        "C": 0.6724
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": 0.05,
+      "quantile": 0.97,
+      "agg_CARE": 0.6446,
+      "agg_AUC": 0.6925,
+      "agg_AP": 0.6592,
+      "coverage": 0.5068,
+      "earliness": 0.4865,
+      "reliability": 0.6029,
+      "accuracy": 0.8133,
+      "ev_tp": 41,
+      "ev_fp": 33,
+      "ev_fn": 3,
+      "per_farm_CARE": {
+        "A": 0.633,
+        "B": 0.626,
+        "C": 0.6579
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6434,
+      "agg_AUC": 0.6765,
+      "agg_AP": 0.6515,
+      "coverage": 0.3868,
+      "earliness": 0.3703,
+      "reliability": 0.6429,
+      "accuracy": 0.9085,
+      "ev_tp": 36,
+      "ev_fp": 23,
+      "ev_fn": 8,
+      "per_farm_CARE": {
+        "A": 0.6359,
+        "B": 0.5578,
+        "C": 0.6775
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": 0.05,
+      "quantile": 0.97,
+      "agg_CARE": 0.6429,
+      "agg_AUC": 0.6791,
+      "agg_AP": 0.6631,
+      "coverage": 0.5003,
+      "earliness": 0.4835,
+      "reliability": 0.625,
+      "accuracy": 0.8028,
+      "ev_tp": 42,
+      "ev_fp": 31,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6398,
+        "B": 0.6522,
+        "C": 0.6492
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6417,
+      "agg_AUC": 0.6791,
+      "agg_AP": 0.6631,
+      "coverage": 0.3784,
+      "earliness": 0.3746,
+      "reliability": 0.653,
+      "accuracy": 0.9013,
+      "ev_tp": 35,
+      "ev_fp": 21,
+      "ev_fn": 9,
+      "per_farm_CARE": {
+        "A": 0.6006,
+        "B": 0.5603,
+        "C": 0.6814
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.6417,
+      "agg_AUC": 0.6765,
+      "agg_AP": 0.6515,
+      "coverage": 0.4171,
+      "earliness": 0.398,
+      "reliability": 0.6169,
+      "accuracy": 0.8882,
+      "ev_tp": 38,
+      "ev_fp": 28,
+      "ev_fn": 6,
+      "per_farm_CARE": {
+        "A": 0.635,
+        "B": 0.5653,
+        "C": 0.6691
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.641,
+      "agg_AUC": 0.6546,
+      "agg_AP": 0.6367,
+      "coverage": 0.2649,
+      "earliness": 0.2813,
+      "reliability": 0.7143,
+      "accuracy": 0.9722,
+      "ev_tp": 24,
+      "ev_fp": 7,
+      "ev_fn": 20,
+      "per_farm_CARE": {
+        "A": 0.5871,
+        "B": 0.0,
+        "C": 0.69
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": null,
+      "quantile": 0.9,
+      "agg_CARE": 0.6406,
+      "agg_AUC": 0.6546,
+      "agg_AP": 0.6367,
+      "coverage": 0.53,
+      "earliness": 0.4893,
+      "reliability": 0.6336,
+      "accuracy": 0.7751,
+      "ev_tp": 37,
+      "ev_fp": 25,
+      "ev_fn": 7,
+      "per_farm_CARE": {
+        "A": 0.6746,
+        "B": 0.638,
+        "C": 0.6433
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.6406,
+      "agg_AUC": 0.6925,
+      "agg_AP": 0.6592,
+      "coverage": 0.4184,
+      "earliness": 0.4015,
+      "reliability": 0.6336,
+      "accuracy": 0.8747,
+      "ev_tp": 37,
+      "ev_fp": 25,
+      "ev_fn": 7,
+      "per_farm_CARE": {
+        "A": 0.6433,
+        "B": 0.5698,
+        "C": 0.6639
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.6376,
+      "agg_AUC": 0.6275,
+      "agg_AP": 0.6189,
+      "coverage": 0.2554,
+      "earliness": 0.2885,
+      "reliability": 0.7012,
+      "accuracy": 0.9715,
+      "ev_tp": 23,
+      "ev_fp": 7,
+      "ev_fn": 21,
+      "per_farm_CARE": {
+        "A": 0.5725,
+        "B": 0.0,
+        "C": 0.6874
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": 0.05,
+      "quantile": 0.97,
+      "agg_CARE": 0.6361,
+      "agg_AUC": 0.6765,
+      "agg_AP": 0.6515,
+      "coverage": 0.4804,
+      "earliness": 0.4564,
+      "reliability": 0.5814,
+      "accuracy": 0.8313,
+      "ev_tp": 40,
+      "ev_fp": 35,
+      "ev_fn": 4,
+      "per_farm_CARE": {
+        "A": 0.6299,
+        "B": 0.5973,
+        "C": 0.6516
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6355,
+      "agg_AUC": 0.6925,
+      "agg_AP": 0.6592,
+      "coverage": 0.3835,
+      "earliness": 0.3747,
+      "reliability": 0.625,
+      "accuracy": 0.8972,
+      "ev_tp": 36,
+      "ev_fp": 25,
+      "ev_fn": 8,
+      "per_farm_CARE": {
+        "A": 0.6154,
+        "B": 0.5599,
+        "C": 0.6693
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": null,
+      "quantile": 0.9,
+      "agg_CARE": 0.6348,
+      "agg_AUC": 0.6275,
+      "agg_AP": 0.6189,
+      "coverage": 0.5284,
+      "earliness": 0.488,
+      "reliability": 0.6338,
+      "accuracy": 0.7618,
+      "ev_tp": 36,
+      "ev_fp": 24,
+      "ev_fn": 8,
+      "per_farm_CARE": {
+        "A": 0.6662,
+        "B": 0.6369,
+        "C": 0.6367
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.6343,
+      "agg_AUC": 0.6511,
+      "agg_AP": 0.635,
+      "coverage": 0.2478,
+      "earliness": 0.2585,
+      "reliability": 0.7188,
+      "accuracy": 0.9733,
+      "ev_tp": 23,
+      "ev_fp": 6,
+      "ev_fn": 21,
+      "per_farm_CARE": {
+        "A": 0.5681,
+        "B": 0.5095,
+        "C": 0.6797
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": null,
+      "quantile": 0.9,
+      "agg_CARE": 0.6342,
+      "agg_AUC": 0.6511,
+      "agg_AP": 0.635,
+      "coverage": 0.5099,
+      "earliness": 0.4537,
+      "reliability": 0.6167,
+      "accuracy": 0.7955,
+      "ev_tp": 37,
+      "ev_fp": 27,
+      "ev_fn": 7,
+      "per_farm_CARE": {
+        "A": 0.662,
+        "B": 0.6041,
+        "C": 0.6384
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": 0.05,
+      "quantile": 0.95,
+      "agg_CARE": 0.6295,
+      "agg_AUC": 0.6925,
+      "agg_AP": 0.6592,
+      "coverage": 0.5464,
+      "earliness": 0.5347,
+      "reliability": 0.5718,
+      "accuracy": 0.7473,
+      "ev_tp": 43,
+      "ev_fp": 40,
+      "ev_fn": 1,
+      "per_farm_CARE": {
+        "A": 0.6128,
+        "B": 0.632,
+        "C": 0.6363
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": 0.05,
+      "quantile": 0.95,
+      "agg_CARE": 0.6255,
+      "agg_AUC": 0.6765,
+      "agg_AP": 0.6515,
+      "coverage": 0.5255,
+      "earliness": 0.5022,
+      "reliability": 0.5526,
+      "accuracy": 0.7735,
+      "ev_tp": 42,
+      "ev_fp": 42,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6117,
+        "B": 0.5973,
+        "C": 0.6365
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": 0.05,
+      "quantile": 0.95,
+      "agg_CARE": 0.6206,
+      "agg_AUC": 0.6791,
+      "agg_AP": 0.6631,
+      "coverage": 0.5359,
+      "earliness": 0.5276,
+      "reliability": 0.5707,
+      "accuracy": 0.7344,
+      "ev_tp": 42,
+      "ev_fp": 39,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6071,
+        "B": 0.6372,
+        "C": 0.6233
+      }
+    },
+    {
+      "model": "Mahalanobis",
+      "smooth": 0.05,
+      "quantile": 0.9,
+      "agg_CARE": 0.6078,
+      "agg_AUC": 0.6765,
+      "agg_AP": 0.6515,
+      "coverage": 0.5772,
+      "earliness": 0.5767,
+      "reliability": 0.534,
+      "accuracy": 0.6756,
+      "ev_tp": 44,
+      "ev_fp": 48,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.5956,
+        "B": 0.5945,
+        "C": 0.6145
+      }
+    },
+    {
+      "model": "Ensemble",
+      "smooth": 0.05,
+      "quantile": 0.9,
+      "agg_CARE": 0.5929,
+      "agg_AUC": 0.6925,
+      "agg_AP": 0.6592,
+      "coverage": 0.5835,
+      "earliness": 0.6053,
+      "reliability": 0.527,
+      "accuracy": 0.6244,
+      "ev_tp": 43,
+      "ev_fp": 48,
+      "ev_fn": 1,
+      "per_farm_CARE": {
+        "A": 0.5868,
+        "B": 0.6021,
+        "C": 0.5925
+      }
+    },
+    {
+      "model": "PCARecon",
+      "smooth": 0.05,
+      "quantile": 0.9,
+      "agg_CARE": 0.5914,
+      "agg_AUC": 0.6791,
+      "agg_AP": 0.6631,
+      "coverage": 0.5773,
+      "earliness": 0.5967,
+      "reliability": 0.5322,
+      "accuracy": 0.6255,
+      "ev_tp": 43,
+      "ev_fp": 47,
+      "ev_fn": 1,
+      "per_farm_CARE": {
+        "A": 0.5869,
+        "B": 0.6031,
+        "C": 0.5904
+      }
+    }
+  ],
+  "level_scores": {
+    "PCARecon|None": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.6833379563187163
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.9407095114072146
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.1750911090771865
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.8199835695387976
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.0870754768415665
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.9486173078493757
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.8505243704792644
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.9490465625984913
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.1040674499049816
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.3275011798295013
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.4544342187497046
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.9040964191410569
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.1515509296687336
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.9028547300151267
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.6629889305281798
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.8131835682192448
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.1914404831431502
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.3780248689095598
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.8114230440102066
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.1390312876692685
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.9961206754544678
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.1769033096273571
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 1.3968910750229806
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 17.496419844467667
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 1.3920122614829764
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 1.788072515463654
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 0.903976056479479
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 280.6764778348367
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 84.59946626661925
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.5949830026408838
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.3084629598641033
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.708464398079759
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.1201049481970862
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.8338861995332485
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.8130810080299999
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.7428715175208467
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.1110628033566798
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3056.3468062539378
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 10.423089440675854
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 20.662149861668908
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1281.406434778736
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 386.38469117649225
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 638.6580950985523
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1924.2032675207697
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 855.1132801462363
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 667.1285576355791
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 13.800946669354424
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 21.157361080089043
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 228.40065227225864
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 7163.959401560516
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 206.39917612221547
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 53.67746279239116
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 174.35966353075364
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 60.01812125101578
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 290.6498083399572
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 182.9578765712134
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 194.24047924393324
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 826.8254307734367
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 154.23138253445777
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 298.6821728650503
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 819.6158641815846
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 13.262462844538591
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 454.3124614221905
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 9.785934126536617
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 8.867336937226906
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 134.69161371204424
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 383.81789486203746
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 8.788514835421449
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 9.062675469210516
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 636.9186646820876
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 931.8666787406596
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 42.14542633355414
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 283.2529354811082
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 15.149640567890513
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 19.47386059058411
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 12.159702845044636
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 26.566230073194653
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 59.73682604797972
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 16.355531610134943
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 12.728256742120426
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 21.648131155899
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 10.70818046287675
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 56.17773028548897
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 9683.056299746373
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 36.16823166318673
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 40.794199302489844
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 15.003769660560332
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 13.428432592045283
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 10.562190378267351
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 20.08992979815224
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 19.462554059966745
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 22.654827099316403
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 286.36341585059665
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 13.643373237220832
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 90.77306663935745
+      }
+    ],
+    "PCARecon|0.05": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.474283458727329
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.6582554851917239
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.8420173424676362
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.6740589727674797
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.8832593594396774
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.46270914610234176
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.5225654187334388
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.7707348742136353
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 0.8445751818266374
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.2074644213804786
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1.1822968395643048
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.3448658096899251
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.7070053848287028
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.3455745370663595
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.578041505870431
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.48879442633843034
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.7123300423609487
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.550875040550533
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.34981718780157567
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.3633489948186687
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.3540975093286123
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.843321296097005
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 0.42250802374062957
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 1.230896901482191
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 0.5751144036036269
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 0.3986168568670439
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 0.42054596256143134
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 14.369933161525093
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 4.998353830012764
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.3408819693384517
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.3839123931734345
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.43218780841515153
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.38485191699186605
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.37457975531479426
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.3219460711380291
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.31399851510707305
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.34757868993819857
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 268.78155532349706
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3.317796896465798
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 19.60923396900731
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 126.18924533877619
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 41.46585571395616
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 308.35583216533433
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 249.6894974730399
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 139.49851893846443
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 135.13451213651683
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1.420997273599793
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 7.262117536225484
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 89.10009565748877
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3636.6979304446036
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 26.974745946005072
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 9.288970527539632
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 40.25028807088915
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 21.462365664217952
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 72.87548488990359
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 23.601269374797727
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 27.862845448248166
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 160.652342837101
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 31.477508689723418
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 43.02486627342352
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 327.9210288195851
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1.6827105575745107
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 41.17769752382034
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3.590739609986854
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.3105974448249982
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 11.228602176786925
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 188.96879910326956
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 0.9439376208576236
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.4986020397232442
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 95.13951481243687
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 107.58727342184413
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 4.3692460942954785
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 15.178267684436985
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.7690898513768378
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 4.941293413336628
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.387234258123987
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 17.05463598712908
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 13.079173131702282
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3.255327349755785
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 6.182597910378611
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 4.584534646701703
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.4326597465968163
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3.3891513458434965
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2216.7204179121736
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2.2229096655313
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3.1514257935765557
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2.010916120484507
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.5148120773742582
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.1804611042460236
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.9481087739088445
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2.119256174393382
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3.4146342731708086
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 32.740878507526425
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1.8678573000659684
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 6.720255666156238
+      }
+    ],
+    "Mahalanobis|None": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 37877.12437983435
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 12588.020098985391
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 4105.857769160476
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1785.5213942193936
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 13241.200224766479
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1447.9084300192726
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 4828.360287636523
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 4634.247379503148
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 7425.346001301156
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 54479.866559742906
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 11059.581862910622
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 2333.749260983112
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1508.0425132868356
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 585.7548936964663
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 3657.5470234554805
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 2352.888487204158
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 7110.618544361777
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 8150.991991147383
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 686.4937415662995
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1417.8275543443494
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1422.4463765999824
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 4086.4786812477837
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 5684.233343366289
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 100181.71985612535
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 2109.4547935884902
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 3278.2894395189683
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 1618.522987032968
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 55068589.29953066
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 8088936.1014638245
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 2660.773786003789
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1991.3384704259317
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 7129.90445494755
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 2598.503974565212
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 3358.3396012736275
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1438.4446817601465
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 830.3418299446605
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1693.993429800077
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1188034991.9752674
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 46976.90859585629
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 42705.98833904941
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1014013552.3437833
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 17377100.80848359
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 30786141.38153725
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 291106127.6753715
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 68272553.65927756
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 55223035.70360998
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 15206.682843187991
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 173417.35683165144
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 14008965.414768731
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 8622071664.936874
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 4956628.103064672
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 826552.6369573952
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3629347.679115347
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 411457.80903298914
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 34836737.603508316
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3495121.7791613247
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3451945.6711475635
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 17524686.879156467
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1317846.0501173239
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3499075.1605311683
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 163782454.30291858
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 106198.09757668027
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3437784.4596174327
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 41571.01296481673
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 39159.19016039024
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2037806.6077686492
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 18712250.39391874
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 14430.612865256502
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 37120.504889552656
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 10930834.290168855
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 290480557.6419018
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 328768.58595716365
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 10006008.403972907
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 13415.191649006127
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 29321.40656059852
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 74427.49485962506
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 144647.0277538342
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1282647.9630327825
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 53434.53835764756
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 68126.58402404436
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 304573.79358551605
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 47438.67033432177
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 349902.42950413673
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2304361743.246846
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 112945.08322252157
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 112149.35793948929
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 41217.30415113123
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 45957.045795251615
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 35482.75382082662
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 52633.1795805244
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 144330.85996122024
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 239427.54529300073
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 19196996.818101406
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 106801.94721737335
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1368459.4108057208
+      }
+    ],
+    "Mahalanobis|0.05": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2157.6135997827096
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 715.4434961952364
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2634.746954673917
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 557.8529589213572
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2032.9838607964575
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 368.8572556797711
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2160.0567214417856
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 1805.7720477617536
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2907.6155964805957
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2873.3337534529605
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2205.7732055463925
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 352.07524973070383
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 404.10047617346333
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 142.70484176899285
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 607.5520927656412
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 473.8937887232061
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 768.239270484832
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 684.1544372048561
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 185.79107392513444
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 238.50738218208627
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 292.66468388308965
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 2622.4351634452314
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 613.1939598852341
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 5734.599069172984
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 749.3284699095777
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 694.6748964309917
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 228.22114024298074
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 2753577.379204184
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 406589.7383154957
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 368.81833643386557
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 336.79289041596917
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 641.3434574490368
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 407.4982054764598
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 329.85324021500566
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 208.5573943670432
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 161.49630127187152
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 212.1454916516248
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 71122056.23731431
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 10865.804345687291
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 30607.066977131035
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 50715746.86174245
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1382409.4524534964
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 14665455.716281358
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 24957250.263909385
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 6245728.739381378
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 9827065.38863654
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 2287.8345366738167
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 20614.38925086818
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3163365.708505189
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 4223097748.891184
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 365401.37072369904
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 71170.78676268386
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 356008.99721096735
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 177205.2626952989
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 2108061.855594608
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 382109.1977274588
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 347588.93624132045
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1879445.619678937
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 150239.9596099356
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 358379.94564104156
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 31652822.69107582
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 6261.7844354544595
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 285757.1953254242
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 6707.648152790541
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2798.505348836629
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 125649.36539044377
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 9727629.595073722
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1543.9326233817837
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3307.362044942318
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1567605.7284325645
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 14599627.869330512
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 28350.92867582457
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 501566.09568383434
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1486.8023989032606
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 8319.039154331302
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 5100.896477289049
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 22768.732597542716
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 107623.20072281586
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3935.0546374212868
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 15496.652028464965
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 34910.911482025374
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3175.2403520360103
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 17549.639755305107
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 404878755.78042454
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 5740.9823238976
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 7741.213812332291
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 4070.4388118279826
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3411.740803671176
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 2535.2970677683693
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3681.840830378166
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 9103.039248033021
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 25619.19063090396
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1274744.974815821
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 8987.548318034445
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 85303.48258351567
+      }
+    ],
+    "Ensemble|None": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 139.79430499940582
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 67.42779495130637
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 22.96412883577509
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 15.542619507680609
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 51.58511474950762
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 8.40847139276296
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 30.582247769503827
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 26.26806306496122
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 40.03289650591415
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 168.31276801591983
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 40.78659084640178
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 11.142473556920837
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.991335153489029
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 4.631055859030397
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 15.735299766296505
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 16.274625132542745
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 39.17525205174472
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 30.59718431735498
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 5.270630291121655
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.868405474411658
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 9.310020333342123
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 22.869453747307254
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 15.570296853589747
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 363.2784723023803
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 10.756213967012744
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 15.268198398484763
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 5.306436298411959
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 93473.71879237427
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 16372.8241750768
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 11.971036341067538
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 9.607540955953677
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 25.24405352963131
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 9.447712402656771
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 15.840575119464045
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 5.671478234806237
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 4.600869013006944
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 6.085155568742945
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 3416075.4248500634
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 146.27948485504254
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 166.51174582958606
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1687641.968241881
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 31825.89088416072
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 79066.2693016074
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1025450.9112799541
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 250504.7016980214
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 135837.47961627325
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 89.84238971298271
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 408.61573850054936
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 29705.299709789862
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 15063173.835949317
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 17035.26284322089
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1589.9588904212076
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 5767.296530813702
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1206.1507948425697
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 115838.32292412117
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 12201.429436256089
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 8723.74278105915
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 40634.67219994854
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 2487.3898622581255
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 9773.335196204816
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 317037.4298037483
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 320.3355870285985
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 10744.48284311192
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 153.57237182732
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 144.61564314072683
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 5671.857172903858
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 46834.23869264652
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 58.9257406956699
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 111.50710989130923
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 29340.3838340897
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 624632.5545221978
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1110.5469392839186
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 31077.883449522258
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 78.18328060151228
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 129.3434447153123
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 262.4849518235703
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 332.6292734203468
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 5027.7150411217035
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 244.28296052884383
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 137.82486776045465
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 625.761180235871
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 181.679830530063
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1401.976856801849
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 5860035.365604946
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 383.8966332250375
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 380.89745911200123
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 113.20249444306867
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 101.2617690538579
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 129.73786494571087
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 185.81680165550716
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 275.8349516768204
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 625.2840854587847
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 49674.908526391286
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 318.23763208172966
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3920.2570744172967
+      }
+    ],
+    "Ensemble|0.05": [
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 8.365690847265503
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 4.785624042240435
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 14.745976308802803
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 4.471102397004342
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 10.94223910657337
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 2.5378534977991194
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 18.35987549585856
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 12.385689321304188
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 17.876770973832997
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 10.843126643846164
+      },
+      {
+        "farm": "A",
+        "label": 1,
+        "score": 12.581338599210637
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.7730864260292356
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 3.8398805835381333
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 0.9531426814222389
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 3.9468463337426067
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 4.130011218354767
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 6.233946147653852
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 3.568492099991266
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.2499913376927754
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.5243856646262206
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 1.6703409615856077
+      },
+      {
+        "farm": "A",
+        "label": 0,
+        "score": 14.685777851281554
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 2.146365896182263
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 20.813142155597834
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 3.790793163912709
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 2.2530746457674704
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 1.52848426851581
+      },
+      {
+        "farm": "B",
+        "label": 1,
+        "score": 4674.685791914095
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 826.1960678078458
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.2593650101818743
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.4904419200111265
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 2.8085767690831274
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.7681828486545026
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 1.4913031696763814
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.8459698613656116
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.7913083518385712
+      },
+      {
+        "farm": "B",
+        "label": 0,
+        "score": 0.8474038169638958
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 204798.5493675082
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 36.62071791063518
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 128.33746390260333
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 84417.98740440796
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 2565.1922010489047
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 37679.08777984158
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 88220.78936919557
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 23133.530837870963
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 24227.058117671593
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 9.877917431663748
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 63.84914550529348
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 6850.011363958127
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 7378417.98411734
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1301.743525137928
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 152.82040956536855
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 624.4471151797062
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 503.38208894645794
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 7210.048747316548
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1351.7762944395024
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 906.4991818079118
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 4603.580760224474
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 332.2974219771458
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 1039.4700961206172
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 61906.35671339878
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 20.96910436312908
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 904.7899979700821
+      },
+      {
+        "farm": "C",
+        "label": 1,
+        "score": 30.811430739415098
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 11.300771547071646
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 353.56102421173296
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 24372.764859291638
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 4.971490683157758
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 11.061186810645363
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 4220.740426022771
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 31455.88187754789
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 96.99815494246252
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1558.753079920668
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 7.954299126132631
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 33.66050984294116
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 18.885481631519305
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 99.69289830610546
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 452.4121056570441
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 18.20008075464466
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 41.014665859156096
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 77.50757161776085
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 12.942685337655739
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 70.08076565897187
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 1031482.2673936344
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 19.543075282901103
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 26.213978961872673
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 11.93929115990032
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 9.138079706481369
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 10.108941743932002
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 13.628363888626605
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 19.506016235923852
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 69.50334747077574
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 3350.5262553615407
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 28.30923125381846
+      },
+      {
+        "farm": "C",
+        "label": 0,
+        "score": 247.135887651581
+      }
+    ]
+  }
+}

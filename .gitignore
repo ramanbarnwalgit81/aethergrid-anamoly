@@ -1,0 +1,13 @@
+.venv/
+.env
+data/raw/*.parquet
+data/processed/*.parquet
+data/models/*.joblib
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+logs/
+data/real_scada/
+*.egg-info/
+*.zip

@@ -1,0 +1,212 @@
+{
+  "config": {
+    "farms": [
+      "A"
+    ],
+    "models": [
+      "TemporalNBM"
+    ],
+    "smooth_alphas": [
+      null,
+      0.05
+    ],
+    "quantiles": [
+      0.9,
+      0.95,
+      0.99,
+      0.995
+    ]
+  },
+  "published_reference_CARE": {
+    "Random": 0.5,
+    "IsolationForest_paper": 0.45,
+    "Autoencoder_paper": 0.66
+  },
+  "runtime_sec": 361.8,
+  "calibrated": [
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.6549,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9498,
+      "coverage": 0.3064,
+      "earliness": 0.157,
+      "reliability": 0.8511,
+      "accuracy": 0.9799,
+      "ev_tp": 8,
+      "ev_fp": 1,
+      "ev_fn": 3,
+      "per_farm_CARE": {
+        "A": 0.6549
+      },
+      "selection": "calibrated_fp<=1"
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6345,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9457,
+      "coverage": 0.3615,
+      "earliness": 0.2231,
+      "reliability": 0.6716,
+      "accuracy": 0.9582,
+      "ev_tp": 9,
+      "ev_fp": 5,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6345
+      },
+      "selection": "calibrated_fp<=1"
+    }
+  ],
+  "rows": [
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.995,
+      "agg_CARE": 0.6549,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9498,
+      "coverage": 0.3064,
+      "earliness": 0.157,
+      "reliability": 0.8511,
+      "accuracy": 0.9799,
+      "ev_tp": 8,
+      "ev_fp": 1,
+      "ev_fn": 3,
+      "per_farm_CARE": {
+        "A": 0.6549
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.99,
+      "agg_CARE": 0.635,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9498,
+      "coverage": 0.3666,
+      "earliness": 0.2195,
+      "reliability": 0.6716,
+      "accuracy": 0.9587,
+      "ev_tp": 9,
+      "ev_fp": 5,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.635
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.995,
+      "agg_CARE": 0.6345,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9457,
+      "coverage": 0.3615,
+      "earliness": 0.2231,
+      "reliability": 0.6716,
+      "accuracy": 0.9582,
+      "ev_tp": 9,
+      "ev_fp": 5,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6345
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.99,
+      "agg_CARE": 0.6283,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9457,
+      "coverage": 0.3998,
+      "earliness": 0.2814,
+      "reliability": 0.6338,
+      "accuracy": 0.9131,
+      "ev_tp": 9,
+      "ev_fp": 6,
+      "ev_fn": 2,
+      "per_farm_CARE": {
+        "A": 0.6283
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.95,
+      "agg_CARE": 0.6173,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9498,
+      "coverage": 0.4709,
+      "earliness": 0.3852,
+      "reliability": 0.6024,
+      "accuracy": 0.814,
+      "ev_tp": 10,
+      "ev_fp": 8,
+      "ev_fn": 1,
+      "per_farm_CARE": {
+        "A": 0.6173
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.95,
+      "agg_CARE": 0.6045,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9457,
+      "coverage": 0.5069,
+      "earliness": 0.4681,
+      "reliability": 0.6044,
+      "accuracy": 0.7215,
+      "ev_tp": 11,
+      "ev_fp": 9,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.6045
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": null,
+      "quantile": 0.9,
+      "agg_CARE": 0.6,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9498,
+      "coverage": 0.5263,
+      "earliness": 0.4704,
+      "reliability": 0.5789,
+      "accuracy": 0.7121,
+      "ev_tp": 11,
+      "ev_fp": 10,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.6
+      }
+    },
+    {
+      "model": "TemporalNBM",
+      "smooth": 0.05,
+      "quantile": 0.9,
+      "agg_CARE": 0.5753,
+      "agg_AUC": 0.9339,
+      "agg_AP": 0.9457,
+      "coverage": 0.5569,
+      "earliness": 0.551,
+      "reliability": 0.5556,
+      "accuracy": 0.6066,
+      "ev_tp": 11,
+      "ev_fp": 11,
+      "ev_fn": 0,
+      "per_farm_CARE": {
+        "A": 0.5753
+      }
+    }
+  ]
+}

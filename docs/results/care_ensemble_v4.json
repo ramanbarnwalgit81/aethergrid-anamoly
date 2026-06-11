@@ -1,0 +1,230 @@
+{
+  "method": "Ensemble v4 \u2014 dual labeling (status_type_id + event window)",
+  "mean_auc_ens_status": 0.6552620583002222,
+  "mean_auc_ens_event": 0.46363527059685106,
+  "pooled_auc_status": 0.6088380496507689,
+  "pooled_auc_event": 0.5982810658629097,
+  "per_event": [
+    {
+      "event_id": 68,
+      "event_type": "anomaly",
+      "event_description": "Transformer failure",
+      "n_test": 2295,
+      "auc_ens_status_label": 0.5153003707146062,
+      "auc_ens_event_label": 0.48469962928539373,
+      "auc_tf_status_label": 0.5797513490972446,
+      "auc_tf_event_label": 0.4202486509027554
+    },
+    {
+      "event_id": 22,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1148,
+      "auc_ens_status_label": 0.5419710048694113,
+      "auc_ens_event_label": 0.46156629440211533,
+      "auc_tf_status_label": 0.5631570938468349,
+      "auc_tf_event_label": 0.44026023727516267
+    },
+    {
+      "event_id": 72,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_test": 2017,
+      "auc_ens_status_label": 0.6850875379101186,
+      "auc_ens_event_label": 0.4407977016376421,
+      "auc_tf_status_label": 0.6849390787045874,
+      "auc_tf_event_label": 0.4628226910189249
+    },
+    {
+      "event_id": 73,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1729,
+      "auc_ens_status_label": 0.5914191657054979,
+      "auc_ens_event_label": 0.4491589582645083,
+      "auc_tf_status_label": 0.5990316224529028,
+      "auc_tf_event_label": 0.46096933157141284
+    },
+    {
+      "event_id": 0,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_test": 2838,
+      "auc_ens_status_label": 0.8293596270487957,
+      "auc_ens_event_label": 0.21879798689701985,
+      "auc_tf_status_label": 0.8116238842528237,
+      "auc_tf_event_label": 0.23754567028819817
+    },
+    {
+      "event_id": 26,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1441,
+      "auc_ens_status_label": 0.6299599897221305,
+      "auc_ens_event_label": 0.3705607862570201,
+      "auc_tf_status_label": 0.5633029585581617,
+      "auc_tf_event_label": 0.43724305326138824
+    },
+    {
+      "event_id": 40,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_test": 4939,
+      "auc_ens_status_label": 0.6760422711956076,
+      "auc_ens_event_label": 0.3235562660452055,
+      "auc_tf_status_label": 0.6639664795981927,
+      "auc_tf_event_label": 0.30530822235077837
+    },
+    {
+      "event_id": 42,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1583,
+      "auc_ens_status_label": 0.44239977199315983,
+      "auc_ens_event_label": 0.6137471725697892,
+      "auc_tf_status_label": 0.4526733802014061,
+      "auc_tf_event_label": 0.6143988607525102
+    },
+    {
+      "event_id": 10,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_test": 1269,
+      "auc_ens_status_label": 0.7831230283911672,
+      "auc_ens_event_label": 0.5903202514441046,
+      "auc_tf_status_label": 0.7728706624605678,
+      "auc_tf_event_label": 0.6370766791256088
+    },
+    {
+      "event_id": 45,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1440,
+      "auc_ens_status_label": null,
+      "auc_ens_event_label": 0.7142926036155203,
+      "auc_tf_status_label": null,
+      "auc_tf_event_label": 0.7146761096413874
+    },
+    {
+      "event_id": 84,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1437,
+      "auc_ens_status_label": null,
+      "auc_ens_event_label": 0.4324903261470426,
+      "auc_tf_status_label": null,
+      "auc_tf_event_label": 0.43377096001474114
+    },
+    {
+      "event_id": 25,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2423,
+      "auc_ens_status_label": 0.6925303660628068,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.6593187895968535,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 69,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2593,
+      "auc_ens_status_label": 0.6172102485854155,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.6019127544208605,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 13,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 3583,
+      "auc_ens_status_label": 0.62940845299905,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.5390201643582131,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 24,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2714,
+      "auc_ens_status_label": 0.6986627379873074,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.6377229959808968,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 3,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 3302,
+      "auc_ens_status_label": 0.6982037030997297,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.6264100217622498,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 17,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2781,
+      "auc_ens_status_label": 0.6568650456702141,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.6226978387015389,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 38,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2544,
+      "auc_ens_status_label": 0.746839697861715,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.7126425486105838,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 71,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2449,
+      "auc_ens_status_label": 0.7522246539587579,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.6927109499363835,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 14,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 1901,
+      "auc_ens_status_label": 0.7536443567936234,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.7385286987961708,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 92,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 1774,
+      "auc_ens_status_label": 0.5180447774507181,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.46273940135326275,
+      "auc_tf_event_label": null
+    },
+    {
+      "event_id": 51,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2393,
+      "auc_ens_status_label": 0.6469443579846099,
+      "auc_ens_event_label": null,
+      "auc_tf_status_label": 0.6455141734805852,
+      "auc_tf_event_label": null
+    }
+  ],
+  "total_time_s": 2883.5545320510864
+}

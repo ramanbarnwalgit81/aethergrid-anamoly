@@ -1,0 +1,105 @@
+{
+  "aleatoric": {
+    "lower_bound": 0.05099882347313788,
+    "basis": "LAS-model from LAT",
+    "las_model": 0.10199764694627576,
+    "interpretation": "Aleatoric variance lower-bounded by half of LAS_model"
+  },
+  "epistemic": {
+    "y_event": {
+      "epistemic_std_mean": 0.005363827090559046,
+      "epistemic_std_on_anomalies": 0.005947257887173548,
+      "epistemic_std_on_normals": 0.00507576330210307
+    },
+    "y_status": {
+      "epistemic_std_mean": 0.004992443814624982,
+      "epistemic_std_on_anomalies": 0.00529977513534467,
+      "epistemic_std_on_normals": 0.004900941250479241
+    }
+  },
+  "adversarial": {
+    "fgsm_no_defense_success": 0.04166666666666666,
+    "pgd_no_defense_success": 0.20833333333333331,
+    "physical_no_defense_success": 0.125,
+    "pgd_with_defense_success": 0.0,
+    "interpretation": "Adversarial uncertainty = residual attack success with defense"
+  },
+  "ood": {
+    "n_train_rows": 20000,
+    "mean_ood_mahalanobis": 2.274231607516463,
+    "per_event": [
+      {
+        "event_id": 68,
+        "fault": "Transformer failure",
+        "ood_mahalanobis_mean": 2.2870039227334495,
+        "ood_mahalanobis_max": 19.876978950903812
+      },
+      {
+        "event_id": 22,
+        "fault": "Hydraulic group",
+        "ood_mahalanobis_mean": 2.3292941653017625,
+        "ood_mahalanobis_max": 21.298205855638212
+      },
+      {
+        "event_id": 72,
+        "fault": "Gearbox failure",
+        "ood_mahalanobis_mean": 2.2676009828037773,
+        "ood_mahalanobis_max": 21.298205855638212
+      },
+      {
+        "event_id": 73,
+        "fault": "Hydraulic group",
+        "ood_mahalanobis_mean": 2.3871104533727507,
+        "ood_mahalanobis_max": 20.46618903409859
+      },
+      {
+        "event_id": 0,
+        "fault": "Generator bearing failure",
+        "ood_mahalanobis_mean": 2.3995658479539643,
+        "ood_mahalanobis_max": 20.46618903409859
+      },
+      {
+        "event_id": 26,
+        "fault": "Hydraulic group",
+        "ood_mahalanobis_mean": 2.276915955724698,
+        "ood_mahalanobis_max": 20.46618903409859
+      },
+      {
+        "event_id": 40,
+        "fault": "Generator bearing failure",
+        "ood_mahalanobis_mean": 2.3433623025262675,
+        "ood_mahalanobis_max": 15.889947730092329
+      },
+      {
+        "event_id": 42,
+        "fault": "Hydraulic group",
+        "ood_mahalanobis_mean": 2.310723710863211,
+        "ood_mahalanobis_max": 15.889947730092329
+      },
+      {
+        "event_id": 10,
+        "fault": "Gearbox failure",
+        "ood_mahalanobis_mean": 2.2985334208003123,
+        "ood_mahalanobis_max": 14.30722642254465
+      },
+      {
+        "event_id": 45,
+        "fault": "Hydraulic group",
+        "ood_mahalanobis_mean": 2.039262170432924,
+        "ood_mahalanobis_max": 13.695913152572196
+      },
+      {
+        "event_id": 84,
+        "fault": "Hydraulic group",
+        "ood_mahalanobis_mean": 2.0771747501679774,
+        "ood_mahalanobis_max": 13.695913152572196
+      }
+    ]
+  },
+  "interpretation": {
+    "aleatoric": "Irreducible noise from label ambiguity (LAT lower-bounds it)",
+    "epistemic": "Model uncertainty (Laplace posterior, shrinks with more data)",
+    "adversarial": "Worst-case perturbation robustness (FGSM/PGD)",
+    "ood": "Distribution-shift distance from training data (Mahalanobis)"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "method": "ST-GNN (TCN + manual GAT) over signal-signal graph",
+  "n_nodes": 10,
+  "window": 32,
+  "mean_auc_event": 0.426548656789957,
+  "mean_auc_status": 0.5408720800820517,
+  "per_event": [
+    {
+      "event_id": 68,
+      "fault": "Transformer failure",
+      "auc_event": 0.8269073778921217,
+      "auc_status": 0.17309262210787832
+    },
+    {
+      "event_id": 22,
+      "fault": "Hydraulic group",
+      "auc_event": 0.41700587969244685,
+      "auc_status": 0.5860862107127047
+    },
+    {
+      "event_id": 72,
+      "fault": "Gearbox failure",
+      "auc_event": 0.3404065788852707,
+      "auc_status": 0.5881980233717207
+    },
+    {
+      "event_id": 73,
+      "fault": "Hydraulic group",
+      "auc_event": 0.4911422200198216,
+      "auc_status": 0.42453383314109955
+    },
+    {
+      "event_id": 0,
+      "fault": "Generator bearing failure",
+      "auc_event": 0.04194145057018664,
+      "auc_status": 0.9193274005604994
+    },
+    {
+      "event_id": 26,
+      "fault": "Hydraulic group",
+      "auc_event": 0.2743044084719011,
+      "auc_status": 0.7258194765627868
+    },
+    {
+      "event_id": 40,
+      "fault": "Generator bearing failure",
+      "auc_event": 0.33840174827118374,
+      "auc_status": 0.6770003008085369
+    },
+    {
+      "event_id": 42,
+      "fault": "Hydraulic group",
+      "auc_event": 0.49262971698113206,
+      "auc_status": 0.5222135664069922
+    },
+    {
+      "event_id": 10,
+      "fault": "Gearbox failure",
+      "auc_event": 0.34858845848907016,
+      "auc_status": 0.25157728706624605
+    },
+    {
+      "event_id": 45,
+      "fault": "Hydraulic group",
+      "auc_event": 0.6324703299529688,
+      "auc_status": null
+    },
+    {
+      "event_id": 84,
+      "fault": "Hydraulic group",
+      "auc_event": 0.48823705546342366,
+      "auc_status": null
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "method": "Fleet-NBM (penmanshiel) -> CARE Farm A hard task",
+  "n_nbms": 4,
+  "targets": [
+    "main_bearing_temp_c",
+    "generator_bearing_de_temp_c",
+    "generator_bearing_nde_temp_c",
+    "nacelle_temp_c"
+  ],
+  "per_event": [
+    {
+      "event_id": 68,
+      "event_type": "anomaly",
+      "event_description": "Transformer failure",
+      "n_rows": 54358,
+      "auc_event": 0.49102626942291927,
+      "auc_event_status_filtered": 0.5053070650020424,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 22,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53036,
+      "auc_event": 0.6094832864181333,
+      "auc_event_status_filtered": 0.6182515795068916,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 72,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_rows": 54082,
+      "auc_event": 0.32886695489095497,
+      "auc_event_status_filtered": 0.35284913660200234,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 73,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 54042,
+      "auc_event": 0.6544970587623538,
+      "auc_event_status_filtered": 0.6628091843054882,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 0,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_rows": 54986,
+      "auc_event": 0.5803886238201854,
+      "auc_event_status_filtered": 0.6029656323614689,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 26,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53702,
+      "auc_event": 0.3438626122324167,
+      "auc_event_status_filtered": 0.37244720074795856,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 40,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_rows": 56158,
+      "auc_event": 0.6340162889938163,
+      "auc_event_status_filtered": 0.646240133713199,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 42,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53886,
+      "auc_event": 0.4235787562667898,
+      "auc_event_status_filtered": 0.45223221829309945,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 10,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_rows": 53592,
+      "auc_event": 0.36963960145929803,
+      "auc_event_status_filtered": 0.4012411643165259,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 45,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53739,
+      "auc_event": 0.6374567737179389,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 84,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_rows": 53772,
+      "auc_event": 0.4906200892367619,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 25,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54712,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 69,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54813,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 13,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54010,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 24,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 55003,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 3,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 55487,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 17,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 55090,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 38,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54835,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 71,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54744,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 14,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54197,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 92,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54067,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    },
+    {
+      "event_id": 51,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_rows": 54436,
+      "auc_event": null,
+      "auc_event_status_filtered": null,
+      "nbm_targets_used": [
+        "generator_bearing_de_temp_c",
+        "generator_bearing_nde_temp_c",
+        "nacelle_temp_c"
+      ]
+    }
+  ],
+  "mean_auc_event": 0.5057669377474153,
+  "mean_auc_event_statfilt": 0.5127048127609641
+}

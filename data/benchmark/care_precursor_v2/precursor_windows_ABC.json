@@ -1,0 +1,742 @@
+{
+  "lead_steps": 1008,
+  "guard_steps": 144,
+  "windows": [
+    {
+      "farm": "A",
+      "event_id": 68,
+      "label": "anomaly",
+      "precursor_start_id": 51055,
+      "precursor_end_id": 52063,
+      "n_precursor_rows": 593
+    },
+    {
+      "farm": "A",
+      "event_id": 22,
+      "label": "anomaly",
+      "precursor_start_id": 50880,
+      "precursor_end_id": 51888,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 72,
+      "label": "anomaly",
+      "precursor_start_id": 51489,
+      "precursor_end_id": 52497,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 73,
+      "label": "anomaly",
+      "precursor_start_id": 51737,
+      "precursor_end_id": 52745,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 0,
+      "label": "anomaly",
+      "precursor_start_id": 51428,
+      "precursor_end_id": 52436,
+      "n_precursor_rows": 614
+    },
+    {
+      "farm": "A",
+      "event_id": 26,
+      "label": "anomaly",
+      "precursor_start_id": 51253,
+      "precursor_end_id": 52261,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 40,
+      "label": "anomaly",
+      "precursor_start_id": 50355,
+      "precursor_end_id": 51363,
+      "n_precursor_rows": 804
+    },
+    {
+      "farm": "A",
+      "event_id": 42,
+      "label": "anomaly",
+      "precursor_start_id": 51295,
+      "precursor_end_id": 52303,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 10,
+      "label": "anomaly",
+      "precursor_start_id": 51603,
+      "precursor_end_id": 52611,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "A",
+      "event_id": 25,
+      "label": "normal",
+      "precursor_start_id": 51281,
+      "precursor_end_id": 52289,
+      "n_precursor_rows": 878
+    },
+    {
+      "farm": "A",
+      "event_id": 69,
+      "label": "normal",
+      "precursor_start_id": 51356,
+      "precursor_end_id": 52364,
+      "n_precursor_rows": 802
+    },
+    {
+      "farm": "A",
+      "event_id": 13,
+      "label": "normal",
+      "precursor_start_id": 49851,
+      "precursor_end_id": 50859,
+      "n_precursor_rows": 779
+    },
+    {
+      "farm": "A",
+      "event_id": 24,
+      "label": "normal",
+      "precursor_start_id": 51712,
+      "precursor_end_id": 52720,
+      "n_precursor_rows": 860
+    },
+    {
+      "farm": "A",
+      "event_id": 3,
+      "label": "normal",
+      "precursor_start_id": 51177,
+      "precursor_end_id": 52185,
+      "n_precursor_rows": 921
+    },
+    {
+      "farm": "A",
+      "event_id": 17,
+      "label": "normal",
+      "precursor_start_id": 51589,
+      "precursor_end_id": 52597,
+      "n_precursor_rows": 898
+    },
+    {
+      "farm": "A",
+      "event_id": 38,
+      "label": "normal",
+      "precursor_start_id": 51715,
+      "precursor_end_id": 52723,
+      "n_precursor_rows": 851
+    },
+    {
+      "farm": "A",
+      "event_id": 71,
+      "label": "normal",
+      "precursor_start_id": 51431,
+      "precursor_end_id": 52439,
+      "n_precursor_rows": 1003
+    },
+    {
+      "farm": "A",
+      "event_id": 14,
+      "label": "normal",
+      "precursor_start_id": 51576,
+      "precursor_end_id": 52584,
+      "n_precursor_rows": 649
+    },
+    {
+      "farm": "A",
+      "event_id": 92,
+      "label": "normal",
+      "precursor_start_id": 51429,
+      "precursor_end_id": 52437,
+      "n_precursor_rows": 906
+    },
+    {
+      "farm": "A",
+      "event_id": 51,
+      "label": "normal",
+      "precursor_start_id": 51323,
+      "precursor_end_id": 52331,
+      "n_precursor_rows": 949
+    },
+    {
+      "farm": "B",
+      "event_id": 34,
+      "label": "anomaly",
+      "precursor_start_id": 51523,
+      "precursor_end_id": 52531,
+      "n_precursor_rows": 917
+    },
+    {
+      "farm": "B",
+      "event_id": 7,
+      "label": "anomaly",
+      "precursor_start_id": 51695,
+      "precursor_end_id": 52703,
+      "n_precursor_rows": 929
+    },
+    {
+      "farm": "B",
+      "event_id": 53,
+      "label": "anomaly",
+      "precursor_start_id": 51551,
+      "precursor_end_id": 52559,
+      "n_precursor_rows": 1007
+    },
+    {
+      "farm": "B",
+      "event_id": 27,
+      "label": "anomaly",
+      "precursor_start_id": 51611,
+      "precursor_end_id": 52619,
+      "n_precursor_rows": 1006
+    },
+    {
+      "farm": "B",
+      "event_id": 19,
+      "label": "anomaly",
+      "precursor_start_id": 51665,
+      "precursor_end_id": 52673,
+      "n_precursor_rows": 1007
+    },
+    {
+      "farm": "B",
+      "event_id": 77,
+      "label": "anomaly",
+      "precursor_start_id": 51983,
+      "precursor_end_id": 52991,
+      "n_precursor_rows": 968
+    },
+    {
+      "farm": "B",
+      "event_id": 83,
+      "label": "normal",
+      "precursor_start_id": 51321,
+      "precursor_end_id": 52329,
+      "n_precursor_rows": 1005
+    },
+    {
+      "farm": "B",
+      "event_id": 52,
+      "label": "normal",
+      "precursor_start_id": 51667,
+      "precursor_end_id": 52675,
+      "n_precursor_rows": 1007
+    },
+    {
+      "farm": "B",
+      "event_id": 21,
+      "label": "normal",
+      "precursor_start_id": 51209,
+      "precursor_end_id": 52217,
+      "n_precursor_rows": 972
+    },
+    {
+      "farm": "B",
+      "event_id": 2,
+      "label": "normal",
+      "precursor_start_id": 51695,
+      "precursor_end_id": 52703,
+      "n_precursor_rows": 944
+    },
+    {
+      "farm": "B",
+      "event_id": 23,
+      "label": "normal",
+      "precursor_start_id": 51551,
+      "precursor_end_id": 52559,
+      "n_precursor_rows": 981
+    },
+    {
+      "farm": "B",
+      "event_id": 87,
+      "label": "normal",
+      "precursor_start_id": 51467,
+      "precursor_end_id": 52475,
+      "n_precursor_rows": 144
+    },
+    {
+      "farm": "B",
+      "event_id": 74,
+      "label": "normal",
+      "precursor_start_id": 51809,
+      "precursor_end_id": 52817,
+      "n_precursor_rows": 1008
+    },
+    {
+      "farm": "B",
+      "event_id": 86,
+      "label": "normal",
+      "precursor_start_id": 51695,
+      "precursor_end_id": 52703,
+      "n_precursor_rows": 957
+    },
+    {
+      "farm": "B",
+      "event_id": 82,
+      "label": "normal",
+      "precursor_start_id": 51967,
+      "precursor_end_id": 52975,
+      "n_precursor_rows": 978
+    },
+    {
+      "farm": "C",
+      "event_id": 55,
+      "label": "anomaly",
+      "precursor_start_id": 51840,
+      "precursor_end_id": 52848,
+      "n_precursor_rows": 999
+    },
+    {
+      "farm": "C",
+      "event_id": 81,
+      "label": "anomaly",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 1002
+    },
+    {
+      "farm": "C",
+      "event_id": 47,
+      "label": "anomaly",
+      "precursor_start_id": 51408,
+      "precursor_end_id": 52416,
+      "n_precursor_rows": 854
+    },
+    {
+      "farm": "C",
+      "event_id": 12,
+      "label": "anomaly",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 954
+    },
+    {
+      "farm": "C",
+      "event_id": 4,
+      "label": "anomaly",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 1004
+    },
+    {
+      "farm": "C",
+      "event_id": 18,
+      "label": "anomaly",
+      "precursor_start_id": 50400,
+      "precursor_end_id": 51408,
+      "n_precursor_rows": 868
+    },
+    {
+      "farm": "C",
+      "event_id": 28,
+      "label": "anomaly",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 671
+    },
+    {
+      "farm": "C",
+      "event_id": 39,
+      "label": "anomaly",
+      "precursor_start_id": 51840,
+      "precursor_end_id": 52848,
+      "n_precursor_rows": 989
+    },
+    {
+      "farm": "C",
+      "event_id": 66,
+      "label": "anomaly",
+      "precursor_start_id": 50688,
+      "precursor_end_id": 51696,
+      "n_precursor_rows": 997
+    },
+    {
+      "farm": "C",
+      "event_id": 15,
+      "label": "anomaly",
+      "precursor_start_id": 50976,
+      "precursor_end_id": 51984,
+      "n_precursor_rows": 988
+    },
+    {
+      "farm": "C",
+      "event_id": 78,
+      "label": "anomaly",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 973
+    },
+    {
+      "farm": "C",
+      "event_id": 79,
+      "label": "anomaly",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 995
+    },
+    {
+      "farm": "C",
+      "event_id": 30,
+      "label": "anomaly",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 995
+    },
+    {
+      "farm": "C",
+      "event_id": 33,
+      "label": "anomaly",
+      "precursor_start_id": 51840,
+      "precursor_end_id": 52848,
+      "n_precursor_rows": 952
+    },
+    {
+      "farm": "C",
+      "event_id": 44,
+      "label": "anomaly",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 677
+    },
+    {
+      "farm": "C",
+      "event_id": 49,
+      "label": "anomaly",
+      "precursor_start_id": 50832,
+      "precursor_end_id": 51840,
+      "n_precursor_rows": 989
+    },
+    {
+      "farm": "C",
+      "event_id": 31,
+      "label": "anomaly",
+      "precursor_start_id": 51840,
+      "precursor_end_id": 52848,
+      "n_precursor_rows": 988
+    },
+    {
+      "farm": "C",
+      "event_id": 67,
+      "label": "anomaly",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 930
+    },
+    {
+      "farm": "C",
+      "event_id": 9,
+      "label": "anomaly",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 835
+    },
+    {
+      "farm": "C",
+      "event_id": 91,
+      "label": "anomaly",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 997
+    },
+    {
+      "farm": "C",
+      "event_id": 5,
+      "label": "anomaly",
+      "precursor_start_id": 51264,
+      "precursor_end_id": 52272,
+      "n_precursor_rows": 850
+    },
+    {
+      "farm": "C",
+      "event_id": 90,
+      "label": "anomaly",
+      "precursor_start_id": 51840,
+      "precursor_end_id": 52848,
+      "n_precursor_rows": 874
+    },
+    {
+      "farm": "C",
+      "event_id": 70,
+      "label": "anomaly",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 749
+    },
+    {
+      "farm": "C",
+      "event_id": 35,
+      "label": "anomaly",
+      "precursor_start_id": 50688,
+      "precursor_end_id": 51696,
+      "n_precursor_rows": 648
+    },
+    {
+      "farm": "C",
+      "event_id": 16,
+      "label": "anomaly",
+      "precursor_start_id": 50256,
+      "precursor_end_id": 51264,
+      "n_precursor_rows": 614
+    },
+    {
+      "farm": "C",
+      "event_id": 76,
+      "label": "anomaly",
+      "precursor_start_id": 50544,
+      "precursor_end_id": 51552,
+      "n_precursor_rows": 286
+    },
+    {
+      "farm": "C",
+      "event_id": 8,
+      "label": "normal",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 1002
+    },
+    {
+      "farm": "C",
+      "event_id": 85,
+      "label": "normal",
+      "precursor_start_id": 49824,
+      "precursor_end_id": 50832,
+      "n_precursor_rows": 956
+    },
+    {
+      "farm": "C",
+      "event_id": 6,
+      "label": "normal",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 1001
+    },
+    {
+      "farm": "C",
+      "event_id": 62,
+      "label": "normal",
+      "precursor_start_id": 51408,
+      "precursor_end_id": 52416,
+      "n_precursor_rows": 979
+    },
+    {
+      "farm": "C",
+      "event_id": 36,
+      "label": "normal",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 992
+    },
+    {
+      "farm": "C",
+      "event_id": 56,
+      "label": "normal",
+      "precursor_start_id": 50112,
+      "precursor_end_id": 51120,
+      "n_precursor_rows": 991
+    },
+    {
+      "farm": "C",
+      "event_id": 94,
+      "label": "normal",
+      "precursor_start_id": 51408,
+      "precursor_end_id": 52416,
+      "n_precursor_rows": 793
+    },
+    {
+      "farm": "C",
+      "event_id": 54,
+      "label": "normal",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 1000
+    },
+    {
+      "farm": "C",
+      "event_id": 43,
+      "label": "normal",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 1003
+    },
+    {
+      "farm": "C",
+      "event_id": 50,
+      "label": "normal",
+      "precursor_start_id": 51120,
+      "precursor_end_id": 52128,
+      "n_precursor_rows": 1002
+    },
+    {
+      "farm": "C",
+      "event_id": 64,
+      "label": "normal",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 827
+    },
+    {
+      "farm": "C",
+      "event_id": 46,
+      "label": "normal",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 993
+    },
+    {
+      "farm": "C",
+      "event_id": 65,
+      "label": "normal",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 1000
+    },
+    {
+      "farm": "C",
+      "event_id": 61,
+      "label": "normal",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 928
+    },
+    {
+      "farm": "C",
+      "event_id": 93,
+      "label": "normal",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 1003
+    },
+    {
+      "farm": "C",
+      "event_id": 75,
+      "label": "normal",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 1000
+    },
+    {
+      "farm": "C",
+      "event_id": 41,
+      "label": "normal",
+      "precursor_start_id": 50544,
+      "precursor_end_id": 51552,
+      "n_precursor_rows": 985
+    },
+    {
+      "farm": "C",
+      "event_id": 58,
+      "label": "normal",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 1001
+    },
+    {
+      "farm": "C",
+      "event_id": 48,
+      "label": "normal",
+      "precursor_start_id": 51840,
+      "precursor_end_id": 52848,
+      "n_precursor_rows": 672
+    },
+    {
+      "farm": "C",
+      "event_id": 88,
+      "label": "normal",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 936
+    },
+    {
+      "farm": "C",
+      "event_id": 57,
+      "label": "normal",
+      "precursor_start_id": 51984,
+      "precursor_end_id": 52992,
+      "n_precursor_rows": 804
+    },
+    {
+      "farm": "C",
+      "event_id": 32,
+      "label": "normal",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 954
+    },
+    {
+      "farm": "C",
+      "event_id": 89,
+      "label": "normal",
+      "precursor_start_id": 50832,
+      "precursor_end_id": 51840,
+      "n_precursor_rows": 1001
+    },
+    {
+      "farm": "C",
+      "event_id": 59,
+      "label": "normal",
+      "precursor_start_id": 51120,
+      "precursor_end_id": 52128,
+      "n_precursor_rows": 929
+    },
+    {
+      "farm": "C",
+      "event_id": 63,
+      "label": "normal",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 733
+    },
+    {
+      "farm": "C",
+      "event_id": 80,
+      "label": "normal",
+      "precursor_start_id": 51552,
+      "precursor_end_id": 52560,
+      "n_precursor_rows": 509
+    },
+    {
+      "farm": "C",
+      "event_id": 37,
+      "label": "normal",
+      "precursor_start_id": 50544,
+      "precursor_end_id": 51552,
+      "n_precursor_rows": 368
+    },
+    {
+      "farm": "C",
+      "event_id": 29,
+      "label": "normal",
+      "precursor_start_id": 51696,
+      "precursor_end_id": 52704,
+      "n_precursor_rows": 625
+    },
+    {
+      "farm": "C",
+      "event_id": 1,
+      "label": "normal",
+      "precursor_start_id": 50544,
+      "precursor_end_id": 51552,
+      "n_precursor_rows": 217
+    },
+    {
+      "farm": "C",
+      "event_id": 20,
+      "label": "normal",
+      "precursor_start_id": 50688,
+      "precursor_end_id": 51696,
+      "n_precursor_rows": 919
+    },
+    {
+      "farm": "C",
+      "event_id": 60,
+      "label": "normal",
+      "precursor_start_id": 51408,
+      "precursor_end_id": 52416,
+      "n_precursor_rows": 982
+    }
+  ]
+}

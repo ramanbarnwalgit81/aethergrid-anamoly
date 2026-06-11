@@ -1,0 +1,93 @@
+{
+  "aggregate": {
+    "label": "y_precursor",
+    "n_events": 10,
+    "mean_base_v7_auc": 0.4023,
+    "mean_pinn_stacker_auc": 0.5574,
+    "median_delta_auc": 0.1699,
+    "pooled_pinn_stacker_auc": 0.5754,
+    "n_features": 47
+  },
+  "per_event": [
+    {
+      "event_id": 68,
+      "fault_type": "Transformer failure",
+      "n_test": 2295,
+      "base_v7_auc": 0.4686,
+      "pinn_stacker_auc": 0.0388,
+      "delta_auc": -0.4298
+    },
+    {
+      "event_id": 22,
+      "fault_type": "Hydraulic group",
+      "n_test": 1148,
+      "base_v7_auc": 0.4744,
+      "pinn_stacker_auc": 0.6195,
+      "delta_auc": 0.1451
+    },
+    {
+      "event_id": 72,
+      "fault_type": "Gearbox failure",
+      "n_test": 2017,
+      "base_v7_auc": 0.4275,
+      "pinn_stacker_auc": 0.6902,
+      "delta_auc": 0.2627
+    },
+    {
+      "event_id": 73,
+      "fault_type": "Hydraulic group",
+      "n_test": 1729,
+      "base_v7_auc": 0.4363,
+      "pinn_stacker_auc": 0.4933,
+      "delta_auc": 0.057
+    },
+    {
+      "event_id": 0,
+      "fault_type": "Generator bearing failure",
+      "n_test": 2838,
+      "base_v7_auc": 0.1651,
+      "pinn_stacker_auc": 0.6546,
+      "delta_auc": 0.4895
+    },
+    {
+      "event_id": 26,
+      "fault_type": "Hydraulic group",
+      "n_test": 1441,
+      "base_v7_auc": 0.3686,
+      "pinn_stacker_auc": 0.8561,
+      "delta_auc": 0.4876
+    },
+    {
+      "event_id": 40,
+      "fault_type": "Generator bearing failure",
+      "n_test": 4939,
+      "base_v7_auc": 0.3363,
+      "pinn_stacker_auc": 0.6689,
+      "delta_auc": 0.3326
+    },
+    {
+      "event_id": 42,
+      "fault_type": "Hydraulic group",
+      "n_test": 1583,
+      "base_v7_auc": 0.5931,
+      "pinn_stacker_auc": 0.488,
+      "delta_auc": -0.1052
+    },
+    {
+      "event_id": 10,
+      "fault_type": "Gearbox failure",
+      "n_test": 1269,
+      "base_v7_auc": 0.5856,
+      "pinn_stacker_auc": 0.7023,
+      "delta_auc": 0.1167
+    },
+    {
+      "event_id": 84,
+      "fault_type": "Hydraulic group",
+      "n_test": 1437,
+      "base_v7_auc": 0.1673,
+      "pinn_stacker_auc": 0.362,
+      "delta_auc": 0.1947
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "method": "Chronos-T5-tiny forecast-residual",
+  "model": "amazon/chronos-t5-tiny",
+  "context_len": 256,
+  "prediction_len": 64,
+  "stride": 64,
+  "target_signals": [
+    "sensor_12_avg",
+    "sensor_0_avg",
+    "power_30_avg",
+    "wind_speed_3_avg",
+    "sensor_18_avg"
+  ],
+  "per_event": [
+    {
+      "event_id": 68,
+      "fault": "Transformer failure",
+      "n_signals_scored": 5,
+      "n_test_rows": 2295,
+      "auc_chronos_event": 0.6252955291606441,
+      "auc_chronos_precursor": 0.6252955291606441,
+      "event_time_s": 2724.0
+    },
+    {
+      "event_id": 22,
+      "fault": "Hydraulic group",
+      "n_signals_scored": 5,
+      "n_test_rows": 1148,
+      "auc_chronos_event": 0.21965695995546744,
+      "auc_chronos_precursor": 0.21965695995546744,
+      "event_time_s": 2771.9
+    },
+    {
+      "event_id": 72,
+      "fault": "Gearbox failure",
+      "n_signals_scored": 5,
+      "n_test_rows": 2017,
+      "auc_chronos_event": 0.4094041523117341,
+      "auc_chronos_precursor": 0.4094041523117341,
+      "event_time_s": 2870.8
+    },
+    {
+      "event_id": 73,
+      "fault": "Hydraulic group",
+      "n_signals_scored": 5,
+      "n_test_rows": 1729,
+      "auc_chronos_event": 0.4263923301398524,
+      "auc_chronos_precursor": 0.4263923301398524,
+      "event_time_s": 2867.9
+    },
+    {
+      "event_id": 0,
+      "fault": "Generator bearing failure",
+      "n_signals_scored": 5,
+      "n_test_rows": 2838,
+      "auc_chronos_event": 0.559964968060884,
+      "auc_chronos_precursor": 0.5673394940867488,
+      "event_time_s": 2877.0
+    },
+    {
+      "event_id": 26,
+      "fault": "Hydraulic group",
+      "n_signals_scored": 5,
+      "n_test_rows": 1441,
+      "auc_chronos_event": 0.3780214183459971,
+      "auc_chronos_precursor": 0.3780214183459971,
+      "event_time_s": 2798.0
+    },
+    {
+      "event_id": 40,
+      "fault": "Generator bearing failure",
+      "n_signals_scored": 5,
+      "n_test_rows": 4939,
+      "auc_chronos_event": 0.5457117225988549,
+      "auc_chronos_precursor": 0.5457117225988549,
+      "event_time_s": 2971.5
+    },
+    {
+      "event_id": 42,
+      "fault": "Hydraulic group",
+      "n_signals_scored": 5,
+      "n_test_rows": 1583,
+      "auc_chronos_event": 0.5441130834160874,
+      "auc_chronos_precursor": 0.5441130834160874,
+      "event_time_s": 2851.2
+    },
+    {
+      "event_id": 10,
+      "fault": "Gearbox failure",
+      "n_signals_scored": 5,
+      "n_test_rows": 1269,
+      "auc_chronos_event": 0.5372051619662476,
+      "auc_chronos_precursor": 0.5372051619662476,
+      "event_time_s": 2748.1
+    },
+    {
+      "event_id": 45,
+      "fault": "Hydraulic group",
+      "n_signals_scored": 5,
+      "n_test_rows": 1440,
+      "auc_chronos_event": 0.3421080430629042,
+      "auc_chronos_precursor": null,
+      "event_time_s": 4057.5
+    },
+    {
+      "event_id": 84,
+      "fault": "Hydraulic group",
+      "n_signals_scored": 5,
+      "n_test_rows": 1437,
+      "auc_chronos_event": 0.5283996683250415,
+      "auc_chronos_precursor": 0.5085019764544125,
+      "event_time_s": 2708.9
+    }
+  ],
+  "events_completed": 11,
+  "events_total": 11,
+  "elapsed_s": 32246.7,
+  "mean_auc_event": 0.46511573066761047,
+  "mean_auc_precursor": 0.4761641828436046,
+  "total_time_s": 32246.7
+}

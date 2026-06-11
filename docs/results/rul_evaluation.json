@@ -1,0 +1,9 @@
+{
+  "n_samples": 240,
+  "mae_hours": 44.3,
+  "rmse_hours": 55.04,
+  "rho_spearman": 0.0,
+  "within_24h_fraction": 0.3375,
+  "mean_true_rul": 44.3,
+  "mean_predicted_rul": 0.0
+}

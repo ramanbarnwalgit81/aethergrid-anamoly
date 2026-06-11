@@ -1,0 +1,169 @@
+{
+  "per_turbine": {
+    "KWF-001": {
+      "baseline": {
+        "detected_before_attack": 6,
+        "total_samples": 6,
+        "detection_rate": 1.0
+      },
+      "fgsm": {
+        "epsilon": 0.05,
+        "detected_after_attack": 6,
+        "detection_rate_after": 1.0,
+        "attack_success_rate": 0.0,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "pgd": {
+        "epsilon": 0.1,
+        "steps": 20,
+        "detected_after_attack": 6,
+        "detection_rate_after": 1.0,
+        "attack_success_rate": 0.0,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "physical_attack": {
+        "epsilon": 0.1,
+        "steps": 30,
+        "detected_after_attack": 6,
+        "detection_rate_after": 1.0,
+        "attack_success_rate": 0.0,
+        "rejected_by_defense": 6,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      }
+    },
+    "KWF-003": {
+      "baseline": {
+        "detected_before_attack": 3,
+        "total_samples": 6,
+        "detection_rate": 0.5
+      },
+      "fgsm": {
+        "epsilon": 0.05,
+        "detected_after_attack": 6,
+        "detection_rate_after": 1.0,
+        "attack_success_rate": 0.0,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "pgd": {
+        "epsilon": 0.1,
+        "steps": 20,
+        "detected_after_attack": 3,
+        "detection_rate_after": 0.5,
+        "attack_success_rate": 0.5,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "physical_attack": {
+        "epsilon": 0.1,
+        "steps": 30,
+        "detected_after_attack": 3,
+        "detection_rate_after": 0.5,
+        "attack_success_rate": 0.5,
+        "rejected_by_defense": 6,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      }
+    },
+    "KWF-004": {
+      "baseline": {
+        "detected_before_attack": 6,
+        "total_samples": 6,
+        "detection_rate": 1.0
+      },
+      "fgsm": {
+        "epsilon": 0.05,
+        "detected_after_attack": 6,
+        "detection_rate_after": 1.0,
+        "attack_success_rate": 0.0,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "pgd": {
+        "epsilon": 0.1,
+        "steps": 20,
+        "detected_after_attack": 5,
+        "detection_rate_after": 0.8333333333333334,
+        "attack_success_rate": 0.16666666666666663,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "physical_attack": {
+        "epsilon": 0.1,
+        "steps": 30,
+        "detected_after_attack": 6,
+        "detection_rate_after": 1.0,
+        "attack_success_rate": 0.0,
+        "rejected_by_defense": 6,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      }
+    },
+    "KWF-006": {
+      "baseline": {
+        "detected_before_attack": 6,
+        "total_samples": 6,
+        "detection_rate": 1.0
+      },
+      "fgsm": {
+        "epsilon": 0.05,
+        "detected_after_attack": 5,
+        "detection_rate_after": 0.8333333333333334,
+        "attack_success_rate": 0.16666666666666663,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "pgd": {
+        "epsilon": 0.1,
+        "steps": 20,
+        "detected_after_attack": 5,
+        "detection_rate_after": 0.8333333333333334,
+        "attack_success_rate": 0.16666666666666663,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      },
+      "physical_attack": {
+        "epsilon": 0.1,
+        "steps": 30,
+        "detected_after_attack": 6,
+        "detection_rate_after": 1.0,
+        "attack_success_rate": 0.0,
+        "rejected_by_defense": 6,
+        "defense_rejection_rate": 1.0,
+        "combined_detection_rate": 1.0,
+        "robust_success_rate": 0.0
+      }
+    }
+  },
+  "aggregate": {
+    "fgsm": {
+      "attack_success_no_defense": 0.04166666666666666,
+      "attack_success_with_defense": 0.0,
+      "defense_improvement": 0.04166666666666666
+    },
+    "pgd": {
+      "attack_success_no_defense": 0.20833333333333331,
+      "attack_success_with_defense": 0.0,
+      "defense_improvement": 0.20833333333333331
+    },
+    "physical_attack": {
+      "attack_success_no_defense": 0.125,
+      "attack_success_with_defense": 0.0,
+      "defense_improvement": 0.125
+    }
+  }
+}

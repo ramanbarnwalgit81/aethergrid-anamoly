@@ -1,0 +1,146 @@
+{
+  "farm": "B",
+  "model": "Mahalanobis",
+  "n_datasets": 15,
+  "train_quantile": 0.995,
+  "care": {
+    "care_score": 0.5092,
+    "WA": 0.5092,
+    "coverage_fbeta": 0.0422,
+    "earliness_ws": 0.0145,
+    "reliability_efbeta": 0.5,
+    "accuracy": 0.9948,
+    "event_tp": 1,
+    "event_fp": 0,
+    "event_fn": 5,
+    "n_anomaly": 6,
+    "n_normal": 9,
+    "crit_threshold": 72,
+    "beta": 0.5
+  },
+  "event_level_auc": 0.7593,
+  "event_level_ap": 0.7099,
+  "runtime_sec": 75.4,
+  "per_dataset": [
+    {
+      "event_id": 34,
+      "label": "anomaly",
+      "n_train": 50579,
+      "n_pred": 4033,
+      "n_features": 234,
+      "ewma_peak": 743.1348
+    },
+    {
+      "event_id": 7,
+      "label": "anomaly",
+      "n_train": 51191,
+      "n_pred": 5329,
+      "n_features": 234,
+      "ewma_peak": 69168.8712
+    },
+    {
+      "event_id": 53,
+      "label": "anomaly",
+      "n_train": 50512,
+      "n_pred": 6048,
+      "n_features": 234,
+      "ewma_peak": 1301.7413
+    },
+    {
+      "event_id": 27,
+      "label": "anomaly",
+      "n_train": 50271,
+      "n_pred": 9937,
+      "n_features": 234,
+      "ewma_peak": 952.0758
+    },
+    {
+      "event_id": 19,
+      "label": "anomaly",
+      "n_train": 50816,
+      "n_pred": 3745,
+      "n_features": 234,
+      "ewma_peak": 399.7529
+    },
+    {
+      "event_id": 77,
+      "label": "anomaly",
+      "n_train": 51143,
+      "n_pred": 9217,
+      "n_features": 234,
+      "ewma_peak": 2924120.1335
+    },
+    {
+      "event_id": 83,
+      "label": "normal",
+      "n_train": 47362,
+      "n_pred": 14113,
+      "n_features": 234,
+      "ewma_peak": 447200.0248
+    },
+    {
+      "event_id": 52,
+      "label": "normal",
+      "n_train": 50652,
+      "n_pred": 2737,
+      "n_features": 234,
+      "ewma_peak": 564.2756
+    },
+    {
+      "event_id": 21,
+      "label": "normal",
+      "n_train": 49862,
+      "n_pred": 1297,
+      "n_features": 234,
+      "ewma_peak": 466.8299
+    },
+    {
+      "event_id": 2,
+      "label": "normal",
+      "n_train": 46759,
+      "n_pred": 2215,
+      "n_features": 234,
+      "ewma_peak": 1015.4666
+    },
+    {
+      "event_id": 23,
+      "label": "normal",
+      "n_train": 49282,
+      "n_pred": 1983,
+      "n_features": 234,
+      "ewma_peak": 698.4501
+    },
+    {
+      "event_id": 87,
+      "label": "normal",
+      "n_train": 48457,
+      "n_pred": 3025,
+      "n_features": 234,
+      "ewma_peak": 663.5191
+    },
+    {
+      "event_id": 74,
+      "label": "normal",
+      "n_train": 50735,
+      "n_pred": 3073,
+      "n_features": 234,
+      "ewma_peak": 353.5841
+    },
+    {
+      "event_id": 86,
+      "label": "normal",
+      "n_train": 50789,
+      "n_pred": 2927,
+      "n_features": 234,
+      "ewma_peak": 264.1596
+    },
+    {
+      "event_id": 82,
+      "label": "normal",
+      "n_train": 50148,
+      "n_pred": 2449,
+      "n_features": 234,
+      "ewma_peak": 421.9498
+    }
+  ]
+}

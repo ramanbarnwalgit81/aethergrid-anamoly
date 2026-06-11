@@ -1,0 +1,89 @@
+{
+  "A": {
+    "farm": "A",
+    "horizon_days": 30.0,
+    "n_events": 22,
+    "n_anomaly": 11,
+    "n_precursor_found": 4,
+    "fraction_precursor_found": 0.36363636363636365,
+    "lead_time_hours_mean": 87.75,
+    "lead_time_hours_median": 89.08333333333333,
+    "lead_time_hours_min": 4.333333333333333,
+    "lead_time_hours_max": 168.5,
+    "per_fault_type": {
+      "Generator bearing failure": {
+        "n": 1,
+        "lead_time_hours_mean": 10.166666666666666,
+        "lead_time_hours_median": 10.166666666666666
+      },
+      "Hydraulic group": {
+        "n": 2,
+        "lead_time_hours_mean": 168.25,
+        "lead_time_hours_median": 168.25
+      },
+      "Transformer failure": {
+        "n": 1,
+        "lead_time_hours_mean": 4.333333333333333,
+        "lead_time_hours_median": 4.333333333333333
+      }
+    }
+  },
+  "B": {
+    "farm": "B",
+    "horizon_days": 30.0,
+    "n_events": 15,
+    "n_anomaly": 6,
+    "n_precursor_found": 1,
+    "fraction_precursor_found": 0.16666666666666666,
+    "lead_time_hours_mean": 1.8333333333333333,
+    "lead_time_hours_median": 1.8333333333333333,
+    "lead_time_hours_min": 1.8333333333333333,
+    "lead_time_hours_max": 1.8333333333333333,
+    "per_fault_type": {
+      "high temperature": {
+        "n": 1,
+        "lead_time_hours_mean": 1.8333333333333333,
+        "lead_time_hours_median": 1.8333333333333333
+      }
+    }
+  },
+  "C": {
+    "farm": "C",
+    "horizon_days": 30.0,
+    "n_events": 58,
+    "n_anomaly": 27,
+    "n_precursor_found": 5,
+    "fraction_precursor_found": 0.18518518518518517,
+    "lead_time_hours_mean": 68.46666666666667,
+    "lead_time_hours_median": 29.666666666666668,
+    "lead_time_hours_min": 0.8333333333333334,
+    "lead_time_hours_max": 265.8333333333333,
+    "per_fault_type": {
+      "10115 : Oil level error, two-pump mode + Oil Leakage Gear Oil Supply + 12019: Rotor brake B cannot be closed + P20_yaw carbon brush damaged": {
+        "n": 1,
+        "lead_time_hours_mean": 4.833333333333333,
+        "lead_time_hours_median": 4.833333333333333
+      },
+      "21002 : Axis 1 DC-link voltage low, batt": {
+        "n": 1,
+        "lead_time_hours_mean": 29.666666666666668,
+        "lead_time_hours_median": 29.666666666666668
+      },
+      "P20_DGUV-v3 RCD 28F1 NC310 defective + 0 : P20_Blades_Cabinet Caps missing": {
+        "n": 1,
+        "lead_time_hours_mean": 265.8333333333333,
+        "lead_time_hours_median": 265.8333333333333
+      },
+      "P20_spinner_carbonbrush defekt + P20_Accumulators_hydraulic system": {
+        "n": 1,
+        "lead_time_hours_mean": 0.8333333333333334,
+        "lead_time_hours_median": 0.8333333333333334
+      },
+      "Valve in water cooling system was left in wrong position after maintenance actions on 05-08-2020": {
+        "n": 1,
+        "lead_time_hours_mean": 41.166666666666664,
+        "lead_time_hours_median": 41.166666666666664
+      }
+    }
+  }
+}

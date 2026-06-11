@@ -1,0 +1,233 @@
+{
+  "task": "CARE-Precursor (predictive: detect before operator event_start)",
+  "model": "Mahalanobis",
+  "farms": [
+    "A",
+    "B"
+  ],
+  "lead_steps": 1008,
+  "guard_steps": 144,
+  "lead_hours": 168.0,
+  "aggregation": "mean",
+  "n_datasets": 35,
+  "n_anomaly": 15,
+  "n_normal": 20,
+  "precursor_auc": 0.61,
+  "precursor_auc_ci95": [
+    0.4115,
+    0.7961
+  ],
+  "precursor_ap": 0.4807,
+  "per_dataset": [
+    {
+      "farm": "A",
+      "event_id": 68,
+      "label": "anomaly",
+      "precursor_score": 88.18797
+    },
+    {
+      "farm": "A",
+      "event_id": 22,
+      "label": "anomaly",
+      "precursor_score": 107.03178
+    },
+    {
+      "farm": "A",
+      "event_id": 72,
+      "label": "anomaly",
+      "precursor_score": 73.89969
+    },
+    {
+      "farm": "A",
+      "event_id": 73,
+      "label": "anomaly",
+      "precursor_score": 100.21821
+    },
+    {
+      "farm": "A",
+      "event_id": 0,
+      "label": "anomaly",
+      "precursor_score": 111.21781
+    },
+    {
+      "farm": "A",
+      "event_id": 26,
+      "label": "anomaly",
+      "precursor_score": 85.25125
+    },
+    {
+      "farm": "A",
+      "event_id": 40,
+      "label": "anomaly",
+      "precursor_score": 63.55308
+    },
+    {
+      "farm": "A",
+      "event_id": 42,
+      "label": "anomaly",
+      "precursor_score": 126.4023
+    },
+    {
+      "farm": "A",
+      "event_id": 10,
+      "label": "anomaly",
+      "precursor_score": 76.76203
+    },
+    {
+      "farm": "A",
+      "event_id": 25,
+      "label": "normal",
+      "precursor_score": 67.30525
+    },
+    {
+      "farm": "A",
+      "event_id": 69,
+      "label": "normal",
+      "precursor_score": 85.12413
+    },
+    {
+      "farm": "A",
+      "event_id": 13,
+      "label": "normal",
+      "precursor_score": 47.84011
+    },
+    {
+      "farm": "A",
+      "event_id": 24,
+      "label": "normal",
+      "precursor_score": 89.76449
+    },
+    {
+      "farm": "A",
+      "event_id": 3,
+      "label": "normal",
+      "precursor_score": 97.15653
+    },
+    {
+      "farm": "A",
+      "event_id": 17,
+      "label": "normal",
+      "precursor_score": 52.60694
+    },
+    {
+      "farm": "A",
+      "event_id": 38,
+      "label": "normal",
+      "precursor_score": 75.45117
+    },
+    {
+      "farm": "A",
+      "event_id": 71,
+      "label": "normal",
+      "precursor_score": 57.80417
+    },
+    {
+      "farm": "A",
+      "event_id": 14,
+      "label": "normal",
+      "precursor_score": 76.43949
+    },
+    {
+      "farm": "A",
+      "event_id": 92,
+      "label": "normal",
+      "precursor_score": 55.2935
+    },
+    {
+      "farm": "A",
+      "event_id": 51,
+      "label": "normal",
+      "precursor_score": 60.31101
+    },
+    {
+      "farm": "B",
+      "event_id": 34,
+      "label": "anomaly",
+      "precursor_score": 85.0028
+    },
+    {
+      "farm": "B",
+      "event_id": 7,
+      "label": "anomaly",
+      "precursor_score": 85.12811
+    },
+    {
+      "farm": "B",
+      "event_id": 53,
+      "label": "anomaly",
+      "precursor_score": 70.90548
+    },
+    {
+      "farm": "B",
+      "event_id": 27,
+      "label": "anomaly",
+      "precursor_score": 78.16939
+    },
+    {
+      "farm": "B",
+      "event_id": 19,
+      "label": "anomaly",
+      "precursor_score": 78.08706
+    },
+    {
+      "farm": "B",
+      "event_id": 77,
+      "label": "anomaly",
+      "precursor_score": 107.33656
+    },
+    {
+      "farm": "B",
+      "event_id": 83,
+      "label": "normal",
+      "precursor_score": 288.40673
+    },
+    {
+      "farm": "B",
+      "event_id": 52,
+      "label": "normal",
+      "precursor_score": 57.50961
+    },
+    {
+      "farm": "B",
+      "event_id": 21,
+      "label": "normal",
+      "precursor_score": 110.7123
+    },
+    {
+      "farm": "B",
+      "event_id": 2,
+      "label": "normal",
+      "precursor_score": 103.54827
+    },
+    {
+      "farm": "B",
+      "event_id": 23,
+      "label": "normal",
+      "precursor_score": 75.05892
+    },
+    {
+      "farm": "B",
+      "event_id": 87,
+      "label": "normal",
+      "precursor_score": 72.12657
+    },
+    {
+      "farm": "B",
+      "event_id": 74,
+      "label": "normal",
+      "precursor_score": 142.32767
+    },
+    {
+      "farm": "B",
+      "event_id": 86,
+      "label": "normal",
+      "precursor_score": 219.18215
+    },
+    {
+      "farm": "B",
+      "event_id": 82,
+      "label": "normal",
+      "precursor_score": 85.92113
+    }
+  ]
+}

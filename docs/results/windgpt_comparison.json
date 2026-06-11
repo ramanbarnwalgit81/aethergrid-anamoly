@@ -1,0 +1,41 @@
+{
+  "methods": [
+    {
+      "method": "v7 ensemble (VAE+LSTM+TF + Fleet-NBM)",
+      "mean_auc_event": 0.4583,
+      "mean_auc_precursor": 0.4023,
+      "mean_auc_status": 0.6361,
+      "training_mode": "trained",
+      "training_cost": "~72 min CPU, Farm-A 86-feature schema",
+      "notes": "Base ensemble; Farm-A-specific feature engineering."
+    },
+    {
+      "mean_auc_event": 0.5769,
+      "mean_auc_precursor": 0.5574,
+      "mean_auc_status": 0.6457,
+      "method": "PINN-v2 residual stacker (ours)",
+      "training_mode": "trained (LOEO)",
+      "training_cost": "~5 min CPU per LOEO fold, Farm A only",
+      "notes": "7 IEC-inspired residuals + v7 + temporal features."
+    },
+    {
+      "method": "Chronos-T5-tiny zero-shot",
+      "mean_auc_event": 0.4651,
+      "mean_auc_precursor": 0.4762,
+      "mean_auc_status": null,
+      "training_mode": "zero-shot (no CARE training)",
+      "training_cost": "9.0 h CPU for 11-event eval",
+      "notes": "8 M-param T5 pretrained on generic time series; forecast-residual anomaly score."
+    },
+    {
+      "method": "WindGPT (Chronos-Bolt + LoRA, ours)",
+      "mean_auc_event": null,
+      "mean_auc_precursor": null,
+      "mean_auc_status": null,
+      "training_mode": "LoRA fine-tuned on Penmanshiel+Kelmarsh",
+      "training_cost": "pending GPU run",
+      "notes": "Run `python -m src.benchmark.lora_finetune all` on a CUDA box to fill this row."
+    }
+  ],
+  "benchmark": "CARE Farm A anomaly events (Farm-A-only for all four methods)"
+}

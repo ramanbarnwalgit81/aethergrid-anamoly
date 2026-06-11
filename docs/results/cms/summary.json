@@ -1,0 +1,23 @@
+[
+  {
+    "model": "PCARecon",
+    "farm": "B",
+    "care_score": 0.5603,
+    "event_auc": 0.8519,
+    "event_ap": 0.7579
+  },
+  {
+    "model": "Mahalanobis",
+    "farm": "B",
+    "care_score": 0.5549,
+    "event_auc": 0.7593,
+    "event_ap": 0.7099
+  },
+  {
+    "model": "IsolationForest",
+    "farm": "B",
+    "care_score": 0.5,
+    "event_auc": 0.7037,
+    "event_ap": 0.7407
+  }
+]
