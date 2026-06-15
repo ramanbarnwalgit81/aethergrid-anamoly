@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.patches import FancyBboxPatch
 
-FIG_DIR = Path("docs/figures")
+FIG_DIR = Path("docs/paper/figures")
 
 # Color palette
 C_Q    = "#1E4D8C"   # dark blue  — decision node
@@ -31,6 +31,7 @@ C_G    = "#4A3500"   # dark gold  — best-practice
 C_S    = "#2D3748"   # near-black — start node
 C_BG   = "#FFFFFF"   # white
 C_E    = "#2D3748"   # arrow / edge color
+FS     = 1.4         # global font-size multiplier (legibility at full text width)
 
 
 # ── Drawing helpers ────────────────────────────────────────────────────────────
@@ -46,7 +47,7 @@ def _rect(ax, cx, cy, w, h, lines, fc,
     ax.add_patch(box)
     ax.text(cx, cy, "\n".join(lines),
             ha="center", va="center",
-            fontsize=fontsize, color=tc,
+            fontsize=fontsize * FS, color=tc,
             fontweight="bold", multialignment="center", zorder=4)
 
 
@@ -59,7 +60,7 @@ def _diamond(ax, cx, cy, w, h, lines, fc, fontsize=8.0, tc="white", lw=1.5):
     ax.plot(xs, ys, color=C_E, linewidth=lw, zorder=4)
     ax.text(cx, cy, "\n".join(lines),
             ha="center", va="center",
-            fontsize=fontsize, color=tc,
+            fontsize=fontsize * FS, color=tc,
             fontweight="bold", multialignment="center", zorder=5)
 
 
@@ -82,7 +83,7 @@ def _label(ax, x, y, text, side="right", fontsize=8.5):
     dx = 0.10 if side == "right" else -0.10
     ax.text(x + dx, y, text,
             ha=ha, va="center",
-            fontsize=fontsize, fontstyle="italic", color="#444444",
+            fontsize=fontsize * FS, fontstyle="italic", color="#444444",
             bbox=dict(boxstyle="round,pad=0.12", fc="white", ec="none", alpha=0.85),
             zorder=7)
 
@@ -91,9 +92,9 @@ def _label(ax, x, y, text, side="right", fontsize=8.5):
 
 def build_figure() -> plt.Figure:
     # Canvas: 13 wide × 18 tall (coordinate units == inches here)
-    fig, ax = plt.subplots(figsize=(13, 18))
+    fig, ax = plt.subplots(figsize=(13, 12.5))
     ax.set_xlim(0, 13)
-    ax.set_ylim(0, 18)
+    ax.set_ylim(0, 12.5)
     ax.set_facecolor(C_BG)
     fig.patch.set_facecolor(C_BG)
     ax.axis("off")
@@ -109,14 +110,14 @@ def build_figure() -> plt.Figure:
     XQ3 = 10.0         # Q3 diamond center
 
     # Y centres (top → bottom)
-    Y_TITLE = 17.35
-    Y_START = 16.4
-    Y_Q1    = 14.8
-    Y_Q23   = 12.5
-    Y_ROW3  = 10.0
-    Y_ROW4  =  7.7
-    Y_BEST  =  5.1
-    Y_REF   =  3.1
+    Y_TITLE = 12.0
+    Y_START = 11.2
+    Y_Q1    =  9.7
+    Y_Q23   =  7.8
+    Y_ROW3  =  5.85
+    Y_ROW4  =  3.95
+    Y_BEST  =  1.85
+    Y_REF   =  0.6
 
     # Box sizes
     DW, DH   = 4.8, 1.4    # decision diamond width/height
@@ -141,12 +142,12 @@ def build_figure() -> plt.Figure:
     ax.text(XC, Y_TITLE,
             "Practitioner Decision Tree: Selecting a Ground-Truth\n"
             "Labeling Convention for SCADA Anomaly Detection",
-            ha="center", va="center", fontsize=12.5,
+            ha="center", va="center", fontsize=12.5 * FS,
             fontweight="bold", color=C_S, multialignment="center")
 
     # ── START ──────────────────────────────────────────────────────────────────
     _rect(ax, XC, Y_START, SW, SH,
-          ["START — Label your SCADA anomaly dataset"],
+          ["START: Label your SCADA anomaly dataset"],
           C_S, fontsize=10)
 
     # ── Q1: PLC columns available? ────────────────────────────────────────────
@@ -184,7 +185,7 @@ def build_figure() -> plt.Figure:
     # ── A_PLC: USE PLC labels ─────────────────────────────────────────────────
     _rect(ax, XL, Y_ROW3, AW, AH,
           ["USE: PLC status-code labels",
-           "(status_type_id ≠ 0)",
+           "(status_type_id $\\neq$ 0)",
            "Expect high AUC.",
            "Disclose convention in paper."],
           C_A, fontsize=8)
@@ -239,8 +240,8 @@ def build_figure() -> plt.Figure:
           ["USE: Proxy labels only",
            "(rolling-score threshold",
            " or expert annotation)",
-           "High risk of label leakage",
-           "— caveat results strongly."],
+           "High risk of label leakage:",
+           "caveat results strongly."],
           C_W, fontsize=7.8)
 
     # ── Convergence arrows to BEST PRACTICE ───────────────────────────────────
@@ -255,22 +256,22 @@ def build_figure() -> plt.Figure:
 
     # ── BEST PRACTICE ─────────────────────────────────────────────────────────
     _rect(ax, XC, Y_BEST, BW, BH,
-          ["BEST PRACTICE — Report AUC under BOTH conventions + LAS-model score.",
-           "LAS-model > 0.30: CRITICAL — dual reporting mandatory; results unreliable without disclosure.",
-           "LAS-model 0.10–0.30: HIGH — flag as high ambiguity in abstract or Section II.",
+          ["BEST PRACTICE: Report AUC under BOTH conventions + LAS-model score.",
+           "LAS-model > 0.30: CRITICAL. Dual reporting mandatory; results unreliable without disclosure.",
+           "LAS-model 0.10-0.30: HIGH. Flag as high ambiguity in abstract or Section II.",
            "Mandatory: state labeling rule explicitly in every paper."],
           C_G, fontsize=8.5, lw=2.0)
 
     # ── Empirical reference panel ──────────────────────────────────────────────
     ref = (
-        "Empirical reference (this paper — CARE dataset):\n"
+        "Provisional thresholds, derived from this paper (CARE dataset):\n"
         "  Farm B: LAS-model = 0.463  →  CRITICAL   |   "
         "Farm C: LAS-model = 0.296  →  HIGH   |   "
-        "Farm A: LAS-model = 0.011  →  SAFE (null result)"
+        "Farm A: LAS-model = 0.041  →  SAFE (near-null)"
     )
     ax.text(XC, Y_REF, ref,
             ha="center", va="center",
-            fontsize=8.5, fontstyle="italic", color="#1A365D",
+            fontsize=8.5 * FS, fontstyle="italic", color="#1A365D",
             multialignment="center",
             bbox=dict(boxstyle="round,pad=0.45",
                       facecolor="#EBF8FF", edgecolor="#2B6CB0",
@@ -284,8 +285,8 @@ def build_figure() -> plt.Figure:
         mpatches.Patch(color=C_G, label="Best practice (gold standard)"),
     ]
     ax.legend(handles=handles,
-              loc="lower left", bbox_to_anchor=(0.01, 0.005),
-              fontsize=8.5, framealpha=0.95, edgecolor="#AAAAAA")
+              loc="center left", bbox_to_anchor=(0.005, 0.31),
+              fontsize=8.5 * FS, framealpha=0.95, edgecolor="#AAAAAA")
 
     fig.tight_layout(pad=0.2)
     return fig

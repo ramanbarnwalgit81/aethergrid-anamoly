@@ -37,6 +37,13 @@ def _bootstrap_care_ci(recs, n_boot=3000, seed=42):
 def fig_detectors():
     d = json.loads((RES / "benchmark_baselines.json").read_text())
     rows, level, cpd = d["rows"], d["level_scores"], d["care_per_dataset"]
+    # Merge the all-farms GDN re-evaluation so the figure carries the same
+    # detector set as Table tab:cms-detectors (same 95 datasets, same leak-free
+    # per-turbine protocol). Without this, Fig. 10 and Table 6 disagree.
+    gdn = json.loads((RES / "benchmark_GDN_ABC.json").read_text())
+    rows = rows + gdn["rows"]
+    level = {**level, **gdn["level_scores"]}
+    cpd = {**cpd, **gdn["care_per_dataset"]}
     best = {}
     for r in rows:
         m = r["model"]
@@ -54,6 +61,15 @@ def fig_detectors():
         ab, alo, ahi = bootstrap_auc(labs, scs)
         models.append(m); care.append(b); care_lo.append(lo); care_hi.append(hi)
         auc.append(ab); auc_lo.append(alo); auc_hi.append(ahi)
+    # TemporalNBM (ours) ships only summary rows (no per-dataset records), so it
+    # is added as a CI-less point, matching its row in Table tab:cms-detectors.
+    tabc = json.loads((RES / "benchmark_ABC.json").read_text())
+    tnbm = max((r for r in tabc["rows"] if r["model"] == "TemporalNBM"),
+               key=lambda r: r["agg_CARE"], default=None)
+    if tnbm is not None:
+        models.append("TemporalNBM")
+        care.append(tnbm["agg_CARE"]); care_lo.append(tnbm["agg_CARE"]); care_hi.append(tnbm["agg_CARE"])
+        auc.append(tnbm["agg_AUC"]); auc_lo.append(tnbm["agg_AUC"]); auc_hi.append(tnbm["agg_AUC"])
     order = np.argsort(care)
     models = [models[i] for i in order]
     def srt(x): return [x[i] for i in order]
@@ -101,7 +117,7 @@ def fig_labelgap():
     ax.text(2.0, (med[0] + med[2]) / 2, f"median gap\n{med[0]-med[2]:.2f}",
             color="#9b2226", fontsize=8, ha="center",
             bbox=dict(boxstyle="round", fc="white", ec="#9b2226", alpha=0.9))
-    ax.set_title("Same scores, three labels (Mahalanobis, 42 events)", fontsize=9)
+    ax.set_title("Same scores, three labels (Mahalanobis, 39 events)", fontsize=9)
     fig.tight_layout()
     _save(fig, "fig_cms_labelgap")
 

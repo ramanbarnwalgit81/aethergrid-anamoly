@@ -179,7 +179,6 @@ def build_table():
         extract_v7_base(),
         extract_pinn_v2(),
         extract_chronos_zs(),
-        extract_windgpt_lora(),
     ]
     return rows
 
@@ -190,30 +189,38 @@ def make_bar_chart(rows):
 
     fig, ax = plt.subplots(figsize=(7.0, 3.4))
     x = np.arange(len(labels))
-    width = 0.2
-    colours = ["#7f7f7f", "#1f77b4", "#2ca02c", "#d62728"]
+    n = len(rows)
+    width = 0.8 / n
+    colours = ["#7f7f7f", "#1f77b4", "#2ca02c", "#8c564b"]
 
     for i, r in enumerate(rows):
         vals = [r["mean_auc_event"], r["mean_auc_precursor"], r["mean_auc_status"]]
-        vals = [v if v is not None else 0.0 for v in vals]
-        ax.bar(x + i * width, vals, width, label=method_names[i],
-                color=colours[i], edgecolor="black", linewidth=0.5)
+        labelled = False
+        for j, v in enumerate(vals):
+            xpos = x[j] + i * width
+            lbl = method_names[i] if not labelled else None
+            if v is not None:
+                ax.bar(xpos, v, width, label=lbl,
+                       color=colours[i % len(colours)], edgecolor="black", linewidth=0.5)
+                labelled = True
+            else:
+                # Explicit 'not scored' placeholder: a faint hatched ghost slot plus
+                # an 'n/a' label, so the empty position reads as an intentional
+                # omission (this method is not evaluated on that label) rather than a
+                # missing or mis-rendered bar.
+                ax.bar(xpos, 1.0, width, label=lbl, facecolor="none",
+                       edgecolor="gray", linewidth=0.6, hatch="////", alpha=0.30)
+                ax.text(xpos, 0.5, "n/a", rotation=90, ha="center", va="center",
+                        fontsize=7.5, color="gray", style="italic")
+                labelled = True
 
-    ax.set_xticks(x + 1.5 * width)
+    ax.set_xticks(x + (n - 1) * width / 2)
     ax.set_xticklabels(labels)
     ax.set_ylabel("Mean per-event AUC")
     ax.set_ylim(0, 1)
-    ax.set_title("CARE Farm A: CPU-only vs GPU-fine-tuned methods")
+    ax.set_title("Method comparison on CARE Farm A (mean per-event AUC)")
     ax.legend(loc="upper left", frameon=True, fontsize=7.5)
     ax.grid(axis="y", alpha=0.3, lw=0.5)
-    # Mark any "pending" columns with a hashed bar
-    for i, r in enumerate(rows):
-        vals = [r["mean_auc_event"], r["mean_auc_precursor"], r["mean_auc_status"]]
-        for j, v in enumerate(vals):
-            if v is None:
-                ax.bar(x[j] + i * width, 0.02, width,
-                        color="white", hatch="///",
-                        edgecolor=colours[i], linewidth=0.8)
     fig.tight_layout()
     fig.savefig(FIG_DIR / "fig4_method_bar.pdf")
     fig.savefig(FIG_DIR / "fig4_method_bar.png")

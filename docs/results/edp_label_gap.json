@@ -1,0 +1,22 @@
+{
+  "dataset": "EDP open data (Portugal onshore, 5 turbines, 2016-2017)",
+  "n_turbines_scored": 5,
+  "W_event_hours": 168,
+  "abnormal_alarm_regex": "\\bHot\\b.{0,40}0kW|timeout|emergency|\\btrip\\b|\\berror\\b|\\bfault\\b|\\balarm\\b",
+  "auc_status": {
+    "mean": 0.7734787633822113,
+    "ci": [
+      0.75954455081866,
+      0.7906749055084994
+    ]
+  },
+  "auc_event": {
+    "mean": 0.5892910152556512,
+    "ci": [
+      0.5634024358758047,
+      0.619763977915287
+    ]
+  },
+  "gap_status_minus_event": 0.18418774812656014,
+  "las_data_mean_jaccard": 0.9775123299825852
+}

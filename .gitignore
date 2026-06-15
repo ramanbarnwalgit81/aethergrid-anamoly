@@ -11,3 +11,12 @@ logs/
 data/real_scada/
 *.egg-info/
 *.zip
+
+# scratch / internal investigation artifacts (excluded from the public release)
+docs/results/_*
+docs/results/cms/_*
+*.v4orig.*
+data/benchmark/harmonized/
+data/benchmark/results/
+data/benchmark/windgpt/
+data/benchmark/leaderboard.csv

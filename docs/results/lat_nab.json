@@ -313,8 +313,8 @@
     "mean_las_rank": 0.0068
   },
   "care_farm_a_reference": {
-    "las_data": 0.985,
-    "las_model": 0.102,
-    "las_rank": 0.319
+    "las_data": 0.778,
+    "las_model": 0.082,
+    "las_rank": 0.311
   }
 }

@@ -1,84 +1,60 @@
 {
   "aggregate": {
     "label": "y_status",
-    "n_events": 9,
-    "mean_base_v7_auc": 0.6361,
-    "mean_xgb_stacker_auc": 0.5889,
-    "median_delta_auc": -0.0549,
-    "pooled_xgb_stacker_auc": 0.5301
+    "n_events": 6,
+    "mean_base_v7_auc": 0.53,
+    "mean_xgb_stacker_auc": 0.557,
+    "median_delta_auc": -0.009,
+    "pooled_xgb_stacker_auc": 0.5514
   },
   "per_event": [
-    {
-      "event_id": 68,
-      "fault_type": "Transformer failure",
-      "n_test": 2295,
-      "base_v7_auc": 0.5314,
-      "xgb_stacker_auc": 0.4765,
-      "delta_auc": -0.0549
-    },
-    {
-      "event_id": 22,
-      "fault_type": "Hydraulic group",
-      "n_test": 1148,
-      "base_v7_auc": 0.529,
-      "xgb_stacker_auc": 0.5677,
-      "delta_auc": 0.0387
-    },
     {
       "event_id": 72,
       "fault_type": "Gearbox failure",
       "n_test": 2017,
-      "base_v7_auc": 0.684,
-      "xgb_stacker_auc": 0.5875,
-      "delta_auc": -0.0965
-    },
-    {
-      "event_id": 73,
-      "fault_type": "Hydraulic group",
-      "n_test": 1729,
-      "base_v7_auc": 0.6098,
-      "xgb_stacker_auc": 0.5925,
-      "delta_auc": -0.0173
+      "base_v7_auc": 0.4264,
+      "xgb_stacker_auc": 0.5788,
+      "delta_auc": 0.1524
     },
     {
       "event_id": 0,
       "fault_type": "Generator bearing failure",
       "n_test": 2838,
-      "base_v7_auc": 0.8354,
-      "xgb_stacker_auc": 0.8079,
-      "delta_auc": -0.0275
+      "base_v7_auc": 0.6794,
+      "xgb_stacker_auc": 0.6822,
+      "delta_auc": 0.0028
     },
     {
       "event_id": 26,
       "fault_type": "Hydraulic group",
       "n_test": 1441,
-      "base_v7_auc": 0.6319,
-      "xgb_stacker_auc": 0.507,
-      "delta_auc": -0.1249
+      "base_v7_auc": 0.175,
+      "xgb_stacker_auc": 0.1413,
+      "delta_auc": -0.0337
     },
     {
       "event_id": 40,
       "fault_type": "Generator bearing failure",
       "n_test": 4939,
-      "base_v7_auc": 0.6706,
-      "xgb_stacker_auc": 0.6151,
-      "delta_auc": -0.0555
+      "base_v7_auc": 0.8722,
+      "xgb_stacker_auc": 0.8513,
+      "delta_auc": -0.0209
     },
     {
       "event_id": 42,
       "fault_type": "Hydraulic group",
       "n_test": 1583,
-      "base_v7_auc": 0.4617,
-      "xgb_stacker_auc": 0.3965,
-      "delta_auc": -0.0652
+      "base_v7_auc": 0.6825,
+      "xgb_stacker_auc": 0.4051,
+      "delta_auc": -0.2773
     },
     {
-      "event_id": 10,
-      "fault_type": "Gearbox failure",
-      "n_test": 1269,
-      "base_v7_auc": 0.7713,
-      "xgb_stacker_auc": 0.7492,
-      "delta_auc": -0.0221
+      "event_id": 51,
+      "fault_type": "Gearbox bearings damaged",
+      "n_test": 2393,
+      "base_v7_auc": 0.3445,
+      "xgb_stacker_auc": 0.6836,
+      "delta_auc": 0.3391
     }
   ]
 }

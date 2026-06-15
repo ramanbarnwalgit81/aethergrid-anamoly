@@ -3,37 +3,37 @@
   "sweep": [
     {
       "scale": 0.8,
-      "mean_stacker_auc": 0.5798,
-      "mean_delta_auc": 0.1215,
-      "pooled_auc": 0.5753
+      "mean_stacker_auc": 0.557,
+      "mean_delta_auc": 0.1441,
+      "pooled_auc": 0.5599
     },
     {
       "scale": 0.9,
-      "mean_stacker_auc": 0.5647,
-      "mean_delta_auc": 0.1064,
-      "pooled_auc": 0.5675
+      "mean_stacker_auc": 0.549,
+      "mean_delta_auc": 0.1361,
+      "pooled_auc": 0.5512
     },
     {
       "scale": 1.0,
-      "mean_stacker_auc": 0.5769,
-      "mean_delta_auc": 0.1187,
-      "pooled_auc": 0.5794
+      "mean_stacker_auc": 0.5624,
+      "mean_delta_auc": 0.1496,
+      "pooled_auc": 0.5579
     },
     {
       "scale": 1.1,
-      "mean_stacker_auc": 0.576,
-      "mean_delta_auc": 0.1178,
-      "pooled_auc": 0.5764
+      "mean_stacker_auc": 0.56,
+      "mean_delta_auc": 0.1472,
+      "pooled_auc": 0.5562
     },
     {
       "scale": 1.2,
-      "mean_stacker_auc": 0.58,
-      "mean_delta_auc": 0.1218,
-      "pooled_auc": 0.583
+      "mean_stacker_auc": 0.5603,
+      "mean_delta_auc": 0.1475,
+      "pooled_auc": 0.5578
     }
   ],
-  "auc_min": 0.5647,
-  "auc_max": 0.58,
-  "auc_range": 0.0153,
-  "baseline_auc_c1": 0.5769
+  "auc_min": 0.549,
+  "auc_max": 0.5624,
+  "auc_range": 0.0134,
+  "baseline_auc_c1": 0.5624
 }

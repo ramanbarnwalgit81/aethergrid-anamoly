@@ -1,559 +1,609 @@
 {
   "farm_A": {
-    "n_events": 11,
-    "mean_las_data": 0.985,
-    "mean_las_model": 0.1037,
-    "mean_las_rank": 0.3172,
+    "n_events": 12,
+    "mean_las_data": 0.7784,
+    "mean_las_model": 0.0762,
+    "mean_las_rank": 0.3093,
     "per_event": [
       {
-        "las_data": 1.0,
-        "las_model": 0.0475,
-        "las_model_ci_lo": 0.0204,
-        "las_model_ci_hi": 0.0851,
+        "las_data": 0.1224,
+        "las_model": 0.0253,
+        "las_model_ci_lo": 0.0129,
+        "las_model_ci_hi": 0.0354,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.495,
+        "las_rank": 0.3682,
         "ambiguity_level": "SAFE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.5452,
-            "auc_B": 0.4855,
-            "delta": 0.0597
+            "auc_B": 0.5861,
+            "delta": 0.0409
           },
           {
             "detector": "IF_1",
             "auc_A": 0.5376,
-            "auc_B": 0.5429,
-            "delta": 0.0053
+            "auc_B": 0.5731,
+            "delta": 0.0355
           },
           {
             "detector": "IF_2",
             "auc_A": 0.5311,
-            "auc_B": 0.5164,
-            "delta": 0.0146
+            "auc_B": 0.568,
+            "delta": 0.0369
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.5578,
-            "auc_B": 0.4308,
-            "delta": 0.1271
+            "auc_B": 0.5738,
+            "delta": 0.016
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.5,
-            "auc_B": 0.4493,
-            "delta": 0.0507
+            "auc_B": 0.501,
+            "delta": 0.001
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.5284,
-            "auc_B": 0.5005,
-            "delta": 0.0278
+            "auc_B": 0.5071,
+            "delta": 0.0213
           }
         ],
         "event_id": 68,
         "fault": "Transformer failure"
       },
       {
-        "las_data": 0.9999,
-        "las_model": 0.1529,
-        "las_model_ci_lo": 0.0699,
-        "las_model_ci_hi": 0.2334,
+        "las_data": 0.8912,
+        "las_model": 0.0884,
+        "las_model_ci_lo": 0.046,
+        "las_model_ci_hi": 0.1278,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.3014,
-        "ambiguity_level": "HIGH",
+        "las_rank": 0.1283,
+        "ambiguity_level": "MODERATE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.74,
-            "auc_B": 0.494,
-            "delta": 0.246
+            "auc_B": 0.5922,
+            "delta": 0.1479
           },
           {
             "detector": "IF_1",
             "auc_A": 0.7024,
-            "auc_B": 0.4779,
-            "delta": 0.2244
+            "auc_B": 0.5669,
+            "delta": 0.1355
           },
           {
             "detector": "IF_2",
             "auc_A": 0.6989,
-            "auc_B": 0.4226,
-            "delta": 0.2763
+            "auc_B": 0.5656,
+            "delta": 0.1332
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.5517,
-            "auc_B": 0.4289,
-            "delta": 0.1228
+            "auc_B": 0.4851,
+            "delta": 0.0666
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.5311,
-            "auc_B": 0.5341,
-            "delta": 0.0029
+            "auc_B": 0.5167,
+            "delta": 0.0144
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.4485,
-            "auc_B": 0.4935,
-            "delta": 0.0451
+            "auc_B": 0.4812,
+            "delta": 0.0328
           }
         ],
         "event_id": 22,
         "fault": "Hydraulic group"
       },
       {
-        "las_data": 0.9999,
-        "las_model": 0.1062,
-        "las_model_ci_lo": 0.0748,
-        "las_model_ci_hi": 0.1485,
+        "las_data": 0.8606,
+        "las_model": 0.071,
+        "las_model_ci_lo": 0.0467,
+        "las_model_ci_hi": 0.1032,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.2762,
-        "ambiguity_level": "HIGH",
+        "las_rank": 0.2684,
+        "ambiguity_level": "MODERATE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.4914,
-            "auc_B": 0.6101,
-            "delta": 0.1186
+            "auc_B": 0.5443,
+            "delta": 0.0529
           },
           {
             "detector": "IF_1",
             "auc_A": 0.4769,
-            "auc_B": 0.5614,
-            "delta": 0.0845
+            "auc_B": 0.5267,
+            "delta": 0.0498
           },
           {
             "detector": "IF_2",
             "auc_A": 0.472,
-            "auc_B": 0.569,
-            "delta": 0.097
+            "auc_B": 0.5196,
+            "delta": 0.0476
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.3583,
-            "auc_B": 0.4258,
-            "delta": 0.0674
+            "auc_B": 0.4509,
+            "delta": 0.0926
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.3465,
-            "auc_B": 0.5507,
-            "delta": 0.2042
+            "auc_B": 0.4896,
+            "delta": 0.1431
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.4147,
-            "auc_B": 0.4799,
-            "delta": 0.0652
+            "auc_B": 0.4546,
+            "delta": 0.04
           }
         ],
         "event_id": 72,
         "fault": "Gearbox failure"
       },
       {
-        "las_data": 0.9999,
-        "las_model": 0.0756,
-        "las_model_ci_lo": 0.0378,
-        "las_model_ci_hi": 0.108,
+        "las_data": 0.8599,
+        "las_model": 0.0454,
+        "las_model_ci_lo": 0.036,
+        "las_model_ci_hi": 0.0542,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.2906,
-        "ambiguity_level": "MODERATE",
+        "las_rank": 0.2044,
+        "ambiguity_level": "SAFE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.6705,
-            "auc_B": 0.5577,
-            "delta": 0.1128
+            "auc_B": 0.6108,
+            "delta": 0.0597
           },
           {
             "detector": "IF_1",
             "auc_A": 0.6699,
-            "auc_B": 0.5938,
-            "delta": 0.0761
+            "auc_B": 0.6116,
+            "delta": 0.0583
           },
           {
             "detector": "IF_2",
             "auc_A": 0.6385,
-            "auc_B": 0.6051,
-            "delta": 0.0334
+            "auc_B": 0.5965,
+            "delta": 0.042
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.5952,
-            "auc_B": 0.4879,
-            "delta": 0.1072
+            "auc_B": 0.5719,
+            "delta": 0.0233
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.5988,
-            "auc_B": 0.4782,
-            "delta": 0.1206
+            "auc_B": 0.5553,
+            "delta": 0.0434
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.5511,
-            "auc_B": 0.5477,
-            "delta": 0.0034
+            "auc_B": 0.5968,
+            "delta": 0.0458
           }
         ],
         "event_id": 73,
         "fault": "Hydraulic group"
       },
       {
-        "las_data": 1.0,
-        "las_model": 0.1304,
-        "las_model_ci_lo": 0.0906,
-        "las_model_ci_hi": 0.1619,
+        "las_data": 0.7298,
+        "las_model": 0.0279,
+        "las_model_ci_lo": 0.0102,
+        "las_model_ci_hi": 0.048,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.4523,
-        "ambiguity_level": "HIGH",
+        "las_rank": 0.3716,
+        "ambiguity_level": "SAFE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.712,
-            "auc_B": 0.5573,
-            "delta": 0.1547
+            "auc_B": 0.6943,
+            "delta": 0.0177
           },
           {
             "detector": "IF_1",
             "auc_A": 0.6842,
-            "auc_B": 0.561,
-            "delta": 0.1232
+            "auc_B": 0.665,
+            "delta": 0.0191
           },
           {
             "detector": "IF_2",
             "auc_A": 0.6991,
-            "auc_B": 0.5538,
-            "delta": 0.1453
+            "auc_B": 0.6878,
+            "delta": 0.0113
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.6502,
-            "auc_B": 0.4583,
-            "delta": 0.1919
+            "auc_B": 0.5985,
+            "delta": 0.0517
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.6018,
-            "auc_B": 0.4746,
-            "delta": 0.1272
+            "auc_B": 0.6026,
+            "delta": 0.0008
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.4905,
-            "auc_B": 0.5306,
-            "delta": 0.0401
+            "auc_B": 0.557,
+            "delta": 0.0665
           }
         ],
         "event_id": 0,
         "fault": "Generator bearing failure"
       },
       {
-        "las_data": 0.9999,
-        "las_model": 0.1488,
-        "las_model_ci_lo": 0.0823,
-        "las_model_ci_hi": 0.2104,
+        "las_data": 0.8654,
+        "las_model": 0.1373,
+        "las_model_ci_lo": 0.0759,
+        "las_model_ci_hi": 0.191,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.2349,
+        "las_rank": 0.3394,
         "ambiguity_level": "HIGH",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.409,
-            "auc_B": 0.6538,
-            "delta": 0.2448
+            "auc_B": 0.6298,
+            "delta": 0.2208
           },
           {
             "detector": "IF_1",
             "auc_A": 0.4161,
-            "auc_B": 0.6584,
-            "delta": 0.2423
+            "auc_B": 0.6243,
+            "delta": 0.2082
           },
           {
             "detector": "IF_2",
             "auc_A": 0.4254,
-            "auc_B": 0.6196,
-            "delta": 0.1942
+            "auc_B": 0.6269,
+            "delta": 0.2016
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.4961,
-            "auc_B": 0.4798,
-            "delta": 0.0163
+            "auc_B": 0.5759,
+            "delta": 0.0799
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.5762,
-            "auc_B": 0.4823,
-            "delta": 0.0939
+            "auc_B": 0.5969,
+            "delta": 0.0207
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.416,
-            "auc_B": 0.5172,
-            "delta": 0.1012
+            "auc_B": 0.5087,
+            "delta": 0.0926
           }
         ],
         "event_id": 26,
         "fault": "Hydraulic group"
       },
       {
-        "las_data": 0.9701,
-        "las_model": 0.1647,
-        "las_model_ci_lo": 0.1032,
-        "las_model_ci_hi": 0.2261,
+        "las_data": 0.8464,
+        "las_model": 0.0612,
+        "las_model_ci_lo": 0.0228,
+        "las_model_ci_hi": 0.1093,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.7479,
-        "ambiguity_level": "HIGH",
+        "las_rank": 0.641,
+        "ambiguity_level": "MODERATE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.6603,
-            "auc_B": 0.4616,
-            "delta": 0.1986
+            "auc_B": 0.6342,
+            "delta": 0.0261
           },
           {
             "detector": "IF_1",
             "auc_A": 0.6628,
-            "auc_B": 0.4933,
-            "delta": 0.1695
+            "auc_B": 0.6198,
+            "delta": 0.0429
           },
           {
             "detector": "IF_2",
             "auc_A": 0.6596,
-            "auc_B": 0.4555,
-            "delta": 0.2041
+            "auc_B": 0.6321,
+            "delta": 0.0275
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.7005,
-            "auc_B": 0.4103,
-            "delta": 0.2902
+            "auc_B": 0.5394,
+            "delta": 0.1611
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.5488,
-            "auc_B": 0.5201,
-            "delta": 0.0287
+            "auc_B": 0.543,
+            "delta": 0.0058
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.3774,
-            "auc_B": 0.4744,
-            "delta": 0.097
+            "auc_B": 0.4812,
+            "delta": 0.1038
           }
         ],
         "event_id": 40,
         "fault": "Generator bearing failure"
       },
       {
-        "las_data": 0.9999,
-        "las_model": 0.1141,
-        "las_model_ci_lo": 0.0811,
-        "las_model_ci_hi": 0.1523,
+        "las_data": 0.8763,
+        "las_model": 0.1453,
+        "las_model_ci_lo": 0.1185,
+        "las_model_ci_hi": 0.1676,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.2307,
+        "las_rank": 0.2845,
         "ambiguity_level": "HIGH",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.456,
-            "auc_B": 0.56,
-            "delta": 0.104
+            "auc_B": 0.6194,
+            "delta": 0.1634
           },
           {
             "detector": "IF_1",
             "auc_A": 0.4367,
-            "auc_B": 0.5824,
-            "delta": 0.1457
+            "auc_B": 0.6068,
+            "delta": 0.17
           },
           {
             "detector": "IF_2",
             "auc_A": 0.4282,
-            "auc_B": 0.5332,
-            "delta": 0.105
+            "auc_B": 0.6015,
+            "delta": 0.1734
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.4887,
-            "auc_B": 0.561,
-            "delta": 0.0722
+            "auc_B": 0.6193,
+            "delta": 0.1306
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.4808,
-            "auc_B": 0.5414,
-            "delta": 0.0606
+            "auc_B": 0.563,
+            "delta": 0.0823
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.6359,
-            "auc_B": 0.4386,
-            "delta": 0.1973
+            "auc_B": 0.4839,
+            "delta": 0.152
           }
         ],
         "event_id": 42,
         "fault": "Hydraulic group"
       },
       {
-        "las_data": 0.9999,
-        "las_model": 0.0658,
-        "las_model_ci_lo": 0.0299,
-        "las_model_ci_hi": 0.0997,
+        "las_data": 0.8835,
+        "las_model": 0.0805,
+        "las_model_ci_lo": 0.0526,
+        "las_model_ci_hi": 0.111,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.2174,
+        "las_rank": 0.2234,
         "ambiguity_level": "MODERATE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.5486,
-            "auc_B": 0.542,
-            "delta": 0.0066
+            "auc_B": 0.5902,
+            "delta": 0.0416
           },
           {
             "detector": "IF_1",
             "auc_A": 0.4928,
-            "auc_B": 0.5991,
-            "delta": 0.1063
+            "auc_B": 0.5877,
+            "delta": 0.095
           },
           {
             "detector": "IF_2",
             "auc_A": 0.5273,
-            "auc_B": 0.5275,
-            "delta": 0.0002
+            "auc_B": 0.5797,
+            "delta": 0.0525
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.4359,
-            "auc_B": 0.5376,
-            "delta": 0.1017
+            "auc_B": 0.5696,
+            "delta": 0.1337
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.4435,
-            "auc_B": 0.5463,
-            "delta": 0.1028
+            "auc_B": 0.5612,
+            "delta": 0.1178
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.5314,
-            "auc_B": 0.4542,
-            "delta": 0.0772
+            "auc_B": 0.4889,
+            "delta": 0.0425
           }
         ],
         "event_id": 10,
         "fault": "Gearbox failure"
       },
       {
-        "las_data": 0.9271,
-        "las_model": 0.0886,
-        "las_model_ci_lo": 0.0244,
-        "las_model_ci_hi": 0.1579,
+        "las_data": 0.7725,
+        "las_model": 0.1171,
+        "las_model_ci_lo": 0.098,
+        "las_model_ci_hi": 0.1359,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.1219,
-        "ambiguity_level": "MODERATE",
+        "las_rank": 0.2528,
+        "ambiguity_level": "HIGH",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.5935,
-            "auc_B": 0.5863,
-            "delta": 0.0072
+            "auc_B": 0.4677,
+            "delta": 0.1258
           },
           {
             "detector": "IF_1",
             "auc_A": 0.5994,
-            "auc_B": 0.602,
-            "delta": 0.0026
+            "auc_B": 0.4676,
+            "delta": 0.1318
           },
           {
             "detector": "IF_2",
             "auc_A": 0.5758,
-            "auc_B": 0.6358,
-            "delta": 0.06
+            "auc_B": 0.4845,
+            "delta": 0.0913
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.5892,
-            "auc_B": 0.3835,
-            "delta": 0.2056
+            "auc_B": 0.4337,
+            "delta": 0.1555
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.5846,
-            "auc_B": 0.5225,
-            "delta": 0.0622
+            "auc_B": 0.4977,
+            "delta": 0.0869
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.3578,
-            "auc_B": 0.5517,
-            "delta": 0.1939
+            "auc_B": 0.4695,
+            "delta": 0.1117
           }
         ],
         "event_id": 45,
         "fault": "Hydraulic group"
       },
       {
-        "las_data": 0.9382,
-        "las_model": 0.0457,
-        "las_model_ci_lo": 0.022,
-        "las_model_ci_hi": 0.0746,
+        "las_data": 0.8568,
+        "las_model": 0.0427,
+        "las_model_ci_lo": 0.0344,
+        "las_model_ci_hi": 0.051,
         "las_model_n_detectors": 6,
         "las_model_n_boot": 1000,
-        "las_rank": 0.121,
+        "las_rank": 0.2142,
         "ambiguity_level": "SAFE",
         "per_detector": [
           {
             "detector": "IF_0",
             "auc_A": 0.5365,
-            "auc_B": 0.5788,
-            "delta": 0.0423
+            "auc_B": 0.4787,
+            "delta": 0.0579
           },
           {
             "detector": "IF_1",
             "auc_A": 0.5165,
-            "auc_B": 0.5745,
-            "delta": 0.0581
+            "auc_B": 0.4755,
+            "delta": 0.0409
           },
           {
             "detector": "IF_2",
             "auc_A": 0.5326,
-            "auc_B": 0.564,
-            "delta": 0.0314
+            "auc_B": 0.4809,
+            "delta": 0.0516
           },
           {
             "detector": "OCSVM",
             "auc_A": 0.4896,
-            "auc_B": 0.3764,
-            "delta": 0.1132
+            "auc_B": 0.4482,
+            "delta": 0.0414
           },
           {
             "detector": "PCA_recon",
             "auc_A": 0.5211,
-            "auc_B": 0.5289,
-            "delta": 0.0077
+            "auc_B": 0.4965,
+            "delta": 0.0247
           },
           {
             "detector": "MAD_roll",
             "auc_A": 0.5259,
-            "auc_B": 0.5473,
-            "delta": 0.0214
+            "auc_B": 0.4863,
+            "delta": 0.0396
           }
         ],
         "event_id": 84,
         "fault": "Hydraulic group"
+      },
+      {
+        "las_data": 0.7763,
+        "las_model": 0.0727,
+        "las_model_ci_lo": 0.0531,
+        "las_model_ci_hi": 0.0859,
+        "las_model_n_detectors": 6,
+        "las_model_n_boot": 1000,
+        "las_rank": 0.4156,
+        "ambiguity_level": "MODERATE",
+        "per_detector": [
+          {
+            "detector": "IF_0",
+            "auc_A": 0.438,
+            "auc_B": 0.521,
+            "delta": 0.0831
+          },
+          {
+            "detector": "IF_1",
+            "auc_A": 0.4582,
+            "auc_B": 0.5282,
+            "delta": 0.07
+          },
+          {
+            "detector": "IF_2",
+            "auc_A": 0.4347,
+            "auc_B": 0.5235,
+            "delta": 0.0888
+          },
+          {
+            "detector": "OCSVM",
+            "auc_A": 0.3651,
+            "auc_B": 0.4483,
+            "delta": 0.0832
+          },
+          {
+            "detector": "PCA_recon",
+            "auc_A": 0.4,
+            "auc_B": 0.4859,
+            "delta": 0.0859
+          },
+          {
+            "detector": "MAD_roll",
+            "auc_A": 0.48,
+            "auc_B": 0.4546,
+            "delta": 0.0255
+          }
+        ],
+        "event_id": 51,
+        "fault": "Gearbox bearings damaged"
       }
     ]
   },

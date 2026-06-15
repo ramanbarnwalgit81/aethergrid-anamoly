@@ -10,7 +10,7 @@ contains the event. The official protocol is: fit a Normal-Behavior Model on the
 *event* level across all datasets in a farm.
 
 Unlike the legacy adapter, this loader:
-  * keeps ALL numeric sensor features (84 / 255 / 955 for farms A / B / C),
+  * keeps ALL numeric sensor features (81 / 252 / 952 for farms A / B / C),
   * preserves the shipped ``train_test`` split and ``status_type_id``,
   * locates the labelled event window via the ``id`` column (not positional
     iloc), and
@@ -19,6 +19,7 @@ Unlike the legacy adapter, this loader:
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from functools import cached_property
 from pathlib import Path
@@ -27,7 +28,7 @@ from typing import Iterator, List, Optional
 import numpy as np
 import pandas as pd
 
-CARE_BASE = Path("data/real_scada/care/extracted")
+CARE_BASE = Path(os.environ.get("CARE_BASE", "data/real_scada/care/extracted"))
 
 # Columns present in every CARE file that are NOT sensor features.
 META_COLS = ["time_stamp", "asset_id", "id", "train_test", "status_type_id"]
@@ -42,7 +43,10 @@ FARMS = ["A", "B", "C"]
 
 
 def _farm_dir(farm: str) -> Path:
-    return CARE_BASE / f"Wind Farm {farm}" / f"Wind Farm {farm}"
+    # v2/v4 ship a doubled "Wind Farm X/Wind Farm X" path; v6 ships a single
+    # "Wind Farm X". Support both so CARE_BASE can point at either layout.
+    doubled = CARE_BASE / f"Wind Farm {farm}" / f"Wind Farm {farm}"
+    return doubled if doubled.exists() else CARE_BASE / f"Wind Farm {farm}"
 
 
 @dataclass

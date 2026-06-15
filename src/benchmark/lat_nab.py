@@ -228,8 +228,8 @@ def main():
     print(f"  mean LAS_model = {aggregate['mean_las_model']}")
     print(f"  mean LAS_rank  = {aggregate['mean_las_rank']}")
     print()
-    print(f"CARE Farm A reference (from paper): LAS_data=0.985, "
-          f"LAS_model=0.102, LAS_rank=0.319")
+    print(f"CARE Farm A reference (from paper, v6): LAS_data=0.778, "
+          f"LAS_model=0.082, LAS_rank=0.311")
 
     out = {
         "benchmark": "Numenta Anomaly Benchmark (NAB)",
@@ -238,7 +238,7 @@ def main():
         "subset_full_lat": subset_results,
         "aggregate_subset": aggregate,
         "care_farm_a_reference": {
-            "las_data": 0.985, "las_model": 0.102, "las_rank": 0.319,
+            "las_data": 0.778, "las_model": 0.082, "las_rank": 0.311,
         },
     }
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,192 @@
+{
+  "dataset": "EDP open data (Portugal onshore, 5 turbines, 2016-2017)",
+  "abnormal_alarm_regex": "\\bHot\\b.{0,40}0kW|timeout|emergency|\\btrip\\b|\\berror\\b|\\bfault\\b|\\balarm\\b",
+  "W_sweep": {
+    "W_24h": {
+      "W_event_hours": 24,
+      "n_turbines_scored": 5,
+      "auc_status": {
+        "mean": 0.7705978216792122,
+        "ci": [
+          0.7579619358684708,
+          0.7862079855848411
+        ]
+      },
+      "auc_event": {
+        "mean": 0.7091565989633136,
+        "ci": [
+          0.6573082825199072,
+          0.7561638120028853
+        ]
+      },
+      "gap_status_minus_event": 0.06144122271589858,
+      "las_data_mean_jaccard": 0.9806420823460013,
+      "per_turbine": [
+        {
+          "turbine": "T01",
+          "n_event": 289,
+          "n_status": 1929,
+          "auc_status": 0.7985942131129866,
+          "auc_event": 0.7422667651882775,
+          "jaccard": 1.0
+        },
+        {
+          "turbine": "T06",
+          "n_event": 851,
+          "n_status": 1972,
+          "auc_status": 0.7779505005660775,
+          "auc_event": 0.7356103496828073,
+          "jaccard": 0.9928647877274349
+        },
+        {
+          "turbine": "T07",
+          "n_event": 865,
+          "n_status": 1858,
+          "auc_status": 0.7630791100916405,
+          "auc_event": 0.7803375899775321,
+          "jaccard": 0.9801498127340824
+        },
+        {
+          "turbine": "T09",
+          "n_event": 701,
+          "n_status": 2457,
+          "auc_status": 0.7607176382582221,
+          "auc_event": 0.628353178721654,
+          "jaccard": 0.9716704656463693
+        },
+        {
+          "turbine": "T11",
+          "n_event": 429,
+          "n_status": 1605,
+          "auc_status": 0.7526476463671344,
+          "auc_event": 0.6592151112462971,
+          "jaccard": 0.9585253456221198
+        }
+      ]
+    },
+    "W_48h": {
+      "W_event_hours": 48,
+      "n_turbines_scored": 5,
+      "auc_status": {
+        "mean": 0.7717258368261376,
+        "ci": [
+          0.7585322366724565,
+          0.788151860542522
+        ]
+      },
+      "auc_event": {
+        "mean": 0.6412623413673636,
+        "ci": [
+          0.5836275795930247,
+          0.6982090813111672
+        ]
+      },
+      "gap_status_minus_event": 0.130463495458774,
+      "las_data_mean_jaccard": 0.9759662361521617,
+      "per_turbine": [
+        {
+          "turbine": "T01",
+          "n_event": 577,
+          "n_status": 1929,
+          "auc_status": 0.7995846331915515,
+          "auc_event": 0.7089111645844077,
+          "jaccard": 0.9907370116794201
+        },
+        {
+          "turbine": "T06",
+          "n_event": 1830,
+          "n_status": 1972,
+          "auc_status": 0.78053996594825,
+          "auc_event": 0.6746083378073399,
+          "jaccard": 0.9912443618997081
+        },
+        {
+          "turbine": "T07",
+          "n_event": 1637,
+          "n_status": 1858,
+          "auc_status": 0.7643479866194914,
+          "auc_event": 0.6993073697898405,
+          "jaccard": 0.9708480565371025
+        },
+        {
+          "turbine": "T09",
+          "n_event": 1396,
+          "n_status": 2457,
+          "auc_status": 0.7614654371897057,
+          "auc_event": 0.5758119878952029,
+          "jaccard": 0.9661926482425544
+        },
+        {
+          "turbine": "T11",
+          "n_event": 861,
+          "n_status": 1605,
+          "auc_status": 0.75269116118169,
+          "auc_event": 0.5476728467600267,
+          "jaccard": 0.9608091024020228
+        }
+      ]
+    },
+    "W_168h": {
+      "W_event_hours": 168,
+      "n_turbines_scored": 5,
+      "auc_status": {
+        "mean": 0.7734787633822113,
+        "ci": [
+          0.75954455081866,
+          0.7906749055084994
+        ]
+      },
+      "auc_event": {
+        "mean": 0.5892910152556512,
+        "ci": [
+          0.5634024358758047,
+          0.619763977915287
+        ]
+      },
+      "gap_status_minus_event": 0.18418774812656014,
+      "las_data_mean_jaccard": 0.9775123299825852,
+      "per_turbine": [
+        {
+          "turbine": "T01",
+          "n_event": 2017,
+          "n_status": 1929,
+          "auc_status": 0.8025832486180906,
+          "auc_event": 0.6416987015338227,
+          "jaccard": 0.9785141082060574
+        },
+        {
+          "turbine": "T06",
+          "n_event": 6156,
+          "n_status": 1972,
+          "auc_status": 0.7827360101021053,
+          "auc_event": 0.6081498631069441,
+          "jaccard": 0.9879218030133233
+        },
+        {
+          "turbine": "T07",
+          "n_event": 5233,
+          "n_status": 1858,
+          "auc_status": 0.7664263622884216,
+          "auc_event": 0.576200843895955,
+          "jaccard": 0.9773579463513123
+        },
+        {
+          "turbine": "T09",
+          "n_event": 4821,
+          "n_status": 2457,
+          "auc_status": 0.7654258119656087,
+          "auc_event": 0.5655739218680236,
+          "jaccard": 0.9711620016963528
+        },
+        {
+          "turbine": "T11",
+          "n_event": 3008,
+          "n_status": 1605,
+          "auc_status": 0.7502223839368307,
+          "auc_event": 0.5548317458735106,
+          "jaccard": 0.9726057906458797
+        }
+      ]
+    }
+  }
+}

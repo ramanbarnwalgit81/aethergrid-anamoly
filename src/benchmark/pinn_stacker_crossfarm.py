@@ -142,7 +142,9 @@ def load_event_test_rows(farm: str, event_id: int, n_expected: int) -> pd.DataFr
     csv = cfg["csv_dir"] / f"{event_id}.csv"
     if not csv.exists():
         return None
-    df = pd.read_csv(csv, sep=";", low_memory=False)
+    _need = {cfg["wind"], cfg["power"], "train_test"}
+    df = pd.read_csv(csv, sep=";", low_memory=False,
+                     usecols=lambda c: c in _need)
     if "train_test" in df.columns:
         df = df[df["train_test"] == "prediction"].reset_index(drop=True)
     for col in (cfg["wind"], cfg["power"]):

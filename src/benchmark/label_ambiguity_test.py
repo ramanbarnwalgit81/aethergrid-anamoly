@@ -303,7 +303,7 @@ def main():
         print(f"{r['event_id']:>4} {r['fault'][:26]:<28} {r['n_rows']:>7} "
               f"{r['las_data_jaccard']:>9.4f} "
               f"{r['las_model_mean_delta_auc']:>11.4f} "
-              f"{r['las_rank_spearman_complement']:>10.4f}")
+              f"{r['las_rank_kendall_complement']:>10.4f}")
 
     # Aggregate — CI pooled over per-event bootstrap-means
     las_model_vals = np.array([r["las_model_mean_delta_auc"] for r in results])

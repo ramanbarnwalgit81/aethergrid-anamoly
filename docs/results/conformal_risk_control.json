@@ -3,47 +3,49 @@
     "y_event": {
       "target_fpr": 0.05,
       "target_fnr": 0.2,
-      "empirical_fpr_mean": 0.15836995467418816,
-      "empirical_fnr_mean": 0.23517211038253877,
-      "n_events": 11,
+      "empirical_fpr_mean": 0.1708014341809778,
+      "empirical_fnr_mean": 0.22797719653810566,
+      "n_events": 12,
       "fpr_holds": false,
       "fnr_holds": true
     },
     "y_status": {
       "target_fpr": 0.05,
       "target_fnr": 0.2,
-      "empirical_fpr_mean": 0.03715080249087876,
-      "empirical_fnr_mean": 0.14297135367126956,
-      "n_events": 20,
-      "fpr_holds": true,
+      "empirical_fpr_mean": 0.11690522190142738,
+      "empirical_fnr_mean": 0.22970827940786034,
+      "n_events": 6,
+      "fpr_holds": false,
       "fnr_holds": true
     }
   },
   "group_conditional_by_fault": {
     "y_event": {
-      "Gearbox failure": 0.01836820586820587,
-      "Generator bearing failure": 0.6301604694257887,
-      "Hydraulic group": 0.04516968644629163,
-      "nan": 0.025004232861702023,
-      "Transformer failure": 0.10533807829181493
+      "Gearbox bearings damaged": 0.023484848484848483,
+      "Gearbox failure": 0.040481701940035274,
+      "Generator bearing failure": 0.6109110230106113,
+      "Hydraulic group": 0.05766860050096948,
+      "nan": 0.020075583179864947,
+      "Transformer failure": 0.2879327078615335
     },
     "y_status": {
-      "Gearbox failure": 0.0211899242517642,
-      "Generator bearing failure": 0.21121248475137913,
-      "Hydraulic group": 0.03601803240965493,
-      "nan": 0.010126577355741394,
-      "Transformer failure": 0.00838864788585167
+      "Gearbox bearings damaged": 0.32173913043478264,
+      "Gearbox failure": 0.08505747126436781,
+      "Generator bearing failure": 0.10847364807048449,
+      "Hydraulic group": 0.0,
+      "Transformer failure": 0.0,
+      "nan": 0.042830468590137095
     }
   },
   "acad_weighted": {
     "y_event": {
       "target_fpr": 0.05,
-      "empirical_fpr_mean": 0.2606922567621154,
+      "empirical_fpr_mean": 0.19147252303414186,
       "holds": false
     },
     "y_status": {
       "target_fpr": 0.05,
-      "empirical_fpr_mean": 0.21160393798801597,
+      "empirical_fpr_mean": 0.10204601401266526,
       "holds": false
     }
   }

@@ -1,24 +1,24 @@
 {
   "test_a_farm_b_vs_nair": {
     "claim": "Farm B AUC \u2248 Nair 0.947",
-    "pooled": 0.9446965379496208,
+    "pooled": 0.947549601791352,
     "n_anomaly_events": 6,
-    "observed_mean_event_auc": 0.9487,
+    "observed_mean_event_auc": 0.9477,
     "bootstrap_95ci_event_level": [
-      0.9293,
-      0.968
+      0.926,
+      0.9694
     ],
     "nair_claimed": 0.947,
     "nair_in_event_level_ci": true
   },
   "test_a2_farm_c_vs_nair": {
     "claim": "Farm C AUC \u2248 Nair 0.963",
-    "pooled": 0.9617595836679466,
+    "pooled": 0.9645762815849379,
     "n_anomaly_events": 27,
-    "observed_mean_event_auc": 0.9582,
+    "observed_mean_event_auc": 0.9596,
     "bootstrap_95ci_event_level": [
-      0.9439,
-      0.971
+      0.9443,
+      0.973
     ],
     "nair_claimed": 0.963,
     "nair_in_event_level_ci": true
@@ -34,38 +34,38 @@
   "test_c_pinn_v2_uplift": {
     "event_window": {
       "claim": "PINN-v2 uplift over v7 on event-window",
-      "n_events": 11,
-      "observed_mean_delta": 0.1187,
+      "n_events": 12,
+      "observed_mean_delta": 0.1496,
       "bootstrap_95ci_mean_delta": [
-        -0.0448,
-        0.2764
+        0.0295,
+        0.2661
       ],
-      "zero_in_ci": true,
-      "p_one_sided": 0.0735,
+      "zero_in_ci": false,
+      "p_one_sided": 0.0095,
       "n_boot": 2000
     },
     "care_precursor": {
       "claim": "PINN-v2 uplift over v7 on CARE-Precursor",
       "n_events": 10,
-      "observed_mean_delta": 0.1551,
+      "observed_mean_delta": 0.2086,
       "bootstrap_95ci_mean_delta": [
-        -0.0079,
-        0.3009
+        0.0431,
+        0.3766
       ],
-      "zero_in_ci": true,
-      "p_one_sided": 0.033,
+      "zero_in_ci": false,
+      "p_one_sided": 0.0065,
       "n_boot": 2000
     },
     "status": {
       "claim": "PINN-v2 uplift over v7 on status_type_id",
-      "n_events": 9,
-      "observed_mean_delta": 0.0096,
+      "n_events": 6,
+      "observed_mean_delta": 0.2964,
       "bootstrap_95ci_mean_delta": [
-        -0.1535,
-        0.1394
+        -0.1161,
+        0.673
       ],
       "zero_in_ci": true,
-      "p_one_sided": 0.4315,
+      "p_one_sided": 0.0725,
       "n_boot": 2000
     }
   }

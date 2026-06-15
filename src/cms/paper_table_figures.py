@@ -48,25 +48,35 @@ def fig_kelmarsh():
 def fig_adv():
     attacks = ["FGSM\n(eps=0.05)", "PGD\n(eps=0.10)", "Physics-constr.\n(eps=0.10)"]
     no_def = [4.2, 20.8, 12.5]
-    with_def = [0.0, 0.0, 0.0]
+    with_def = [0.0, 0.0, 0.0]   # defence blocks every non-adaptive attack
     x = np.arange(len(attacks)); w = 0.36
     fig, ax = plt.subplots(figsize=(5.2, 3.6))
     ax.bar(x - w / 2, no_def, w, label="No defence", color="#c0504d")
-    ax.bar(x + w / 2, with_def, w, label="With physics-consistency defence", color="#4f81bd")
+    # The with-defence series is all 0%, so the bars have zero height and would be
+    # invisible. Draw a short visible stub at the baseline plus an explicit "0.0%"
+    # label so the second series unambiguously reads as present-and-zero, not absent.
+    ax.bar(x + w / 2, with_def, w, label="With physics-consistency defence",
+           color="#4f81bd")
+    ax.bar(x + w / 2, [0.18] * len(with_def), w, color="#4f81bd",
+           edgecolor="#1f4e79", linewidth=0.6, zorder=2)
     for xi, v in zip(x - w / 2, no_def):
         ax.text(xi, v + 0.4, f"{v:.1f}%", ha="center", fontsize=8)
+    for xi, v in zip(x + w / 2, with_def):
+        ax.text(xi, 0.6, f"{v:.1f}%", ha="center", fontsize=8,
+                color="#1f4e79", fontweight="bold")
     ax.set_xticks(x); ax.set_xticklabels(attacks, fontsize=8)
     ax.set_ylabel("Attack success rate (%)"); ax.set_ylim(0, 24)
     ax.set_title("Adversarial robustness with/without physics defence", fontsize=9.5)
-    ax.legend(fontsize=8, loc="upper right")
+    # Legend below the axes so it never overlaps the tall PGD bar's value label.
+    ax.legend(fontsize=8, ncol=2, loc="upper center", bbox_to_anchor=(0.5, -0.22))
     ax.grid(axis="y", alpha=0.3)
     _save(fig, "fig_tbl_adv")
 
 
 def fig_pinn_v2():
     labels = ["Event-window", "CARE-Precursor", "Status-code"]
-    v7 = [0.458, 0.402, 0.636]
-    pinn = [0.577, 0.557, 0.646]
+    v7 = [0.413, 0.395, 0.431]
+    pinn = [0.562, 0.604, 0.728]
     x = np.arange(len(labels)); w = 0.36
     fig, ax = plt.subplots(figsize=(5.6, 3.7))
     b1 = ax.bar(x - w / 2, v7, w, label="v7 base ensemble", color="#a6a6a6")
@@ -76,7 +86,7 @@ def fig_pinn_v2():
         ax.text(b.get_x() + b.get_width() / 2, b.get_height() + 0.008,
                 f"{b.get_height():.3f}", ha="center", fontsize=7.5)
     ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=8.5)
-    ax.set_ylabel("Mean per-event AUC (Farm A)"); ax.set_ylim(0, 0.75)
+    ax.set_ylabel("Mean per-event AUC (Farm A)"); ax.set_ylim(0, 0.85)
     ax.set_title("PINN-v2 vs v7 base across label conventions", fontsize=9.5)
     ax.legend(fontsize=8, loc="upper left")
     ax.grid(axis="y", alpha=0.3)

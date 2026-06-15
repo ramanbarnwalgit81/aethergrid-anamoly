@@ -1,6 +1,6 @@
 """CARE-Precursor sensitivity analysis: sweep (sustained-window, horizon).
 
-For each of the 11 CARE Farm A anomaly events, sweep the two hyperparameters
+For each of the 12 CARE Farm A anomaly events (v6 labels), sweep the two hyperparameters
 of the precursor definition:
   - sustained window length: number of consecutive non-zero status_type_id
     rows required to qualify as a "sustained" operator alert (paper default: 12 rows = 2 h)
@@ -97,9 +97,11 @@ def sweep_farm_A():
 
 def main():
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    event_info = pd.read_csv(CARE_DIR / "event_info.csv", sep=";")
+    n_anom = int((event_info["event_label"] == "anomaly").sum())
     out = {
         "dataset": "CARE Farm A",
-        "n_anomaly_events": 11,
+        "n_anomaly_events": n_anom,
         "paper_default": {"sustained_window_hours": 2, "horizon_days": 30},
         "grid": sweep_farm_A(),
     }
@@ -117,7 +119,7 @@ def main():
         for hd in horizon_days_grid:
             key = f"w{wh}h_h{hd}d"
             n = out["grid"][key]["events_with_precursor"]
-            print(f"   {n:>2}/11", end="")
+            print(f"   {n:>2}/{n_anom}", end="")
         print()
     print("\n[OK] Saved: docs/results/precursor_sensitivity.json")
 

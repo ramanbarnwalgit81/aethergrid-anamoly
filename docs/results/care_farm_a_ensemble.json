@@ -1,0 +1,219 @@
+{
+  "method": "Ensemble Farm A, status_type_id label",
+  "n_features": 81,
+  "n_events": 22,
+  "ensemble_weights": {
+    "vae": 0.0034814859254962372,
+    "lstm": 0.0018517742750620932,
+    "transformer": 0.9946667397994416
+  },
+  "mean_auc_status": 0.43113110640227226,
+  "mean_auc_event": 0.4128556629727671,
+  "mean_auc_precursor": 0.3949270504455826,
+  "pooled_auc_status": 0.612649679443054,
+  "pooled_auc_event": 0.5721774832020241,
+  "pooled_auc_precursor": 0.567659918900823,
+  "per_event": [
+    {
+      "event_id": 68,
+      "event_type": "anomaly",
+      "event_description": "Transformer failure",
+      "n_test": 2295,
+      "auc_status": null,
+      "auc_event": 0.242196086469447,
+      "auc_precursor": 0.242196086469447
+    },
+    {
+      "event_id": 22,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1148,
+      "auc_status": null,
+      "auc_event": 0.47924016282225235,
+      "auc_precursor": 0.47924016282225235
+    },
+    {
+      "event_id": 72,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_test": 2017,
+      "auc_status": 0.3323128499852638,
+      "auc_event": 0.3598231000361823,
+      "auc_precursor": 0.3965007903462102
+    },
+    {
+      "event_id": 73,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1729,
+      "auc_status": null,
+      "auc_event": 0.5138875123885034,
+      "auc_precursor": 0.5342065695119129
+    },
+    {
+      "event_id": 0,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_test": 2838,
+      "auc_status": 0.48171704793028325,
+      "auc_event": 0.16428487188250643,
+      "auc_precursor": 0.16428487188250643
+    },
+    {
+      "event_id": 26,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1441,
+      "auc_status": 0.2611111111111111,
+      "auc_event": 0.3869365525089014,
+      "auc_precursor": 0.3869365525089014
+    },
+    {
+      "event_id": 40,
+      "event_type": "anomaly",
+      "event_description": "Generator bearing failure",
+      "n_test": 4939,
+      "auc_status": 0.8125115308743596,
+      "auc_event": 0.299557682449556,
+      "auc_precursor": 0.299557682449556
+    },
+    {
+      "event_id": 42,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1583,
+      "auc_status": 0.5999232650712196,
+      "auc_event": 0.498787997903564,
+      "auc_precursor": 0.498787997903564
+    },
+    {
+      "event_id": 10,
+      "event_type": "anomaly",
+      "event_description": "Gearbox failure",
+      "n_test": 1269,
+      "auc_status": null,
+      "auc_event": 0.4762819968286329,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 45,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1440,
+      "auc_status": null,
+      "auc_event": 0.6518982400058788,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 84,
+      "event_type": "anomaly",
+      "event_description": "Hydraulic group",
+      "n_test": 1437,
+      "auc_status": null,
+      "auc_event": 0.4704394693200663,
+      "auc_precursor": 0.48279195668986846
+    },
+    {
+      "event_id": 25,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2423,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 69,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2593,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 13,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 3583,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 24,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2714,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 3,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 3302,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 17,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2781,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 38,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2544,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 71,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 2449,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 14,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 1901,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 92,
+      "event_type": "normal",
+      "event_description": "nan",
+      "n_test": 1774,
+      "auc_status": null,
+      "auc_event": null,
+      "auc_precursor": null
+    },
+    {
+      "event_id": 51,
+      "event_type": "anomaly",
+      "event_description": "Gearbox bearings damaged",
+      "n_test": 2393,
+      "auc_status": 0.09921083344139606,
+      "auc_event": 0.410934283057714,
+      "auc_precursor": 0.46476783387160747
+    }
+  ],
+  "total_time_s": 3102.2341587543488,
+  "ensemble_weights_note": "ensemble_weights and total_time_s below are from a re-training build; the AUC fields are recomputed from the released realization_1 scores.",
+  "_provenance": "realization_2 (canonical: the released seed-42 code output); AUC fields recomputed from care_ensemble_v7_per_event_scores.json."
+}
