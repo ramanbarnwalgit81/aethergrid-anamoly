@@ -1,0 +1,193 @@
+{
+  "method": "Small-sample robustness battery for the PINN-v2 per-event AUC uplift (exact Wilcoxon, exact sign-flip permutation, sign test, leave-one-event-out).",
+  "tasks": {
+    "event_window": {
+      "n": 12,
+      "n_positive": 9,
+      "mean_uplift": 0.1496,
+      "median_uplift": 0.1516,
+      "wilcoxon_signed_rank_p_onesided": 0.0171,
+      "sign_test_p_onesided": 0.073,
+      "signflip_permutation_p_onesided": 0.0215,
+      "leave_one_out": [
+        {
+          "dropped_event": 68,
+          "mean": 0.1801,
+          "median": 0.2241,
+          "wilcoxon_p": 0.0068
+        },
+        {
+          "dropped_event": 22,
+          "mean": 0.1386,
+          "median": 0.079,
+          "wilcoxon_p": 0.0337
+        },
+        {
+          "dropped_event": 72,
+          "mean": 0.1302,
+          "median": 0.079,
+          "wilcoxon_p": 0.0337
+        },
+        {
+          "dropped_event": 73,
+          "mean": 0.1622,
+          "median": 0.2241,
+          "wilcoxon_p": 0.021
+        },
+        {
+          "dropped_event": 0,
+          "mean": 0.1208,
+          "median": 0.079,
+          "wilcoxon_p": 0.0337
+        },
+        {
+          "dropped_event": 26,
+          "mean": 0.1258,
+          "median": 0.079,
+          "wilcoxon_p": 0.0337
+        },
+        {
+          "dropped_event": 40,
+          "mean": 0.1428,
+          "median": 0.079,
+          "wilcoxon_p": 0.0337
+        },
+        {
+          "dropped_event": 42,
+          "mean": 0.1635,
+          "median": 0.2241,
+          "wilcoxon_p": 0.0161
+        },
+        {
+          "dropped_event": 10,
+          "mean": 0.1389,
+          "median": 0.079,
+          "wilcoxon_p": 0.0337
+        },
+        {
+          "dropped_event": 45,
+          "mean": 0.1794,
+          "median": 0.2241,
+          "wilcoxon_p": 0.0068
+        },
+        {
+          "dropped_event": 84,
+          "mean": 0.156,
+          "median": 0.2241,
+          "wilcoxon_p": 0.021
+        },
+        {
+          "dropped_event": 51,
+          "mean": 0.1567,
+          "median": 0.2241,
+          "wilcoxon_p": 0.021
+        }
+      ],
+      "leave_one_out_worst_wilcoxon_p": 0.0337,
+      "most_influential_event": 68,
+      "mean_without_most_influential": 0.1801,
+      "wilcoxon_p_without_most_influential": 0.0068,
+      "per_event_delta": {
+        "68": -0.1864,
+        "22": 0.2707,
+        "72": 0.3632,
+        "73": 0.0105,
+        "0": 0.4662,
+        "26": 0.4109,
+        "40": 0.2241,
+        "42": -0.0032,
+        "10": 0.2668,
+        "45": -0.1784,
+        "84": 0.079,
+        "51": 0.0715
+      }
+    },
+    "precursor": {
+      "n": 10,
+      "n_positive": 6,
+      "mean_uplift": 0.2086,
+      "median_uplift": 0.3106,
+      "wilcoxon_signed_rank_p_onesided": 0.042,
+      "sign_test_p_onesided": 0.377,
+      "signflip_permutation_p_onesided": 0.0293,
+      "leave_one_out": [
+        {
+          "dropped_event": 68,
+          "mean": 0.2517,
+          "median": 0.3209,
+          "wilcoxon_p": 0.0273
+        },
+        {
+          "dropped_event": 22,
+          "mean": 0.1984,
+          "median": 0.3209,
+          "wilcoxon_p": 0.082
+        },
+        {
+          "dropped_event": 72,
+          "mean": 0.1757,
+          "median": 0.3003,
+          "wilcoxon_p": 0.082
+        },
+        {
+          "dropped_event": 73,
+          "mean": 0.2383,
+          "median": 0.3209,
+          "wilcoxon_p": 0.0273
+        },
+        {
+          "dropped_event": 0,
+          "mean": 0.1591,
+          "median": 0.3003,
+          "wilcoxon_p": 0.082
+        },
+        {
+          "dropped_event": 26,
+          "mean": 0.1904,
+          "median": 0.3003,
+          "wilcoxon_p": 0.082
+        },
+        {
+          "dropped_event": 40,
+          "mean": 0.1961,
+          "median": 0.3003,
+          "wilcoxon_p": 0.082
+        },
+        {
+          "dropped_event": 42,
+          "mean": 0.2369,
+          "median": 0.3209,
+          "wilcoxon_p": 0.0273
+        },
+        {
+          "dropped_event": 84,
+          "mean": 0.2517,
+          "median": 0.3209,
+          "wilcoxon_p": 0.0273
+        },
+        {
+          "dropped_event": 51,
+          "mean": 0.1879,
+          "median": 0.3003,
+          "wilcoxon_p": 0.082
+        }
+      ],
+      "leave_one_out_worst_wilcoxon_p": 0.082,
+      "most_influential_event": 68,
+      "mean_without_most_influential": 0.2517,
+      "wilcoxon_p_without_most_influential": 0.0273,
+      "per_event_delta": {
+        "68": -0.1791,
+        "22": 0.3003,
+        "72": 0.5053,
+        "73": -0.0588,
+        "0": 0.6545,
+        "26": 0.3728,
+        "40": 0.3209,
+        "42": -0.0458,
+        "84": -0.1792,
+        "51": 0.3953
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 # AetherGrid reproducibility manifest (SHA-256)
-# 115 files
+# 116 files
 5c4e06014638a22a3bd72a94c19e3ea5dc4fde24b126245ec79fdc6ab0ed81e2  1253  data/benchmark/care_precursor/event_info_precursor_farm_A.csv
 e11dc909d206e63b650895214508b1ae1842eac965a832f06fe764c0fd3a053b  1868  data/benchmark/care_precursor/event_info_precursor_farm_B.csv
 7e939ddc911c2b9a96bee2adb6209babf1661b6c38f00a6cf97eca647a46143b  8066  data/benchmark/care_precursor/event_info_precursor_farm_C.csv
@@ -88,6 +88,7 @@ cf1b28dae313b25c480e712e2ecba09eeed85fc6afd4adc0fa541b81fbf4b6ee  1679  docs/res
 92f390f688a1fbf5e6a49c46c1dce4b78b7c689a7d9fc1f804d483cf00057784  798  docs/results/physics_sensitivity.json
 bb8147757da7dee747de12a9371376d53d3fd8a9899bbc4a1dcd32b7c4227767  1083  docs/results/pinn_ablation.json
 54192efc30ae51af3017657f2755e305a78339161a263748a7bfd05eed119d28  37552  docs/results/pinn_stacker_crossfarm.json
+d7d953e1b86aa573383dc251263bf4fab669c755fc58b96c7fae90ee41be5ed4  4879  docs/results/pinn_stacker_robustness.json
 fbb09607379d2dc5ca71aace774e73877ee4a6fcbeb57de47eeb95fe64f2d64f  1752464  docs/results/pinn_stacker_y_event.json
 072bea51e21f5790977d1bd36955383ad22b2f7c3cfd0c3b204704c44875cdbe  1558386  docs/results/pinn_stacker_y_precursor.json
 c63bfeb243ba8562c37b10005d7a590d288550ebb07005a3f52a7c038d16ee54  1085189  docs/results/pinn_stacker_y_status.json
