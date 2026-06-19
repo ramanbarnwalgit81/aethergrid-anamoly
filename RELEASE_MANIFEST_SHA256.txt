@@ -1,5 +1,5 @@
 # AetherGrid reproducibility manifest (SHA-256)
-# 116 files
+# 115 files
 5c4e06014638a22a3bd72a94c19e3ea5dc4fde24b126245ec79fdc6ab0ed81e2  1253  data/benchmark/care_precursor/event_info_precursor_farm_A.csv
 e11dc909d206e63b650895214508b1ae1842eac965a832f06fe764c0fd3a053b  1868  data/benchmark/care_precursor/event_info_precursor_farm_B.csv
 7e939ddc911c2b9a96bee2adb6209babf1661b6c38f00a6cf97eca647a46143b  8066  data/benchmark/care_precursor/event_info_precursor_farm_C.csv
@@ -72,7 +72,6 @@ e3793e7c253c2c249a5146265f5a9150a7760f178ed430223f13528578db7068  456  docs/resu
 276318d6bc76b236f272d4ef5dc63c6e7f9720fbf3768c0c8ee73c91df983f7f  1230  docs/results/economic_sensitivity.json
 e8229be1f8289b97de3a9bc1af83cd0432f0332ba0889ab2f53a8b1d70fea562  5379  docs/results/edp_W_sweep.json
 feb28252bb68b49c15ae3255c37df3c111c1eae0659f7beda3cb944ff681b864  599  docs/results/edp_label_gap.json
-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  0  docs/results/ensemble_v2_log.txt
 3691ffc920c575bfc1d4350ca39870c73c81421b95387e549c6ae469835f4a5a  7369  docs/results/evaluation_with_ci.json
 fe58c240245dc92fba93511afb519a2b821e6321cf8e94d82c17107e42d5f1d6  2192  docs/results/findings.json
 f5a6b7ba18022528cb5b109a0a16b49eaaccb05415f1f451fc5ca3fbc6e7158b  2444  docs/results/findings_lstm.json

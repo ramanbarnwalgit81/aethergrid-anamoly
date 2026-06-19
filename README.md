@@ -1,10 +1,10 @@
 # The Reporting Gap in Wind-Turbine Condition Monitoring
 
 Code and artifacts for the paper "The Reporting Gap in Wind-Turbine Condition
-Monitoring: A Physics-Informed, Conformally-Calibrated Evaluation Framework"
-(R. Barnwal). The paper examines how the choice of ground-truth label, rather
+Monitoring: How Label Conventions and Scoring Rules Drive Reported Detection AUC"
+(R. Barnwal et al.). The paper examines how the choice of ground-truth label, rather
 than model capacity, governs reported anomaly-detection performance on the CARE
-wind-turbine benchmark, and reports honest numbers under each label convention
+wind-turbine benchmark, and reports the number produced under each label convention
 across 89 turbine-years from three wind farms.
 
 This repository holds the corrected evaluation harness, the CARE-Precursor
@@ -15,7 +15,7 @@ Each is written to a JSON file by the script that produces it.
 ## What is included
 
 - `src/` source code.
-- `docs/results/` all result files behind the paper (101 JSON files).
+- `docs/results/` all result files behind the paper (106 JSON files).
 - `data/benchmark/care_precursor*/` the CARE-Precursor window definitions.
 - `models/` pretrained per-turbine detector weights.
 - `RELEASE_MANIFEST_SHA256.txt` SHA-256 and byte size of every result file.
@@ -60,14 +60,14 @@ below maps each result to the script that produces it. Outputs are written under
 | Paper item | Script (run as `python -m ...`) | Output |
 | --- | --- | --- |
 | Table 3, Nair replication | `src.benchmark.care_sota` | `docs/results/care_sota.json` |
-| Table 6 and Fig. 10, ten-detector plateau | `src.cms.benchmark` | `docs/results/cms/benchmark_ABC.json` |
-| Fig. 9, GDN dependency graph | `src.cms.benchmark` (GDN) | `docs/results/cms/benchmark_GDN_AB.json` |
-| Fig. 11, same-scores label gap | `src.cms.label_sensitivity` | `docs/results/cms/` |
-| Table 7, Label Ambiguity Score | `src.benchmark.label_ambiguity_test` | `docs/results/label_ambiguity_test.json` |
-| Fig. 6 and 7, PINN-v2 stacker | `src.benchmark.pinn_stacker` | `docs/results/care_pinn_results.json` |
-| Table 5, conformal risk control | `src.cms.evaluate` | `docs/results/calibration.json` |
+| Table 9 and Fig. 9, ten-detector plateau | `src.cms.benchmark` | `docs/results/cms/benchmark_ABC.json` |
+| Fig. 8, GDN dependency graph | `src.cms.benchmark` (GDN) | `docs/results/cms/benchmark_GDN_AB.json` |
+| Fig. 10, same-scores label gap | `src.cms.label_sensitivity` | `docs/results/cms/` |
+| Table 10, Label Ambiguity Score | `src.benchmark.label_ambiguity_test` | `docs/results/label_ambiguity_test.json` |
+| Fig. 5 and 6, PINN-v2 stacker | `src.benchmark.pinn_stacker` | `docs/results/care_pinn_results.json` |
+| Table 7, conformal risk control | `src.cms.evaluate` | `docs/results/calibration.json` |
 | CARE-Precursor labels | `src.benchmark.care_precursor` | `data/benchmark/care_precursor*/` |
-| Fig. 14, labeling decision tree | `src.benchmark.labeling_decision_tree` | figure |
+| Fig. 13, labeling decision tree | `src.benchmark.labeling_decision_tree` | figure |
 | Paper figures and table-charts | `src.cms.paper_figures`, `src.cms.paper_table_figures` | `docs/paper/figures/` |
 
 ## Verifying the artifacts
@@ -107,7 +107,7 @@ docs/paper/      manuscript, figures, and REPRODUCE.md
 @article{barnwal2026reportinggap,
   author  = {Barnwal, Raman},
   title   = {The Reporting Gap in Wind-Turbine Condition Monitoring:
-             A Physics-Informed, Conformally-Calibrated Evaluation Framework},
+             How Label Conventions and Scoring Rules Drive Reported Detection AUC},
   journal = {IEEE Access},
   year    = {2026}
 }
